@@ -1,0 +1,15 @@
+TranscriptIDCluster_5p	ExonIDCluster_5p	S_exonID_5p	TranscriptIDCluster_3p	ExonIDCluster_3p	S_exonID_3p	Species	n_lib	Experiment_ID	Ammon's horn	CD4-positive helper T cell	adipose tissue	adrenal gland	adrenal tissue	adult mammalian kidney	adult organism	blastula	bone marrow	bone marrow macrophage	bone tissue	brain	brown adipose tissue	cerebellum	cerebral cortex	colon	corpus callosum	egg cell	embryo	embryonic stem cell	eye	female gonad	female reproductive system	fibroblast	frontal cortex	gastrula	head	head kidney	heart	heart left ventricle	intestine	kidney	larva	leukocyte	liver	lung	lymph node	male reproductive system	mature ovarian follicle	mesonephros	multi-cellular organism	multi-tissue structure	muscle of leg	muscle tissue	peripheral blood mononuclear cell	pharyngeal gill	pharyngeal muscle cell (C elegans)	placenta	prefrontal cortex	prostate gland	rectum	skeletal muscle tissue	spleen	stomach	tail	temporal lobe	testis	thoracic mammary gland	thymus	thyroid gland	zone of skin
+						sus_scrofa	1	GSE43013																																																	0.0												
+						gorilla_gorilla	3	GSE30352																																																	0.0												
+						gorilla_gorilla	3	GSE43520																									0.0																																				
+						homo_sapiens	1	GSE43520																									1.2362640249517641e-07																																				
+						homo_sapiens	6	GSE30352														0.0											0.0																																				
+						homo_sapiens	6	GSE64283																																																						0.0							
+						homo_sapiens	6	GSE43520																									0.0																																				
+						homo_sapiens	6	GSE30611																																																												0.0	
+						mus_musculus	1	GSE43721												0.0																																																	
+						mus_musculus	2	GSE43520												0.0																																																	
+						mus_musculus	2	GSE30617	0.0																																																												
+						mus_musculus	1	GSE36026										5.0138600640681065e-08																																																			
+						mus_musculus	2	GSE30352												4.535640832407686e-08																																																	
+						mus_musculus	2	GSE41338												0.0																																																	

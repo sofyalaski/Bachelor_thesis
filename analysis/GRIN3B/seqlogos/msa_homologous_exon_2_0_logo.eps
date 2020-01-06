@@ -1,0 +1,3305 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title:        Sequence Logo: 
+%%Creator:      WebLogo 3.7.1
+%%CreationDate: 2019-06-03 19:18:55.882478
+%%BoundingBox:  0  0  470  220 
+%%Pages: 0
+%%DocumentFonts: 
+%%EndComments
+
+
+% ---- VARIABLES ----
+
+/True   true def
+/False  false def
+
+/debug              False        def
+
+/logo_height        220  def
+/logo_width         470  def
+/logo_title         () def
+/show_title         False def
+
+/logo_margin        2 def
+/xaxis_label_height 6.0 def
+/title_height       0 def
+/stroke_width       0.5 def
+/tic_length         5 def
+
+/lines_per_logo     3 def
+/line_width         466.0 def
+/line_height        70.0 def
+/line_margin_left   30.0 def
+/line_margin_right  4 def
+/line_margin_bottom 12.0 def
+/line_margin_top    4 def
+
+/stack_width         10.8 def
+/stack_height        54.0 def
+/stacks_per_line     40 def
+/stack_margin        0.5 def
+
+/show_yaxis             True def      
+/show_yaxis_label       True def
+/yaxis_label            (bits) def
+/yaxis_scale          4.321928094887362 def              % height in units 
+/yaxis_tic_interval     1.0 def           % in units
+/yaxis_minor_tic_interval 0.2 def   % in units
+
+/show_xaxis_label       False def             % True or False
+/show_xaxis             True def                   % True or False
+/xaxis_label            () def
+/xaxis_tic_interval     1 def
+/rotate_numbers         False def               % True or False
+/number_interval        5 def
+/show_ends              False def          
+/end_type               (-) def          % d: DNA, p: PROTEIN, -: none
+
+/show_fineprint         True def
+/fineprint              (WebLogo 3.7.1) def
+/logo_label             () def
+
+/show_boxes             False def    % True or False
+/shrink                 false def    % True or False
+/shrink_fraction        0.5 def               
+
+/show_errorbars         True def      % True or False
+/errorbar_fraction      0.9 def
+/errorbar_width_fraction  0.25 def
+/errorbar_gray          0.75 def
+
+/fontsize               10 def
+/small_fontsize         6 def
+/title_fontsize         12 def
+/number_fontsize        8 def
+
+
+/UseCIEColor true def       % Fix for issue 4
+/default_color [ 0.0 0.0 0.0 ] def 
+
+
+% ---- DERIVED PARAMETERS ----
+
+/char_width stack_width 2 stack_margin mul sub def
+/char_width2 char_width 2 div def
+/char_width4 char_width 4 div def
+
+% movements to place 5'/N and 3'/C symbols
+/leftEndDeltaX  fontsize neg         def
+/leftEndDeltaY  fontsize 1.25 mul neg def
+/rightEndDeltaX fontsize 0.25 mul     def
+/rightEndDeltaY leftEndDeltaY        def
+
+
+% ---- PROCEDURES ----
+
+
+/SetTitleFont {/ArialMT findfont title_fontsize scalefont setfont} bind def
+/SetLogoFont  {/ArialMT findfont char_width  scalefont setfont} bind def
+/SetStringFont{/ArialMT findfont fontsize scalefont setfont} bind def
+/SetPrimeFont {/Symbol findfont fontsize scalefont setfont} bind def
+/SetSmallFont {/ArialMT findfont small_fontsize scalefont setfont} bind def
+/SetNumberFont {/ArialMT findfont number_fontsize scalefont setfont} bind def
+
+/DrawBox { % width height 
+    /hh exch def
+    /ww exch def
+    gsave
+        0.2 setlinewidth
+        %0.5 setgray
+        
+        %0 0 moveto 
+        hh 0 rlineto
+        0 ww rlineto
+        hh neg 0 rlineto
+        0 ww neg rlineto
+        stroke
+    grestore
+} bind def
+
+
+/StartLogo { 
+  %save 
+  gsave 
+
+  
+  debug { 
+    logo_margin logo_margin moveto
+    logo_height logo_margin 2 mul sub
+    logo_width logo_margin 2 mul sub
+    DrawBox } if
+    
+  show_title { DrawTitle } if
+  show_xaxis_label { DrawXaxisLable } if
+  show_fineprint { DrawFineprint } if
+  DrawLogoLabel
+  
+  
+  MoveToFirstLine
+} bind def
+
+
+/DrawLogoLabel {
+  gsave 
+    SetTitleFont
+    
+    logo_margin
+    logo_height title_fontsize sub logo_margin sub
+    moveto
+    
+    debug { title_fontsize logo_label stringwidth pop DrawBox } if
+    0 title_fontsize 4 div rmoveto % Move up to baseline (approximatly)
+    logo_label show
+    
+  grestore
+} bind def
+
+/DrawTitle {
+  gsave 
+    SetTitleFont
+    
+    logo_width 2 div logo_title stringwidth pop 2 div sub 
+    logo_height title_fontsize sub logo_margin sub
+    moveto
+    
+    debug { title_fontsize logo_title stringwidth pop DrawBox } if
+    
+    0 title_fontsize 4 div rmoveto % Move up to baseline (approximatly)
+    logo_title show
+    
+  grestore
+} bind def
+
+/DrawXaxisLable {
+  % Print X-axis label, bottom center
+  gsave
+    SetStringFont
+
+    logo_width 2 div xaxis_label stringwidth pop 2 div sub
+    xaxis_label_height logo_margin add fontsize sub
+    moveto
+    %fontsize 3 div
+    
+    debug { fontsize xaxis_label stringwidth pop DrawBox } if
+
+    xaxis_label show
+
+  grestore
+} bind def
+
+
+/DrawFineprint {
+    gsave
+    
+    SetSmallFont
+
+    logo_width fineprint stringwidth pop sub 
+        logo_margin sub line_margin_right sub
+    logo_margin 
+    moveto
+    
+    debug { small_fontsize fineprint stringwidth pop DrawBox } if
+        
+    fineprint show
+    grestore
+} bind def
+
+/MoveToFirstLine {
+    logo_margin 
+    logo_height logo_margin sub title_height sub line_height sub
+    moveto
+} bind def
+
+/EndLogo { 
+  grestore 
+  %showpage 
+  %restore 
+} bind def
+
+
+/StartLine{ 
+    gsave 
+  
+    % Draw outer box
+    debug { line_height line_width DrawBox } if  
+
+    % Move to lower left corner of content area
+    line_margin_left line_margin_bottom rmoveto
+
+    % Draw inner content box
+    debug { 
+        line_height line_margin_bottom sub line_margin_top sub
+        line_width line_margin_left sub line_margin_right sub
+        DrawBox
+    } if  
+  
+    show_yaxis { DrawYaxis } if
+    show_xaxis { DrawLeftEnd } if
+    
+} bind def
+
+/EndLine{ 
+    show_xaxis { DrawRightEnd } if
+    grestore 
+    0 line_height neg rmoveto 
+} bind def
+
+
+/DrawYaxis {
+  gsave    
+    stack_margin neg 0 translate
+    DrawYaxisBar
+    DrawYaxisLabel
+  grestore
+} bind def
+
+
+/DrawYaxisBar { 
+  gsave  
+    stack_margin neg 0 rmoveto
+    
+    SetNumberFont
+    stroke_width setlinewidth
+    
+    /str 10 string def % string to hold number  
+    /smallgap stack_margin  def
+
+    % Draw first tic and bar
+    gsave    
+      tic_length neg 0 rmoveto 
+      tic_length 0 rlineto 
+      0 stack_height rlineto
+      stroke
+    grestore
+
+    % Draw the tics
+    % initial increment limit proc for
+    0 yaxis_tic_interval yaxis_scale abs 
+    {/loopnumber exch def
+
+      % convert the number coming from the loop to a string
+      % and find its width
+      loopnumber 10 str cvrs
+      /stringnumber exch def % string representing the number
+
+      stringnumber stringwidth pop
+      /numberwidth exch def % width of number to show
+
+      /halfnumberheight
+         stringnumber CharBoxHeight 2 div
+      def
+
+      gsave
+        numberwidth % move back width of number
+        neg loopnumber stack_height yaxis_scale div mul % shift on y axis
+        halfnumberheight sub % down half the digit
+        rmoveto % move back the width of the string
+
+        tic_length neg smallgap sub % Move back a bit more  
+        0 rmoveto % move back the width of the tic  
+
+        stringnumber show
+        smallgap 0 rmoveto % Make a small gap  
+
+        % now show the tic mark
+        0 halfnumberheight rmoveto % shift up again
+        tic_length 0 rlineto
+        stroke
+     grestore
+    } for
+    
+    % Draw the minor tics
+    % initial increment limit proc for
+    0 yaxis_minor_tic_interval yaxis_scale abs 
+    {/loopnumber2 exch def
+      gsave
+        0
+        loopnumber2 stack_height yaxis_scale div mul 
+        rmoveto 
+
+        tic_length 2 div neg 0 rlineto
+        stroke
+     grestore
+    } for    
+    
+  grestore
+} bind def
+
+/DrawYaxisLabel {
+  gsave
+    SetStringFont
+
+    % How far we move left depends on the size of
+    % the tic labels.
+    /str 10 string def % string to hold number  
+    yaxis_scale yaxis_tic_interval div cvi yaxis_tic_interval mul 
+    str cvs stringwidth pop
+    tic_length 1.25 mul  add neg  
+
+    stack_height
+    yaxis_label stringwidth pop
+    sub 2 div
+
+    rmoveto
+    90 rotate
+    
+    yaxis_label show
+  grestore
+} bind def
+
+
+%Take a single character and return the bounding box
+/CharBox { % <char> CharBox <lx> <ly> <ux> <uy>
+  gsave
+    newpath
+    0 0 moveto
+    % take the character off the stack and use it here:
+    true charpath 
+    flattenpath 
+    pathbbox % compute bounding box of 1 pt. char => lx ly ux uy
+    % the path is here, but toss it away ...
+  grestore
+} bind def
+
+
+% The height of a characters bounding box
+/CharBoxHeight { % <char> CharBoxHeight <num>
+  CharBox
+  exch pop sub neg exch pop
+} bind def
+
+
+% The width of a characters bounding box
+/CharBoxWidth { % <char> CharBoxHeight <num>
+  CharBox
+  pop exch pop sub neg 
+} bind def
+
+
+/DrawLeftEnd {
+  gsave
+    SetStringFont
+    leftEndDeltaX leftEndDeltaY rmoveto
+    
+    show_ends {
+        debug { leftEndDeltaY neg leftEndDeltaX neg DrawBox } if
+        end_type (d) eq {(5) show DrawPrime} if
+        end_type (p) eq {(N) show} if
+    } if
+  grestore
+} bind def
+
+/DrawRightEnd { 
+  gsave
+    SetStringFont
+    rightEndDeltaX rightEndDeltaY rmoveto
+    
+    show_ends {
+        debug { rightEndDeltaY neg leftEndDeltaX neg  DrawBox } if
+        end_type (d) eq {(3) show DrawPrime} if
+        end_type (p) eq {(C) show} if
+    } if
+  grestore
+} bind def
+
+/DrawPrime {
+  gsave
+    SetPrimeFont
+    (\242) show 
+  grestore
+} bind def
+
+
+/StartStack {  % <stackNumber> startstack
+  show_xaxis {DrawNumber}{pop} ifelse
+  gsave
+  debug { stack_height stack_width DrawBox } if
+    
+} bind def
+
+/EndStack {
+  grestore
+  stack_width 0 rmoveto
+} bind def
+
+
+/DrawNumber { % number MakeNumber
+    /n exch def
+    
+    
+  gsave
+    %0 stack_margin neg rmoveto
+    stroke_width setlinewidth
+    stack_width  0 rlineto
+    stack_width 2 div neg 0 rmoveto
+    
+    n () eq 
+    {  0 tic_length 4 div neg rlineto  } 
+    { 0 tic_length 2 div neg rlineto } 
+    ifelse
+
+    stroke
+  grestore   
+
+
+
+  gsave
+    n
+    SetNumberFont
+    stack_width 2 div tic_length 2 div neg rmoveto 
+
+    rotate_numbers {
+        90 rotate     
+        dup stringwidth pop neg % find the length of the number
+        stack_margin sub        % Move down a bit
+        (0) CharBoxHeight 2 div neg % left half height of numbers
+        rmoveto 
+        show
+    } {
+        dup stringwidth pop neg 2 div number_fontsize neg  rmoveto
+        show
+    } ifelse
+    
+    
+
+  grestore
+} bind def
+
+
+
+% Draw a character whose height is proportional to symbol bits
+/ShowSymbol{ % interval color character ShowSymbol
+    /char exch def
+    /color exch def
+    /interval exch def
+    /fraction_width exch def
+    
+    /char_height 
+       interval yaxis_scale div stack_height mul
+       stack_margin sub
+       dup 
+       % if char_height is negative or very small replace with zero 
+       % BUG FIX: This used to be '0.0 gt' but it seems that DrawHeight
+       % has a finite, non-zero minimum, which results in a rangecheck error
+       0.01 gt {}{pop 0.0} ifelse 
+    def 
+
+    char_height 0.0 gt {
+        show_boxes {
+            gsave
+                /ww char_height stack_margin add def
+                /hh stack_width def
+                stroke_width setlinewidth
+                hh 0 rlineto
+                0 ww rlineto
+                hh neg 0 rlineto
+                0 ww neg rlineto
+                stroke
+            grestore     
+        } if
+
+        gsave
+            stack_margin stack_margin rmoveto
+            debug { char_height char_width DrawBox } if
+            1 fraction_width sub char_width mul 2 div  0 rmoveto
+            fraction_width char_width mul char_height color char DrawChar
+        grestore
+        
+    } if
+    0 interval yaxis_scale div stack_height mul rmoveto
+} bind def
+
+
+/DrawChar { % <width> <height> <char> ShowChar
+    /tc exch def    % The character
+    /color exch def % The color of the character
+    /ysize exch def % the y size of the character
+    /xsize exch def % the x size of the character
+    /xmulfactor 1 def 
+    /ymulfactor 1 def
+    
+    gsave
+        SetLogoFont    
+        color aload pop setrgbcolor
+
+        % IReplacementHack
+        % Deal with the lack of bars on the letter 'I' in Arial and Helvetica
+        % by replacing with 'I' from Courier.
+        tc (I) eq {
+            /Courier findfont char_width  scalefont setfont    
+        } if
+
+
+        shrink {
+            xsize 1 shrink_fraction sub 2 div mul
+            ysize 1 shrink_fraction sub 2 div mul rmoveto 
+            shrink_fraction shrink_fraction scale
+        } if
+        
+        % Calculate the font scaling factors
+        % Loop twice to catch small correction due to first scaling
+        2 {
+            gsave
+            xmulfactor ymulfactor scale
+      
+            ysize % desired size of character in points
+            tc CharBoxHeight 
+            dup 0.0 ne {
+                div % factor by which to scale up the character
+                /ymulfactor exch def
+            } {pop pop} ifelse
+
+            xsize % desired size of character in points
+            tc CharBoxWidth  
+            dup 0.0 ne {
+                div % factor by which to scale up the character
+                /xmulfactor exch def
+            } {pop pop} ifelse
+            grestore
+        } repeat
+
+
+  
+        % Draw the character
+        xmulfactor ymulfactor scale
+        % Move lower left corner of character to start point
+        tc CharBox pop pop % llx lly : Lower left corner
+        exch neg exch neg
+        rmoveto
+        
+        tc show    
+
+    grestore
+} bind def
+
+/DrawErrorbar{ % interval_down interval_up DrawErrorbar
+    
+    gsave
+    /points_per_unit stack_height yaxis_scale div def 
+    /height_up   exch points_per_unit mul def 
+    /height_down exch points_per_unit mul def
+    
+    show_errorbars {
+    
+    stroke_width setlinewidth
+    errorbar_gray setgray     
+    stack_width 2 div 0 rmoveto
+    
+    /errorbar_width char_width errorbar_width_fraction mul def
+    /errorbar_width2 errorbar_width 2 div def
+    
+    gsave 
+        0 height_down neg rmoveto
+        errorbar_width2 neg 0 rlineto
+        errorbar_width 0 rlineto
+        errorbar_width2 neg 0 rlineto
+        0 height_down errorbar_fraction mul rlineto 
+        stroke
+    grestore
+
+    gsave 
+        0 height_up  rmoveto
+        errorbar_width2 neg 0 rlineto
+        errorbar_width 0 rlineto
+        errorbar_width2 neg 0 rlineto
+        0 height_up neg errorbar_fraction mul rlineto 
+        stroke
+    grestore
+    } if
+           
+    grestore
+    
+} bind def
+
+/DrawErrorbarFirst{ % interval_down interval_up center DrawErrorbarFirst
+    gsave
+    /points_per_unit stack_height yaxis_scale div def 
+    /center   exch points_per_unit mul def 
+
+    0 center rmoveto
+    DrawErrorbar
+    grestore
+} bind def
+
+%%EndProlog
+
+%%Page: 1 1
+
+% Example Data
+%StartLogo
+%    StartLine
+%        (1) StartStack
+%            1.2 [0 0 0] (C) ShowSymbol
+%            2.2 [0 0 0] (I) ShowSymbol
+%            0.5 0.5 DrawErrorbar
+%        EndStack
+%        (2) StartStack
+%            0.5 [0 0 0] (I) ShowSymbol
+%            0.9 [0 0 0] (L) ShowSymbol
+%            1.0 [0 0 0] (G) ShowSymbol
+%            0.5 0.5 DrawErrorbar        
+%        EndStack
+%        (234) StartStack
+%        EndStack
+%        (235) StartStack
+%        EndStack
+%    EndLine
+%EndLogo
+
+StartLogo
+
+StartLine
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.724480 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 1.086720 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.794444 0.794444 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.176042 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.976720 0.976720 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.358390 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.984785 0.984785 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.761658 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.049288 1.049288 DrawErrorbar
+EndStack
+
+(5) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.340973 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.983381 0.983381 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.396432 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 1.585728 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.912716 0.912716 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 3.144105 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.155374 1.155374 DrawErrorbar
+EndStack
+
+(10) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 1.867311 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000756 1.000756 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.977184 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.986257 0.986257 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.176042 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.976720 0.976720 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.046671 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.980582 0.980582 DrawErrorbar
+EndStack
+
+(15) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.090497 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.978323 0.978323 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.629627 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.944440 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.828680 0.828680 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.150321 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.976822 0.976822 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.005935 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.983591 0.983591 DrawErrorbar
+EndStack
+
+(20) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.005935 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.983591 0.983591 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.339360 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.357441 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.884238 0.884238 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.623810 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.935714 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.815025 0.815025 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.607187 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.910780 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.824518 0.824518 DrawErrorbar
+EndStack
+
+(25) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.741113 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 1.111670 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.798654 0.798654 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.326496 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 1.305985 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.897648 0.897648 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.761658 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.049288 1.049288 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.632066 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.948099 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.814750 0.814750 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 3.144105 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.155374 1.155374 DrawErrorbar
+EndStack
+
+(30) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.046671 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.980582 0.980582 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.150321 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.976822 0.976822 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.686683 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 1.030024 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.794688 0.794688 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.619145 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.928718 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.811947 0.811947 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+(35) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.343841 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.375365 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.881904 0.881904 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.947977 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.096465 1.096465 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.395728 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 1.582914 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.939377 0.939377 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.350728 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 1.402911 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.880434 0.880434 DrawErrorbar
+EndStack
+
+(40) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.374005 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 1.496020 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.881726 0.881726 DrawErrorbar
+EndStack
+
+
+EndLine
+StartLine
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.150321 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.976822 0.976822 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.176042 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.976720 0.976720 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.634429 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.951644 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.804802 0.804802 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.338427 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 1.353707 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.885482 0.885482 DrawErrorbar
+EndStack
+
+(45) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.005935 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.983591 0.983591 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.285091 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.570182 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.570182 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.731217 0.731217 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 3.144105 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.155374 1.155374 DrawErrorbar
+EndStack
+
+(50) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.090497 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.978323 0.978323 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.352321 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 1.409283 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.890086 0.890086 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.388867 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 1.555469 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.916600 0.916600 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 1.867311 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000756 1.000756 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.634429 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.951644 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.804802 0.804802 DrawErrorbar
+EndStack
+
+(55) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.359816 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.719632 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.719632 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.813925 0.813925 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.331934 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 1.327735 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.902631 0.902631 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.176042 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.976720 0.976720 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.374005 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 1.496020 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.881726 0.881726 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.658182 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.987273 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.846009 0.846009 DrawErrorbar
+EndStack
+
+(60) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.005935 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.983591 0.983591 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.150321 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.976822 0.976822 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.977184 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.986257 0.986257 DrawErrorbar
+EndStack
+
+(65) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.374005 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 1.496020 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.881726 0.881726 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.302362 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.604724 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.604724 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.755154 0.755154 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.371901 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 1.487604 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.872878 0.872878 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.265394 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.265394 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.265394 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.530789 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.692675 0.692675 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.342355 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 1.369422 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.886953 0.886953 DrawErrorbar
+EndStack
+
+(70) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.733070 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 1.099605 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.792632 0.792632 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.554352 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 1.108705 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.827470 0.827470 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.555100 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 1.110200 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.813771 0.813771 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 1.896116 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000493 1.000493 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.286821 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.286821 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 1.147283 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.801938 0.801938 DrawErrorbar
+EndStack
+
+(75) StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 1.960578 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.991490 0.991490 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.241454 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.241454 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.241454 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.724362 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.700862 0.700862 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.282437 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 1.412183 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.923892 0.923892 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.285778 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 1.428892 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.906895 0.906895 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.830056 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.830056 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.800448 0.800448 DrawErrorbar
+EndStack
+
+(80) StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.602279 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 1.204559 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.907189 0.907189 DrawErrorbar
+EndStack
+
+
+EndLine
+StartLine
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.296344 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 1.481722 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.897121 0.897121 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.289096 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 1.445479 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.909969 0.909969 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.590862 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 1.181723 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.821152 0.821152 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.251248 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.502496 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.753744 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.726561 0.726561 DrawErrorbar
+EndStack
+
+(85) StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 2.052080 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.981766 0.981766 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 2.052080 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.981766 0.981766 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.233748 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.233748 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.233748 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.701245 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.709287 0.709287 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.243124 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.486248 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.729372 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.739681 0.739681 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.335637 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 1.678187 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.887357 0.887357 DrawErrorbar
+EndStack
+
+(90) StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.307310 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 1.536548 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.892121 0.892121 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.289322 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.289322 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 1.157287 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.793833 0.793833 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.257751 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.257751 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 1.031002 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.819847 0.819847 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.289373 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 1.446866 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.910352 0.910352 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.005935 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.983591 0.983591 DrawErrorbar
+EndStack
+
+(95) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.809298 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.011303 1.011303 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 1.949828 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.989219 0.989219 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 2.947977 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.096465 1.096465 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.679737 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 1.019605 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.796440 0.796440 DrawErrorbar
+EndStack
+
+(100) StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.272032 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.272032 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.272032 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.544065 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.682701 0.682701 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.326496 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 1.305985 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.897648 0.897648 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.784459 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 1.176689 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.858418 0.858418 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.325605 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 1.302420 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.897355 0.897355 DrawErrorbar
+EndStack
+
+() StartStack
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 0.833333 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.833333 0.371829 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 0.833333 0.743659 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 0.833333 0.743659 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 0.773369 0.773369 DrawErrorbar
+EndStack
+
+(105) StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.245272 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.245272 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.490544 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.490544 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.663579 0.663579 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.307310 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 1.536548 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 0.892121 0.892121 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.277666 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 1.388331 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 0.916919 0.916919 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.269498 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 1.000000 0.538996 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.808493 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 0.737435 0.737435 DrawErrorbar
+EndStack
+
+() StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.289373 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 1.446866 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.910352 0.910352 DrawErrorbar
+EndStack
+
+(110) StartStack
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (Y) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (W) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (T) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (S) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (R) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (Q) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (N) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (M) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (L) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (K) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (I) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (H) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.5019607843137255 0.0 ] (G) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (F) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (E) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 1.0 ] (D) ShowSymbol
+ 1.000000 0.000000 [ 0.0 0.0 0.0 ] (C) ShowSymbol
+ 1.000000 0.255781 [ 0.0 0.0 0.0 ] (V) ShowSymbol
+ 1.000000 0.255781 [ 0.0 0.5019607843137255 0.0 ] (P) ShowSymbol
+ 1.000000 1.023125 [ 0.0 0.5019607843137255 0.0 ] (A) ShowSymbol
+ 0.818669 0.818669 DrawErrorbar
+EndStack
+
+EndLine
+
+EndLogo
+
+
+%%EOF

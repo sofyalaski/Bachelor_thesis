@@ -1,0 +1,26 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting ENST00000650130
+WARNING:root:deleting ENST00000650053
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEANGD and CLRLLTHTFNREYSYSHVCVSASESK have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CLRPVPTVPATKLSTLTRPCPGPCHCKYDL and CLRLLMHTF--NREYTHSHVC---ISASESK have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEANGD and CLRLLTHTFNREYSHSHVCVSVSESK have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEAN and CLRLLTHTFNREYSYSHVCVSASE have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEAN and CLRLLTHTFNREYSHSHVCVSVSE have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEAN and CLRLLTHTFNREYTHSHVCVSASE have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEANGD and CLRLLMHTFNREYTHSHVCISASESK have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEANGD and CLRLLTHTFNREYTHSHVCVSASESK have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPGPCHCKYDLLVYFEICELEAN and CLRLLMHTFNREYTHSHVCISASE have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1A\thoraxe\_intermediate\chimeric_alignment_2.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1A\thoraxe\_intermediate\chimeric_alignment_21.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1A\thoraxe\_intermediate\chimeric_alignment_36.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1A\thoraxe\_intermediate\chimeric_alignment_45.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1A\thoraxe\_intermediate\chimeric_alignment_49.fasta

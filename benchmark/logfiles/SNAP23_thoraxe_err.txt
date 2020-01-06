@@ -1,0 +1,8 @@
+
+FATAL: Sequence file contains no data
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\SNAP23\thoraxe\_intermediate\chimeric_alignment_12.fasta
+0000048710
+WARNING:root:deleting ENSSSCT00000037345
+WARNING:root:deleting ENSMUST00000110711
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\SNAP23\thoraxe\_intermediate\chimeric_alignment_7.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\SNAP23\thoraxe\_intermediate\chimeric_alignment_10.fasta

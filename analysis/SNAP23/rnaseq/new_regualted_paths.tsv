@@ -1,0 +1,4 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	mus_musculus	1.0	lung	0.3804943423366928	5_0,2_1	5_0,2_0,3_0	SNAP23
+1	mus_musculus	1.0	lung	0.3804943423366928	5_0,2_1,2_2	5_0,2_0,3_0	SNAP23
+2	mus_musculus	1.0	lung	0.3804943423366928	5_0,2_1,2_2,2_3,3_0	5_0,2_0,3_0	SNAP23

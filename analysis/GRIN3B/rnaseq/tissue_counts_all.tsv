@@ -1,0 +1,187 @@
+TranscriptIDCluster_5p	ExonIDCluster_5p	S_exonID_5p	TranscriptIDCluster_3p	ExonIDCluster_3p	S_exonID_3p	Species	n_lib	Experiment_ID	Ammon's horn	CD4-positive helper T cell	adipose tissue	adrenal gland	adrenal tissue	adult mammalian kidney	adult organism	blastula	bone marrow	bone marrow macrophage	bone tissue	brain	brown adipose tissue	cerebellum	cerebral cortex	colon	corpus callosum	egg cell	embryo	embryonic stem cell	eye	female gonad	female reproductive system	fibroblast	frontal cortex	gastrula	head	head kidney	heart	heart left ventricle	intestine	kidney	larva	leukocyte	liver	lung	lymph node	male reproductive system	mature ovarian follicle	mesonephros	multi-cellular organism	multi-tissue structure	muscle of leg	muscle tissue	peripheral blood mononuclear cell	pharyngeal gill	pharyngeal muscle cell (C elegans)	placenta	prefrontal cortex	prostate gland	rectum	skeletal muscle tissue	spleen	stomach	tail	temporal lobe	testis	thoracic mammary gland	thymus	thyroid gland	zone of skin
+ENSBTAT00000036098	ENSBTAE00000283284	2_1	ENSBTAT00000036098	ENSBTAE00000283283	1_0	bos_taurus	1	GSE41637												1.338723265244574e-08																																																	
+ENSBTAT00000036098	ENSBTAE00000283282	8_0	ENSBTAT00000036098	ENSBTAE00000199573	9_0	bos_taurus	4	GSE41637												4.0015853354625744e-08																																													1.2200937781159173e-08				
+ENSBTAT00000036098	ENSBTAE00000283282	8_0	ENSBTAT00000036098	ENSBTAE00000199573	9_0	bos_taurus	4	GSE43013																																																	1.0234450275181341e-07												
+ENSBTAT00000036098	ENSBTAE00000199573	9_0	ENSBTAT00000036098	ENSBTAE00000283281	7_0	bos_taurus	6	GSE41637						2.3222450313129197e-08						2.677446530489148e-08																																													6.341925150447072e-07				
+ENSBTAT00000036098	ENSBTAE00000199573	9_0	ENSBTAT00000036098	ENSBTAE00000283281	7_0	bos_taurus	6	GSE43013																																																	1.0234450275181341e-07												
+ENSBTAT00000036098	ENSBTAE00000199573	9_0				bos_taurus	1	GSE41637																																																									6.100468890579586e-08				
+ENSBTAT00000036098	ENSBTAE00000283281	7_0				bos_taurus	2	GSE41637																																																									1.3251700309985087e-07				
+ENSBTAT00000036098	ENSBTAE00000283281	7_0	ENSBTAT00000036098	ENSBTAE00000283280	5_0	bos_taurus	8	GSE41637						2.3222450313129197e-08						9.18208609475115e-08																																								2.3074728315264475e-07					2.3275940565263306e-06				
+ENSBTAT00000036098	ENSBTAE00000283281	7_0	ENSBTAT00000036098	ENSBTAE00000283280	5_0	bos_taurus	8	GSE43013																																																	5.1172251375906704e-08												
+ENSBTAT00000036098	ENSBTAE00000283280	5_0	ENSBTAT00000036098	ENSBTAE00000283279	10_0	bos_taurus	9	GSE41637												3.921681414753288e-08																																								5.506978449610266e-08					2.450540038188078e-06				
+ENSBTAT00000036098	ENSBTAE00000283280	5_0	ENSBTAT00000036098	ENSBTAE00000283279	10_0	bos_taurus	9	GSE43013																																																	1.4720576937849404e-07												
+ENSBTAT00000036098	ENSBTAE00000283279	10_0				bos_taurus	1	GSE41637																																																									2.4401875562318345e-08				
+ENSBTAT00000036098	ENSBTAE00000283279	10_0	ENSBTAT00000036098	ENSBTAE00000283278	3_0	bos_taurus	6	GSE41637						2.3222450313129197e-08						4.0161697957337216e-08																								1.3212827414523973e-08																					2.3541127790526976e-06				
+						gorilla_gorilla	1	GSE43520																																																									1.7495291186115485e-08				
+						gorilla_gorilla	1	GSE30352																																																									0.0				
+						gorilla_gorilla	1	GSE43520																																																									1.7495291186115485e-08				
+ENST00000234389	ENSE00000769054	4_1	ENST00000234389	ENSE00000769056	2_0	homo_sapiens	5	GSE30352						6.160080154962977e-08																																																			1.816820524112751e-07				
+ENST00000234389	ENSE00000769054	4_1	ENST00000234389	ENSE00000769056	2_0	homo_sapiens	5	GSE43520																																																4.47345589946391e-08													
+ENST00000234389	ENSE00000769054	4_1	ENST00000234389	ENSE00000769056	2_0	homo_sapiens	5	GSE30611																																				3.460698619988644e-08																									
+ENST00000234389	ENSE00000769056	2_1	ENST00000234389	ENSE00000769058	1_0	homo_sapiens	5	GSE30352						6.160080154962977e-08																																																							
+ENST00000234389	ENSE00000769056	2_1	ENST00000234389	ENSE00000769058	1_0	homo_sapiens	5	GSE64283																																				5.200927429379207e-08																									
+ENST00000234389	ENSE00000769056	2_1	ENST00000234389	ENSE00000769058	1_0	homo_sapiens	5	GSE30611																						1.3988072482498753e-08														1.0496735546461378e-07																									
+ENST00000234389	ENSE00000769058	1_0				homo_sapiens	1	GSE30611																																				1.4148500310609102e-08																									
+ENST00000234389	ENSE00000769058	1_0	ENST00000234389	ENSE00000769060	8_0	homo_sapiens	7	GSE30611																						4.21797191694546e-08														4.206336864350915e-08					3.099680838262808e-08																2.036542259012437e-08				
+ENST00000234389	ENSE00000769060	8_0	ENST00000234389	ENSE00000769062	9_0	homo_sapiens	15	GSE30352						1.8480240464888928e-07																																																			4.1056508782767304e-08				
+ENST00000234389	ENSE00000769060	8_0	ENST00000234389	ENSE00000769062	9_0	homo_sapiens	15	GSE43520																						3.021614880317158e-08																																			3.0670038203519685e-08				
+ENST00000234389	ENSE00000769060	8_0	ENST00000234389	ENSE00000769062	9_0	homo_sapiens	15	GSE30611																						1.0577255050657402e-07														2.7914868332900045e-08					1.852164141912579e-08																2.6887392802653636e-08				
+ENST00000234389	ENSE00000769062	9_0	ENST00000234389	ENSE00000769063	7_0	homo_sapiens	25	GSE30352						1.4814406790366754e-07																																																			2.1401055255393947e-07				
+ENST00000234389	ENSE00000769062	9_0	ENST00000234389	ENSE00000769063	7_0	homo_sapiens	25	GSE64283																																				9.084718640179956e-08																		5.1028893018487105e-08							
+ENST00000234389	ENSE00000769062	9_0	ENST00000234389	ENSE00000769063	7_0	homo_sapiens	25	GSE43520																																																									3.0670038203519685e-08				
+ENST00000234389	ENSE00000769062	9_0	ENST00000234389	ENSE00000769063	7_0	homo_sapiens	25	GSE30611				4.880401213228699e-08								6.34801816142604e-08										1.0555704878461568e-07														5.602080280995917e-08					2.1801622400038088e-08																4.745269338091215e-08			2.7833981932377813e-08	
+ENST00000234389	ENSE00000769063	7_0	ENST00000234389	ENSE00000769064	5_0	homo_sapiens	17	GSE30352						1.2320160309925954e-07																																																			1.2316952634830192e-07				
+ENST00000234389	ENSE00000769063	7_0	ENST00000234389	ENSE00000769064	5_0	homo_sapiens	17	GSE64283																																8.551262983061915e-08				8.259361800765527e-08																		6.291807487804589e-08							
+ENST00000234389	ENSE00000769063	7_0	ENST00000234389	ENSE00000769064	5_0	homo_sapiens	17	GSE30611				1.6674740298006624e-08								1.6919467752377552e-08										1.6947313270467262e-07														1.2599903978636837e-07					1.6007008402123245e-08																4.063090618618167e-08				
+ENST00000234389	ENSE00000769063	7_0	ENST00000234389	ENSE00000769065	10_0	homo_sapiens	4	GSE30352																													5.1142814314403215e-08																																
+ENST00000234389	ENSE00000769063	7_0	ENST00000234389	ENSE00000769065	10_0	homo_sapiens	4	GSE30611																																									1.6049322778763697e-08																1.3643574389460961e-08			1.3909685414103576e-08	
+ENST00000234389	ENSE00000769064	5_0	ENST00000234389	ENSE00000769065	10_0	homo_sapiens	15	GSE30352						1.8480240464888928e-07																																																			4.1056508782767304e-08				
+ENST00000234389	ENSE00000769064	5_0	ENST00000234389	ENSE00000769065	10_0	homo_sapiens	15	GSE30611						3.5862070643799657e-08																3.5077932067226057e-08														4.225443478766823e-08					1.7325039892281825e-08																1.354363539539389e-08				
+ENST00000234389	ENSE00000769065	10_0	ENST00000234389	ENSE00001492453	3_0	homo_sapiens	16	GSE30352						6.160080154962977e-08																			7.7875991517124e-08																																1.2316952634830192e-07				
+ENST00000234389	ENSE00000769065	10_0	ENST00000234389	ENSE00001492453	3_0	homo_sapiens	16	GSE64283																																				7.678446299277803e-08																		6.419322880835478e-08							
+ENST00000234389	ENSE00000769065	10_0	ENST00000234389	ENSE00001492453	3_0	homo_sapiens	16	GSE30611																						2.1197610445706474e-08														4.9137618798813695e-08					1.9798732437169405e-08																4.0530967192114597e-08				
+						homo_sapiens	1	GSE30611																						1.4203574204457098e-08																																							
+						homo_sapiens	2	GSE30352																																																									1.816820524112751e-07				
+						homo_sapiens	2	GSE30611																																																									2.7287148778921922e-08				
+						macaca_mulatta	11	GSE41637						7.855666478148128e-08						1.4681503500474176e-08				1.4352154509554588e-08													2.3891858281858823e-08						1.2517253782613954e-08																		4.311579366559152e-08								
+						macaca_mulatta	11	GSE30352												9.268569880985075e-08																																																	
+						macaca_mulatta	11	GSE43520												2.0195982827153844e-07																																																	
+						macaca_mulatta	11	GSE53690																																													4.587755320910092e-08																
+						macaca_mulatta	12	GSE41637						1.3092777463580214e-08										2.8704309019109175e-08													2.3891858281858823e-08																								5.006209905462264e-08				2.6357314382072862e-08				
+						macaca_mulatta	12	GSE30352																													9.258317139765129e-08																				6.872350622930477e-08												
+						macaca_mulatta	12	GSE43520																																																									2.3810556734151657e-08				
+						macaca_mulatta	12	GSE53690																																													1.0949791106741838e-07																
+						macaca_mulatta	1	GSE41637																																																				1.1484017577896665e-07									
+						macaca_mulatta	1	GSE41637																																																									1.3178657191036431e-08				
+						macaca_mulatta	1	GSE41637												1.4681503500474176e-08																																																	
+						macaca_mulatta	1	GSE41637												2.936300700094835e-08																																																	
+						macaca_mulatta	1	GSE30352																																																									4.724494861733878e-08				
+						macaca_mulatta	1	GSE41637												1.4681503500474176e-08																																																	
+						macaca_mulatta	17	GSE41637						1.3364236989544365e-07						8.270286459107048e-08				2.8704309019109175e-08													1.1945929140929412e-08							2.9016788606093684e-08																2.22657703580809e-08	1.7154913812340614e-08				6.589328595518215e-08				
+						macaca_mulatta	17	GSE30352						2.2239034932631292e-07																							1.3607762902149366e-07																												8.750828812873939e-08				
+						macaca_mulatta	17	GSE53690																																													1.1219847106733819e-07						7.69352445279038e-08										
+						macaca_mulatta	1	GSE41637												1.4681503500474176e-08																																																	
+						macaca_mulatta	22	GSE41637						1.36035612829364e-07						9.504833310540313e-08				7.287905726882976e-08													2.3891858281858823e-08						1.2517253782613954e-08	4.3525182909140526e-08																2.22657703580809e-08	3.430982762468123e-08				1.1572429997832759e-07				
+						macaca_mulatta	22	GSE30352																													8.031099295419906e-08																												1.7501657625747878e-07				
+						macaca_mulatta	22	GSE43520												1.0097991413576922e-07																																													5.952639183537914e-08				
+						macaca_mulatta	22	GSE53690																																													1.2429074204525962e-07																
+						macaca_mulatta	15	GSE41637						3.927833239074064e-08										1.4352154509554588e-08													1.1945929140929412e-08							8.670986859405863e-08																1.113288517904045e-08	1.7154913812340614e-08				1.28902957169364e-07				
+						macaca_mulatta	15	GSE30352						2.2239034932631292e-07																							9.258317139765129e-08																												1.1462156699037786e-07				
+						macaca_mulatta	15	GSE43520																																																									4.7621113468303314e-08				
+						macaca_mulatta	15	GSE53690																																													1.5191699498461233e-07																
+						macaca_mulatta	1	GSE41637																																																									1.3178657191036431e-08				
+ENSMUST00000045085	ENSMUSE00000400749	4_1				mus_musculus	1	GSE30352														5.1976678272365905e-08																																															
+ENSMUST00000045085	ENSMUSE00000400749	4_1	ENSMUST00000045085	ENSMUSE00000314256	2_0	mus_musculus	11	GSE43013												6.742057704328003e-08																							7.015453500662188e-08																										
+ENSMUST00000045085	ENSMUSE00000400749	4_1	ENSMUST00000045085	ENSMUSE00000314256	2_0	mus_musculus	11	SRP022612																																																													3.687883230995803e-08
+ENSMUST00000045085	ENSMUSE00000400749	4_1	ENSMUST00000045085	ENSMUSE00000314256	2_0	mus_musculus	11	GSE30352														1.3867469426736843e-07																																															
+ENSMUST00000045085	ENSMUSE00000400749	4_1	ENSMUST00000045085	ENSMUSE00000314256	2_0	mus_musculus	11	GSE30617																													5.597447808489873e-08																																
+ENSMUST00000045085	ENSMUSE00000400749	4_1	ENSMUST00000045085	ENSMUSE00000314256	2_0	mus_musculus	11	GSE41338												8.868992017899806e-08																																																	
+ENSMUST00000045085	ENSMUSE00000400749	4_1	ENSMUST00000045085	ENSMUSE00000314256	2_0	mus_musculus	11	GSE41637						4.82350924382135e-08																													9.647936753992586e-09																	1.904609136969985e-08									
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE43013												5.7910646420641394e-08																							9.129276952136115e-08																										
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE30352						5.600848062117434e-08								6.926613672699537e-08															5.651387706728469e-08																																
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE30617	3.504505164046062e-08																												3.7724701051549634e-08																																
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE41338												1.1408711985351896e-07																	3.1438010107257377e-08																																
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE41637						1.9098587634547478e-08						1.0343958016025956e-08																								1.0457364441524608e-08																9.523045684849926e-09					1.0917339733398127e-08				
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE36026														6.293821915176022e-08																																															
+ENSMUST00000045085	ENSMUSE00000314256	2_1	ENSMUST00000045085	ENSMUSE00000314250	1_0	mus_musculus	21	GSE43520																						2.8613628768668855e-08																																							
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	4	GSE41637						9.59058014752403e-09																																																			6.74868406465701e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	4	GSE43721																																																									1.2351930156455599e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	9	GSE41637						9.59058014752403e-09																													8.985850890349152e-09																						1.6583157938482036e-07				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	9	GSE30617																																				4.624097197043371e-08																									
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	9	GSE43520																																																									5.799692482905479e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	9	GSE43721																																																									1.2351930156455599e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0	ENSMUST00000045085	ENSMUSE00000314246	8_0	mus_musculus	21	GSE43721																																																									3.70557904693668e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0	ENSMUST00000045085	ENSMUSE00000314246	8_0	mus_musculus	21	GSE43013																																			7.121165056784883e-08																										
+ENSMUST00000045085	ENSMUSE00000314250	1_0	ENSMUST00000045085	ENSMUSE00000314246	8_0	mus_musculus	21	GSE30352												7.102877581691793e-08		6.933734713368421e-08															5.651387706728469e-08																												3.420042221408667e-07				
+ENSMUST00000045085	ENSMUSE00000314250	1_0	ENSMUST00000045085	ENSMUSE00000314246	8_0	mus_musculus	21	GSE30617																													6.025094979009481e-08																																
+ENSMUST00000045085	ENSMUSE00000314250	1_0	ENSMUST00000045085	ENSMUSE00000314246	8_0	mus_musculus	21	GSE41338						4.997680139350315e-07						2.8944796481680823e-07																																																	
+ENSMUST00000045085	ENSMUSE00000314250	1_0	ENSMUST00000045085	ENSMUSE00000314246	8_0	mus_musculus	21	GSE41637						1.4344583891035754e-08						3.097765346796331e-08																							8.323765026705718e-09																	1.904609136969985e-08					3.4819827383848733e-07				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	4	GSE41637																																																									1.022216620929458e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	4	GSE30352																																																									4.704168264711828e-08				
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	4	GSE43013												7.295819203763475e-08																																																	
+ENSMUST00000045085	ENSMUSE00000314250	1_0				mus_musculus	4	GSE43721																																																									2.4703860312911198e-08				
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE43721																																																									6.999427088658173e-08				
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE43013						7.118727706814346e-08						6.742057704328003e-08																																																	
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	SRP022612																																																													2.7924307281403338e-08
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE30352						6.303528778445462e-08								1.2131402540605013e-07															3.1884882819070027e-08																												3.776028251092918e-07				
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE30617	3.648143957511673e-08																												5.594821638575902e-08																																
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE41338												6.61128306264844e-08																	3.1438010107257377e-08																																
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE41637						5.2583045490381e-08						2.7511593935916473e-08																							1.3147733403702011e-08																	1.4211354359492444e-08	2.157273919392101e-08				7.577275200228222e-07				
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE36026						2.6149023388889375e-08				5.0138600640681065e-08																																																			
+ENSMUST00000045085	ENSMUSE00000314246	8_0	ENSMUST00000045085	ENSMUSE00000574936	9_0	mus_musculus	31	GSE43520																																																									1.7399077448716437e-07				
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE43721												1.402678327299923e-08																																													1.358712317210116e-07				
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE43013						1.423745541362869e-07																																																							
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	SRP022612																																																													2.6265235806660547e-08
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE30352						4.040278669332604e-08								5.194057730287341e-08																																											3.3119582442834635e-07				
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE30617																													8.400234551349143e-08																																
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE41637						1.4303297560785463e-08						4.809055893470979e-08																							8.323765026705718e-09																	1.875323469857007e-08	1.0786369596960505e-08				4.771470384598062e-07				
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE36026						2.6149023388889375e-08								6.293821915176022e-08																																															
+ENSMUST00000045085	ENSMUSE00000574936	9_0	ENSMUST00000045085	ENSMUSE00000574935	7_0	mus_musculus	24	GSE43520																																																									4.349769362179109e-07				
+ENSMUST00000045085	ENSMUSE00000574936	9_0				mus_musculus	2	GSE41637																																																									1.022216620929458e-08				
+ENSMUST00000045085	ENSMUSE00000574936	9_0				mus_musculus	2	GSE43721												1.402678327299923e-08																																																	
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE43721												1.402678327299923e-08																																													2.4703860312911195e-08				
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE43013						7.118727706814346e-08																																																							
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	SRP022612																																																													3.577586876152028e-08
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE30352														8.664535183920801e-08															5.651387706728469e-08																												2.1232225387820504e-07				
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE30617	3.648143957511673e-08																												4.2001172756745715e-08																																
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE41637						4.4861595828340454e-08						5.5023187871832946e-08																							8.323765026705718e-09																	1.889966303413496e-08	1.0786369596960505e-08				4.349205228230489e-07				
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE36026																													3.370263785154042e-08																																
+ENSMUST00000045085	ENSMUSE00000574935	7_0	ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	24	GSE43520																																																									1.1599384965810957e-07				
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	GSE43721																																																									2.4703860312911198e-08				
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	GSE43013						7.118727706814346e-08						5.7910646420641394e-08																																																	
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	SRP022612																																																													3.556551136963602e-08
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	GSE30352						6.303528778445462e-08								8.659169615111734e-08															5.194875089488217e-08																												7.329541728273701e-07				
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	GSE30617	9.447208855208959e-08																												4.2001172756745715e-08																								1.0067204631236281e-07								
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	GSE41637						3.8503416440392795e-08						3.268357294392945e-08																	1.1812930433652676e-07						2.4971295080117154e-08	4.448287962946117e-08																1.904609136969985e-08	1.0786369596960505e-08				4.569869267978796e-07				
+ENSMUST00000045085	ENSMUSE00001248046	5_0	ENSMUST00000045085	ENSMUSE00001299302	10_0	mus_musculus	27	GSE43520																																																									8.699538724358218e-08				
+ENSMUST00000045085	ENSMUSE00001299302	10_0	ENSMUST00000045085	ENSMUSE00000314227	3_0	mus_musculus	23	GSE43721																																																									2.4703860312911198e-08				
+ENSMUST00000045085	ENSMUSE00001299302	10_0	ENSMUST00000045085	ENSMUSE00000314227	3_0	mus_musculus	23	GSE43013						8.04892781707798e-08						6.742057704328003e-08																							9.129276952136115e-08																										
+ENSMUST00000045085	ENSMUSE00001299302	10_0	ENSMUST00000045085	ENSMUSE00000314227	3_0	mus_musculus	23	GSE30352						0.0						1.9684040831235785e-08		8.07687055611854e-08																																											6.719306826368674e-07				
+ENSMUST00000045085	ENSMUSE00001299302	10_0	ENSMUST00000045085	ENSMUSE00000314227	3_0	mus_musculus	23	GSE41338												3.789552082995625e-08																							3.5695025698276804e-08																	2.1137859428161717e-08									
+ENSMUST00000045085	ENSMUSE00001299302	10_0	ENSMUST00000045085	ENSMUSE00000314227	3_0	mus_musculus	23	GSE41637						4.82350924382135e-08																													8.323765026705718e-09																	9.523045684849926e-09					3.42663094038511e-07				
+ENSMUST00000045085	ENSMUSE00001299302	10_0	ENSMUST00000045085	ENSMUSE00000314227	3_0	mus_musculus	23	GSE36026														6.293821915176022e-08																																															
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	9	GSE41637						9.508007487023448e-09																							1.1812930433652676e-07																								1.0891230716476998e-08				9.408501645596188e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	9	GSE30352																																																									1.0616112693910252e-07				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	9	GSE43520																																																									8.699538724358218e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	9	GSE43721																																																									2.4703860312911198e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	2	GSE41637																																																									1.022216620929458e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	2	GSE30352						4.8981673457894053e-08																																																							
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	4	GSE41637																																																									5.215359133262823e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	4	GSE30352																																																									7.119720593685022e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	4	GSE43721																																																									1.2351930156455599e-08				
+			ENSMUST00000045085	ENSMUSE00001248046	5_0	mus_musculus	1	GSE41637																																																									1.0917339733398127e-08				
+						mus_musculus	7	GSE41637						2.8524022461070343e-08																																																			6.245129475170199e-08				
+						mus_musculus	7	GSE30352																																																									2.8225009588270966e-07				
+						mus_musculus	7	GSE43520																																																									3.1898308655980136e-07				
+						mus_musculus	7	GSE43721																																																									3.70557904693668e-08				
+						mus_musculus	2	GSE41637																																																									2.625058904734e-08				
+						mus_musculus	2	GSE41637																																																									2.148709270474448e-08				
+						mus_musculus	1	GSE41637																																																									6.133299725576749e-08				
+ENSRNOT00000017064	ENSRNOE00000454949	4_1	ENSRNOT00000017064	ENSRNOE00000119715	2_0	rattus_norvegicus	2	GSE41637												1.2218971745148849e-08																																																	
+ENSRNOT00000017064	ENSRNOE00000119715	2_1	ENSRNOT00000017064	ENSRNOE00000119866	1_0	rattus_norvegicus	3	GSE41637												2.887611599865588e-08																																																	
+ENSRNOT00000017064	ENSRNOE00000119866	1_0	ENSRNOT00000017064	ENSRNOE00000120395	8_0	rattus_norvegicus	4	GSE41637												9.298878944778971e-08				9.841482745346566e-08																																													
+ENSRNOT00000017064	ENSRNOE00000120395	8_0	ENSRNOT00000017064	ENSRNOE00000346849	9_0	rattus_norvegicus	5	GSE41637												1.0024200075541702e-07																								9.425519310768326e-08																	1.1719306529724539e-08								
+ENSRNOT00000017064	ENSRNOE00000346849	9_0	ENSRNOT00000017064	ENSRNOE00000340966	7_0	rattus_norvegicus	6	GSE41637												9.388155930359495e-08																								9.425519310768326e-08																4.544748250260562e-08	1.2722524426706193e-08								
+ENSRNOT00000017064	ENSRNOE00000340966	7_0	ENSRNOT00000017064	ENSRNOE00000121057	5_0	rattus_norvegicus	4	GSE41637												4.243424252751259e-08																																																	
+ENSRNOT00000017064	ENSRNOE00000340966	7_0	ENSRNOT00000017064	ENSRNOE00000121057	5_0	rattus_norvegicus	4	GSE43013						7.219521760107853e-08																																																							
+ENSRNOT00000017064	ENSRNOE00000121057	5_0	ENSRNOT00000017064	ENSRNOE00000441272	10_0	rattus_norvegicus	5	GSE41637												5.285483617571693e-08																								1.123461750553833e-08																	1.2722524426706193e-08								
+ENSRNOT00000017064	ENSRNOE00000121057	5_0	ENSRNOT00000017064	ENSRNOE00000441272	10_0	rattus_norvegicus	5	GSE43013						7.219521760107853e-08																																																							
+ENSRNOT00000017064	ENSRNOE00000441272	10_0	ENSRNOT00000017064	ENSRNOE00000311842	3_0	rattus_norvegicus	3	GSE41637												4.0674379586570146e-08				1.2301853431683207e-08																				1.123461750553833e-08																									
+ENSRNOT00000017064	ENSRNOE00000441272	10_0				rattus_norvegicus	1	GSE41637												1.3558126528856717e-08																																																	
+						monodelphis_domestica	13	GSE30352						2.565749373501167e-07						6.852256610843045e-08																	1.9075982308170968e-07						2.8807658822678813e-07																						4.516404535570109e-07				
+						monodelphis_domestica	13	GSE43520												4.658063440867678e-08										2.4680255465056833e-07																										5.150017698035819e-08									4.487947290053705e-07				
+						monodelphis_domestica	8	GSE30352						8.144287454254556e-08						6.032737986234678e-08																																													8.76359442573436e-08				
+						monodelphis_domestica	8	GSE43520												4.658063440867678e-08										4.0940603822321216e-08																																			7.277752362249252e-08				
+ENSSSCT00000026993	ENSSSCE00000220928	2_1	ENSSSCT00000026993	ENSSSCE00000203981	1_0	sus_scrofa	1	GSE43013																																																	9.008251828922848e-08												
+ENSSSCT00000026993	ENSSSCE00000232833	8_0	ENSSSCT00000026993	ENSSSCE00000208415	9_0	sus_scrofa	2	GSE43013						7.80757512800129e-08																																																							
+ENSSSCT00000026993	ENSSSCE00000232833	8_0	ENSSSCT00000026993	ENSSSCE00000208415	9_0	sus_scrofa	2	GSE43892																																				9.556064426604121e-08																									
+ENSSSCT00000026993	ENSSSCE00000208415	9_0	ENSSSCT00000026993	ENSSSCE00000164304	7_0	sus_scrofa	2	GSE43013																																																	9.008251828922848e-08												
+ENSSSCT00000026993	ENSSSCE00000208415	9_0	ENSSSCT00000026993	ENSSSCE00000164304	7_0	sus_scrofa	2	GSE43892																													2.4987919590274082e-08																																
+ENSSSCT00000026993	ENSSSCE00000164304	7_0	ENSSSCT00000026993	ENSSSCE00000162284	5_0	sus_scrofa	1	GSE43013																																																	1.2387668620945268e-07												
+ENSSSCT00000026993	ENSSSCE00000226822	4_1				sus_scrofa	1	GSE43013																																																	4.1292228736484226e-08												
+ENSSSCT00000026993	ENSSSCE00000164304	7_0				sus_scrofa	1	GSE43013						7.80757512800129e-08																																																							
+						xenopus_tropicalis	1	GSE41338												6.62766067437773e-08																																																	
+						xenopus_tropicalis	14	GSE43652																		5.234933064313613e-08																																											
+						xenopus_tropicalis	14	GSE41338												6.62766067437773e-08																	4.927350163716137e-08																																
+						xenopus_tropicalis	14	GSE43520																						3.184509628030487e-08																																			7.431438477536062e-08				
+						xenopus_tropicalis	14	GSE37452								1.0571034604070356e-07											9.649291442055338e-08							1.3724386315539858e-07																																			

@@ -1,0 +1,3 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1C\thoraxe\_intermediate\chimeric_alignment_6.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1C\thoraxe\_intermediate\chimeric_alignment_7.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1C\thoraxe\_intermediate\chimeric_alignment_25.fasta

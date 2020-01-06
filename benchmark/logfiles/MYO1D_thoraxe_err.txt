@@ -1,0 +1,4 @@
+
+FATAL: Sequence file contains no data
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1D\thoraxe\_intermediate\chimeric_alignment_26.fasta
+s in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1D\thoraxe\_intermediate\chimeric_alignment_14.fasta

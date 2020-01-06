@@ -1,0 +1,15 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,AP005329.1-201,ENST00000578800,havana,havana,antisense,2,5
+homo_sapiens,AP005329.1-202,ENST00000581905,havana,havana,antisense,2,1
+homo_sapiens,MYL12B-205,ENST00000648965,havana,havana,protein_coding,NA,1
+homo_sapiens,MYL12B-201,ENST00000237500,ensembl_havana,ensembl_havana_transcript,protein_coding,1,9
+homo_sapiens,MYL12B-203,ENST00000581193,havana,havana,protein_coding,3,5
+homo_sapiens,MYL12B-202,ENST00000400175,ensembl_havana,ensembl_havana_transcript,protein_coding,3,9
+homo_sapiens,MYL12B-204,ENST00000584539,havana,havana,protein_coding,3,1
+macaca_mulatta,MYL12B-201,ENSMMUT00000071173,ensembl,ensembl,protein_coding,NA,1
+bos_taurus,MYL12B-201,ENSBTAT00000037254,ensembl,ensembl,protein_coding,NA,4
+gorilla_gorilla,MYL12B-201,ENSGGOT00000004072,ensembl,ensembl,protein_coding,NA,3
+gorilla_gorilla,MYL12B-202,ENSGGOT00000058622,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,MYL12B-203,ENSGGOT00000011472,ensembl,ensembl,protein_coding,NA,3
+monodelphis_domestica,MYL12B-201,ENSMODT00000027298,ensembl,ensembl,protein_coding,NA,3
+rattus_norvegicus,Myl12b-201,ENSRNOT00000048125,ensembl,ensembl,protein_coding,NA,4

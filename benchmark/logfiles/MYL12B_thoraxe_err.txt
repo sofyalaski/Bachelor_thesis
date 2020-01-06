@@ -1,0 +1,7 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting ENSGGOT00000058622
+WARNING:root:deleting ENST00000237500
+WARNING:root:deleting ENST00000400175
+WARNING:root:deleting ENST00000648965
+WARNING:root:deleting ENST00000581193
+WARNING:root:deleting ENSGGOT00000011472

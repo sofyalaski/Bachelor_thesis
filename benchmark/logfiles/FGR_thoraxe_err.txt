@@ -1,0 +1,8 @@
+
+FATAL: Sequence file contains no data
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\FGR\thoraxe\_intermediate\chimeric_alignment_3.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\FGR\thoraxe\_intermediate\chimeric_alignment_5.fasta
+G:root:deleting ENST00000374003
+WARNING:root:deleting ENSMUST00000171223
+WARNING:root:deleting ENST00000374004
+WARNING:root:deleting ENSBTAT00000078914

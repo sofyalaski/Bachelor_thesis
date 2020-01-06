@@ -1,0 +1,25 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,KIF1C-201,ENST00000320785,ensembl_havana,ensembl_havana_transcript,protein_coding,1 (assigned to previous version 9),10
+homo_sapiens,KIF1C-204,ENST00000574165,havana,havana,protein_coding,5,1
+homo_sapiens,KIF1C-202,ENST00000572959,havana,havana,retained_intron,5,1
+homo_sapiens,KIF1C-203,ENST00000573815,havana,havana,processed_transcript,5,1
+homo_sapiens,AC004771.1-201,ENST00000438266,havana,havana,antisense,2,1
+gorilla_gorilla,KIF1C-201,ENSGGOT00000009255,ensembl,ensembl,protein_coding,NA,3
+gorilla_gorilla,KIF1C-202,ENSGGOT00000068478,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,KIF1C-203,ENSGGOT00000043507,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,KIF1C-201,ENSMMUT00000063709,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,KIF1C-202,ENSMMUT00000015886,ensembl,ensembl,protein_coding,NA,3
+rattus_norvegicus,Kif1c-201,ENSRNOT00000041493,ensembl,ensembl,protein_coding,NA,3
+rattus_norvegicus,RF00026.602-201,ENSRNOT00000091658,ensembl,ncrna,snRNA,NA,1
+mus_musculus,Kif1c-205,ENSMUST00000152618,havana,havana,protein_coding,1,8
+mus_musculus,Kif1c-203,ENSMUST00000102554,havana,havana,protein_coding,5,7
+mus_musculus,Kif1c-202,ENSMUST00000094499,ensembl_havana,ensembl_havana_transcript,protein_coding,1,10
+mus_musculus,Kif1c-201,ENSMUST00000072187,havana,havana,protein_coding,1,11
+mus_musculus,Kif1c-204,ENSMUST00000137119,havana,havana,protein_coding,5,2
+mus_musculus,Mir6925-201,ENSMUST00000197857,mirbase,ncrna,miRNA,NA,1
+sus_scrofa,KIF1C-201,ENSSSCT00000019480,ensembl,ensembl,protein_coding,NA,3
+bos_taurus,KIF1C-202,ENSBTAT00000081136,ensembl,ensembl,protein_coding,NA,1
+bos_taurus,KIF1C-201,ENSBTAT00000001780,ensembl,ensembl,protein_coding,NA,6
+bos_taurus,KIF1C-203,ENSBTAT00000086224,ensembl,ensembl,protein_coding,NA,1
+ornithorhynchus_anatinus,NA,ENSOANT00000003355,ensembl,ensembl,protein_coding,NA,3
+xenopus_tropicalis,kif1c-201,ENSXETT00000047954,ensembl,ensembl,protein_coding,NA,3

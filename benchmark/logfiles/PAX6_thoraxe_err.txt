@@ -1,0 +1,18 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting ENSMUST00000090391
+WARNING:root:deleting ENST00000640975
+WARNING:root:deleting ENST00000638914
+WARNING:root:deleting ENSMUST00000111087
+WARNING:root:deleting ENSRNOT00000005882
+WARNING:root:deleting ENST00000643871
+WARNING:root:deleting ENST00000639409
+WARNING:root:deleting ENST00000640610
+WARNING:root:deleting ENST00000241001
+WARNING:root:deleting ENST00000379109
+WARNING:root:deleting ENST00000645710
+WARNING:root:deleting ENST00000419022
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PAX6\thoraxe\_intermediate\chimeric_alignment_4.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PAX6\thoraxe\_intermediate\chimeric_alignment_10.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PAX6\thoraxe\_intermediate\chimeric_alignment_11.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PAX6\thoraxe\_intermediate\chimeric_alignment_14.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PAX6\thoraxe\_intermediate\chimeric_alignment_15.fasta

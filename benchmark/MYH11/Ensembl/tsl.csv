@@ -1,0 +1,60 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,NDE1-202,ENST00000396355,havana,havana,protein_coding,1,5
+homo_sapiens,NDE1-201,ENST00000396354,havana,havana,protein_coding,1 (assigned to previous version 5),6
+homo_sapiens,NDE1-208,ENST00000573694,havana,havana,protein_coding,3,5
+homo_sapiens,NDE1-206,ENST00000572967,havana,havana,protein_coding,3,1
+homo_sapiens,MYH11-201,ENST00000300036,havana,havana,protein_coding,1 (assigned to previous version 5),6
+homo_sapiens,MYH11-203,ENST00000452625,ensembl_havana,ensembl_havana_transcript,protein_coding,1 (assigned to previous version 6),7
+homo_sapiens,MYH11-202,ENST00000396324,ensembl_havana,ensembl_havana_transcript,protein_coding,1,7
+homo_sapiens,MYH11-208,ENST00000573908,havana,havana,processed_transcript,4,1
+homo_sapiens,MYH11-213,ENST00000652121,havana,havana,nonsense_mediated_decay,NA,1
+homo_sapiens,MYH11-211,ENST00000576790,ensembl_havana,ensembl_havana_transcript,protein_coding,1 (assigned to previous version 6),7
+homo_sapiens,MYH11-210,ENST00000576164,havana,havana,retained_intron,2 (assigned to previous version 5),6
+homo_sapiens,MYH11-205,ENST00000571275,havana,havana,retained_intron,1,1
+homo_sapiens,NDE1-204,ENST00000572503,havana,havana,processed_transcript,2,1
+homo_sapiens,AF001548.2-201,ENST00000574212,havana,havana,antisense,2,1
+homo_sapiens,AF001548.1-201,ENST00000577048,havana,havana,antisense,4,1
+homo_sapiens,MYH11-209,ENST00000574119,havana,havana,retained_intron,2,1
+homo_sapiens,MYH11-212,ENST00000651659,havana,havana,retained_intron,NA,1
+homo_sapiens,MYH11-204,ENST00000570785,havana,havana,retained_intron,2,1
+homo_sapiens,MYH11-207,ENST00000571910,havana,havana,retained_intron,4 (assigned to previous version 1),2
+homo_sapiens,MYH11-206,ENST00000571505,havana,havana,retained_intron,1,1
+homo_sapiens,AF001548.3-201,ENST00000624545,havana,havana,TEC,NA,1
+gorilla_gorilla,NDE1-201,ENSGGOT00000014357,ensembl,ensembl,protein_coding,NA,3
+gorilla_gorilla,MYH11-201,ENSGGOT00000056175,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,MYH11-202,ENSGGOT00000066873,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,MYH11-203,ENSGGOT00000014394,ensembl,ensembl,protein_coding,NA,3
+gorilla_gorilla,MYH11-204,ENSGGOT00000066461,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,MYH11-205,ENSGGOT00000068134,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,NDE1-202,ENSMMUT00000014501,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,MYH11-201,ENSMMUT00000056057,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,MYH11-202,ENSMMUT00000065208,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,MYH11-203,ENSMMUT00000014502,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,MYH11-204,ENSMMUT00000014504,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,MYH11-205,ENSMMUT00000039538,ensembl,ensembl,protein_coding,NA,2
+macaca_mulatta,MYH11-206,ENSMMUT00000008532,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,MYH11-207,ENSMMUT00000065965,ensembl,ensembl,protein_coding,NA,1
+mus_musculus,Myh11-201,ENSMUST00000090287,havana,havana,protein_coding,1 (assigned to previous version 3),4
+mus_musculus,Myh11-204,ENSMUST00000231567,havana,havana,protein_coding,NA,1
+mus_musculus,Myh11-202,ENSMUST00000230397,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,1
+mus_musculus,Myh11-203,ENSMUST00000230643,havana,havana,retained_intron,NA,1
+rattus_norvegicus,Myh11-201,ENSRNOT00000084608,ensembl,ensembl,protein_coding,NA,1
+rattus_norvegicus,Myh11-202,ENSRNOT00000087567,ensembl,ensembl,protein_coding,NA,1
+bos_taurus,NDE1-202,ENSBTAT00000021265,ensembl,ensembl,protein_coding,NA,6
+bos_taurus,MYH11-201,ENSBTAT00000081607,ensembl,ensembl,protein_coding,NA,1
+bos_taurus,MYH11-203,ENSBTAT00000067717,ensembl,ensembl,protein_coding,NA,1
+bos_taurus,MYH11-202,ENSBTAT00000035455,ensembl,ensembl,protein_coding,NA,5
+bos_taurus,MYH11-204,ENSBTAT00000086021,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,MYH11-201,ENSSSCT00000057164,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,MYH11-202,ENSSSCT00000059552,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,MYH11-203,ENSSSCT00000048998,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,MYH11-204,ENSSSCT00000000153,ensembl,ensembl,protein_coding,NA,3
+sus_scrofa,MYH11-205,ENSSSCT00000054316,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,MYH11-206,ENSSSCT00000055981,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,MYH11-207,ENSSSCT00000056503,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,NDE1-201,ENSSSCT00000041777,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,NDE1-202,ENSSSCT00000046320,ensembl,ensembl,protein_coding,NA,1
+monodelphis_domestica,MYH11-201,ENSMODT00000037268,ensembl,ensembl,protein_coding,NA,2
+ornithorhynchus_anatinus,NDE1-201,ENSOANT00000008134,ensembl,ensembl,protein_coding,NA,3
+ornithorhynchus_anatinus,MYH11-201,ENSOANT00000008171,ensembl,ensembl,protein_coding,NA,2
+xenopus_tropicalis,myh11-201,ENSXETT00000042562,ensembl,ensembl,protein_coding,NA,3

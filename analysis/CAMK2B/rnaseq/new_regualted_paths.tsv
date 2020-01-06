@@ -1,0 +1,23 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	bos_taurus	6.0	heart	0.4211995830989992	3_0,10_4	3_0,3_2,3_3,10_4	CAMK2B
+1	sus_scrofa	6.0	heart	0.21587301587301605	3_0,10_4	3_0,10_3,10_4	CAMK2B
+2	sus_scrofa	6.0	heart	0.5206349206349208	3_0,10_4	3_0,3_2,3_3,10_4	CAMK2B
+3	sus_scrofa	6.0	heart	0.5492063492063494	3_0,10_4	3_0,3_2,3_3,10_3,10_4	CAMK2B
+4	bos_taurus	6.0	brain	0.3506476711228037	3_0,3_2,3_3,10_3	3_0,10_4	CAMK2B
+5	bos_taurus	6.0	brain	0.35794334128240385	3_0,3_2,3_3,10_3	3_0,10_3,10_4	CAMK2B
+6	bos_taurus	6.0	skeletal muscle tissue	0.34410129897450864	3_0,3_2,3_3,10_3	3_0,10_4	CAMK2B
+7	bos_taurus	6.0	skeletal muscle tissue	0.3478661581037169	3_0,3_2,3_3,10_3	3_0,10_3,10_4	CAMK2B
+8	sus_scrofa	6.0	prefrontal cortex	0.2706960921845773	3_0,3_2,3_3,10_3	3_0,10_4	CAMK2B
+9	sus_scrofa	6.0	prefrontal cortex	0.2989978659923016	3_0,3_2,3_3,10_3	3_0,10_3,10_4	CAMK2B
+10	bos_taurus	6.0	brain	0.3506476711228037	3_0,3_2,3_3,10_3,10_4	3_0,10_4	CAMK2B
+11	bos_taurus	6.0	brain	0.35794334128240385	3_0,3_2,3_3,10_3,10_4	3_0,10_3,10_4	CAMK2B
+12	bos_taurus	6.0	skeletal muscle tissue	0.34410129897450864	3_0,3_2,3_3,10_3,10_4	3_0,10_4	CAMK2B
+13	bos_taurus	6.0	skeletal muscle tissue	0.3478661581037169	3_0,3_2,3_3,10_3,10_4	3_0,10_3,10_4	CAMK2B
+14	sus_scrofa	6.0	prefrontal cortex	0.2706960921845773	3_0,3_2,3_3,10_3,10_4	3_0,10_4	CAMK2B
+15	sus_scrofa	6.0	prefrontal cortex	0.2989978659923016	3_0,3_2,3_3,10_3,10_4	3_0,10_3,10_4	CAMK2B
+16	bos_taurus	6.0	brain	0.3506476711228037	3_3,10_3,10_4	3_0,10_4	CAMK2B
+17	bos_taurus	6.0	brain	0.35794334128240385	3_3,10_3,10_4	3_0,10_3,10_4	CAMK2B
+18	bos_taurus	6.0	skeletal muscle tissue	0.34410129897450864	3_3,10_3,10_4	3_0,10_4	CAMK2B
+19	bos_taurus	6.0	skeletal muscle tissue	0.3478661581037169	3_3,10_3,10_4	3_0,10_3,10_4	CAMK2B
+20	sus_scrofa	6.0	prefrontal cortex	0.2706960921845773	3_3,10_3,10_4	3_0,10_4	CAMK2B
+21	sus_scrofa	6.0	prefrontal cortex	0.2989978659923016	3_3,10_3,10_4	3_0,10_3,10_4	CAMK2B

@@ -1,0 +1,60 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,TPM3-223,ENST00000611659,ensembl,ensembl,protein_coding,3,4
+homo_sapiens,TPM3-212,ENST00000368533,havana,havana,protein_coding,1 (assigned to previous version 7),8
+homo_sapiens,TPM3-213,ENST00000368545,havana,havana,retained_intron,1,7
+homo_sapiens,TPM3-215,ENST00000469717,havana,havana,retained_intron,2,5
+homo_sapiens,TPM3-206,ENST00000330188,havana,havana,protein_coding,1,13
+homo_sapiens,TPM3-208,ENST00000341485,havana,havana,nonsense_mediated_decay,1 (assigned to previous version 9),10
+homo_sapiens,TPM3-203,ENST00000312970,havana,havana,processed_transcript,5 (assigned to previous version 12),13
+homo_sapiens,TPM3-207,ENST00000341372,havana,havana,nonsense_mediated_decay,5 (assigned to previous version 7),8
+homo_sapiens,TPM3-227,ENST00000651731,havana,havana,nonsense_mediated_decay,NA,1
+homo_sapiens,TPM3-205,ENST00000328159,ensembl_havana,ensembl_havana_transcript,protein_coding,2 (assigned to previous version 8),9
+homo_sapiens,TPM3-219,ENST00000509409,ensembl_havana,ensembl_havana_transcript,nonsense_mediated_decay,2,5
+homo_sapiens,TPM3-228,ENST00000651873,havana,havana,nonsense_mediated_decay,NA,1
+homo_sapiens,TPM3-201,ENST00000271850,havana,havana,protein_coding,5,11
+homo_sapiens,TPM3-221,ENST00000513769,havana,havana,retained_intron,3,5
+homo_sapiens,TPM3-202,ENST00000302206,ensembl_havana,ensembl_havana_transcript,protein_coding,3,9
+homo_sapiens,TPM3-211,ENST00000368531,ensembl_havana,ensembl_havana_transcript,protein_coding,1,6
+homo_sapiens,TPM3-204,ENST00000323144,havana,havana,protein_coding,2 (assigned to previous version 11),12
+homo_sapiens,TPM3-225,ENST00000651641,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,1
+homo_sapiens,TPM3-224,ENST00000650886,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,1
+homo_sapiens,RN7SL431P-201,ENST00000582918,ensembl,ncrna,misc_RNA,NA,2
+homo_sapiens,TPM3-210,ENST00000368530,havana,havana,protein_coding,1 (assigned to previous version 6),7
+homo_sapiens,TPM3-217,ENST00000504663,havana,havana,retained_intron,2,1
+homo_sapiens,TPM3-220,ENST00000509601,havana,havana,nonsense_mediated_decay,4,1
+homo_sapiens,TPM3-226,ENST00000651644,havana,havana,nonsense_mediated_decay,NA,1
+homo_sapiens,TPM3-218,ENST00000505010,havana,havana,retained_intron,2,5
+homo_sapiens,TPM3-209,ENST00000368527,havana,havana,processed_transcript,4,7
+homo_sapiens,TPM3-216,ENST00000473036,havana,havana,retained_intron,2,2
+homo_sapiens,TPM3-214,ENST00000466010,havana,havana,processed_transcript,2,1
+homo_sapiens,TPM3-222,ENST00000515609,havana,havana,protein_coding,3,1
+homo_sapiens,MIR190B-201,ENST00000401119,mirbase,ncrna,miRNA,NA,3
+macaca_mulatta,TPM3-201,ENSMMUT00000015103,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,TPM3-203,ENSMMUT00000045900,ensembl,ensembl,protein_coding,NA,2
+macaca_mulatta,TPM3-202,ENSMMUT00000045901,ensembl,ensembl,protein_coding,NA,2
+macaca_mulatta,TPM3-204,ENSMMUT00000071421,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,TPM3-205,ENSMMUT00000015106,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,RF00017-201,ENSMMUT00000053305,ensembl,ncrna,misc_RNA,NA,1
+macaca_mulatta,TPM3-206,ENSMMUT00000015107,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,TPM3-207,ENSMMUT00000015108,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,NA,ENSMMUT00000033339,ensembl,ensembl,protein_coding,NA,3
+bos_taurus,TPM3-201,ENSBTAT00000075495,ensembl,ensembl,protein_coding,NA,1
+bos_taurus,TPM3-202,ENSBTAT00000013077,ensembl,ensembl,protein_coding,NA,3
+bos_taurus,TPM3-203,ENSBTAT00000047197,ensembl,ensembl,protein_coding,NA,2
+sus_scrofa,UBAP2L-204,ENSSSCT00000047273,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,TPM3-201,ENSSSCT00000040499,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,TPM3-202,ENSSSCT00000058770,ensembl,ensembl,protein_coding,NA,1
+sus_scrofa,TPM3-203,ENSSSCT00000007183,ensembl,ensembl,protein_coding,NA,3
+sus_scrofa,TPM3-204,ENSSSCT00000007182,ensembl,ensembl,protein_coding,NA,3
+rattus_norvegicus,Tpm3-203,ENSRNOT00000029076,ensembl,ensembl,protein_coding,NA,5
+rattus_norvegicus,Tpm3-201,ENSRNOT00000023567,ensembl,ensembl,protein_coding,NA,8
+rattus_norvegicus,Tpm3-202,ENSRNOT00000023605,ensembl,ensembl,protein_coding,NA,7
+monodelphis_domestica,TPM3-201,ENSMODT00000021907,ensembl,ensembl,protein_coding,NA,2
+danio_rerio,si:ch1073-70f20.1-201,ENSDART00000142975,havana,havana,protein_coding,NA,2
+danio_rerio,tpm3-206,ENSDART00000188025,ensembl,ensembl,protein_coding,NA,1
+danio_rerio,tpm3-205,ENSDART00000183745,ensembl,ensembl,protein_coding,NA,1
+danio_rerio,tpm3-204,ENSDART00000151375,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,3
+danio_rerio,tpm3-201,ENSDART00000010997,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,8
+danio_rerio,tpm3-202,ENSDART00000027598,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,9
+danio_rerio,CU628002.1-201,ENSDART00000157111,havana,havana,antisense,NA,2
+danio_rerio,tpm3-203,ENSDART00000137865,havana,havana,protein_coding,NA,2

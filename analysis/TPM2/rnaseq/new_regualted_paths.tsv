@@ -1,0 +1,112 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	bos_taurus	1.0	heart	0.2225924760297805	2_2,5_0	4_2,2_0,2_2,5_0	TPM2
+1	bos_taurus	1.0	skeletal muscle tissue	0.21408979187106728	2_2,5_0	4_2,2_0,2_2,5_0	TPM2
+2	bos_taurus	1.0	heart	0.2225924760297805	4_2,2_2,5_0	4_2,2_0,2_2,5_0	TPM2
+3	bos_taurus	1.0	skeletal muscle tissue	0.21408979187106728	4_2,2_2,5_0	4_2,2_0,2_2,5_0	TPM2
+4	homo_sapiens	1.0	multi-cellular organism	0.20814209442173465	4_2,11_0	4_2,2_0,2_2,5_0	TPM2
+5	homo_sapiens	1.0	multi-cellular organism	0.20814209442173465	4_2,11_0,5_0	4_2,2_0,2_2,5_0	TPM2
+6	sus_scrofa	1.0	adult mammalian kidney	0.8512065929098269	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+7	sus_scrofa	1.0	lung	0.6796536796536797	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+8	sus_scrofa	1.0	lung	0.4361702127659575	4_2,2_0,2_2	4_2,2_2,11_0,5_0	TPM2
+9	gorilla_gorilla	1.0	adult mammalian kidney	0.6764042649769362	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+10	gorilla_gorilla	1.0	liver	0.7324036168022511	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+11	gorilla_gorilla	1.0	testis	0.41288057584848975	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+12	bos_taurus	1.0	adult mammalian kidney	0.8106666603815295	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+13	bos_taurus	1.0	colon	0.9368971814278604	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+14	bos_taurus	1.0	liver	0.7571530410235551	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+15	bos_taurus	1.0	lung	0.8333903068836624	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+16	bos_taurus	1.0	spleen	0.9187990559128054	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+17	homo_sapiens	1.0	adipose tissue	0.8232462110238906	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+18	homo_sapiens	1.0	adrenal gland	0.8553120850345967	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+19	homo_sapiens	1.0	adult mammalian kidney	0.863660863869234	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+20	homo_sapiens	1.0	colon	0.9503377313349112	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+21	homo_sapiens	1.0	female gonad	0.5539053086925085	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+22	homo_sapiens	1.0	intestine	0.4164573699327639	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+23	homo_sapiens	1.0	liver	0.5861981058393813	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+24	homo_sapiens	1.0	lung	0.5575566426085555	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+25	homo_sapiens	1.0	lymph node	0.6917333205322962	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+26	homo_sapiens	1.0	placenta	0.8974603644404093	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+27	homo_sapiens	1.0	prostate gland	0.9727753526660172	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+28	homo_sapiens	1.0	stomach	0.5730601526435121	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+29	homo_sapiens	1.0	testis	0.2102766509505497	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+30	mus_musculus	1.0	adult mammalian kidney	0.6274339364244381	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+31	mus_musculus	1.0	female gonad	0.8495953657436126	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+32	mus_musculus	1.0	heart	0.2403089115504928	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+33	mus_musculus	1.0	lung	0.8246915672357491	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+34	mus_musculus	1.0	spleen	0.7013351607946838	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+35	mus_musculus	1.0	testis	0.4461817266296345	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+36	mus_musculus	1.0	thymus	0.4553747943343586	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+37	rattus_norvegicus	1.0	colon	0.9892865941216172	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+38	rattus_norvegicus	1.0	lung	0.9279900597617888	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+39	rattus_norvegicus	1.0	spleen	0.7170403315691655	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+40	rattus_norvegicus	1.0	testis	0.8154812695785433	4_2,2_0,2_2	4_2,2_2,11_0	TPM2
+41	sus_scrofa	1.0	adult mammalian kidney	0.8512065929098269	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+42	sus_scrofa	1.0	lung	0.6796536796536797	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+43	sus_scrofa	1.0	lung	0.4361702127659575	4_2,2_0,2_2,11_0	4_2,2_2,11_0,5_0	TPM2
+44	gorilla_gorilla	1.0	adult mammalian kidney	0.6764042649769362	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+45	gorilla_gorilla	1.0	liver	0.7324036168022511	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+46	gorilla_gorilla	1.0	testis	0.41288057584848975	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+47	bos_taurus	1.0	adult mammalian kidney	0.8106666603815295	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+48	bos_taurus	1.0	colon	0.9368971814278604	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+49	bos_taurus	1.0	liver	0.7571530410235551	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+50	bos_taurus	1.0	lung	0.8333903068836624	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+51	bos_taurus	1.0	spleen	0.9187990559128054	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+52	homo_sapiens	1.0	adipose tissue	0.8232462110238906	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+53	homo_sapiens	1.0	adrenal gland	0.8553120850345967	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+54	homo_sapiens	1.0	adult mammalian kidney	0.863660863869234	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+55	homo_sapiens	1.0	colon	0.9503377313349112	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+56	homo_sapiens	1.0	female gonad	0.5539053086925085	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+57	homo_sapiens	1.0	intestine	0.4164573699327639	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+58	homo_sapiens	1.0	liver	0.5861981058393813	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+59	homo_sapiens	1.0	lung	0.5575566426085555	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+60	homo_sapiens	1.0	lymph node	0.6917333205322962	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+61	homo_sapiens	1.0	placenta	0.8974603644404093	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+62	homo_sapiens	1.0	prostate gland	0.9727753526660172	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+63	homo_sapiens	1.0	stomach	0.5730601526435121	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+64	homo_sapiens	1.0	testis	0.2102766509505497	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+65	mus_musculus	1.0	adult mammalian kidney	0.6274339364244381	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+66	mus_musculus	1.0	female gonad	0.8495953657436126	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+67	mus_musculus	1.0	heart	0.2403089115504928	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+68	mus_musculus	1.0	lung	0.8246915672357491	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+69	mus_musculus	1.0	spleen	0.7013351607946838	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+70	mus_musculus	1.0	testis	0.4461817266296345	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+71	mus_musculus	1.0	thymus	0.4553747943343586	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+72	rattus_norvegicus	1.0	colon	0.9892865941216172	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+73	rattus_norvegicus	1.0	lung	0.9279900597617888	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+74	rattus_norvegicus	1.0	spleen	0.7170403315691655	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+75	rattus_norvegicus	1.0	testis	0.8154812695785433	4_2,2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+76	sus_scrofa	1.0	adult mammalian kidney	0.8512065929098269	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+77	sus_scrofa	1.0	lung	0.6796536796536797	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+78	sus_scrofa	1.0	lung	0.4361702127659575	2_0,2_2,11_0	4_2,2_2,11_0,5_0	TPM2
+79	gorilla_gorilla	1.0	adult mammalian kidney	0.6764042649769362	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+80	gorilla_gorilla	1.0	liver	0.7324036168022511	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+81	gorilla_gorilla	1.0	testis	0.41288057584848975	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+82	bos_taurus	1.0	adult mammalian kidney	0.8106666603815295	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+83	bos_taurus	1.0	colon	0.9368971814278604	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+84	bos_taurus	1.0	liver	0.7571530410235551	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+85	bos_taurus	1.0	lung	0.8333903068836624	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+86	bos_taurus	1.0	spleen	0.9187990559128054	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+87	homo_sapiens	1.0	adipose tissue	0.8232462110238906	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+88	homo_sapiens	1.0	adrenal gland	0.8553120850345967	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+89	homo_sapiens	1.0	adult mammalian kidney	0.863660863869234	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+90	homo_sapiens	1.0	colon	0.9503377313349112	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+91	homo_sapiens	1.0	female gonad	0.5539053086925085	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+92	homo_sapiens	1.0	intestine	0.4164573699327639	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+93	homo_sapiens	1.0	liver	0.5861981058393813	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+94	homo_sapiens	1.0	lung	0.5575566426085555	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+95	homo_sapiens	1.0	lymph node	0.6917333205322962	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+96	homo_sapiens	1.0	placenta	0.8974603644404093	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+97	homo_sapiens	1.0	prostate gland	0.9727753526660172	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+98	homo_sapiens	1.0	stomach	0.5730601526435121	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+99	homo_sapiens	1.0	testis	0.2102766509505497	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+100	mus_musculus	1.0	adult mammalian kidney	0.6274339364244381	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+101	mus_musculus	1.0	female gonad	0.8495953657436126	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+102	mus_musculus	1.0	heart	0.2403089115504928	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+103	mus_musculus	1.0	lung	0.8246915672357491	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+104	mus_musculus	1.0	spleen	0.7013351607946838	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+105	mus_musculus	1.0	testis	0.4461817266296345	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+106	mus_musculus	1.0	thymus	0.4553747943343586	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+107	rattus_norvegicus	1.0	colon	0.9892865941216172	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+108	rattus_norvegicus	1.0	lung	0.9279900597617888	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+109	rattus_norvegicus	1.0	spleen	0.7170403315691655	2_0,2_2,11_0	4_2,2_2,11_0	TPM2
+110	rattus_norvegicus	1.0	testis	0.8154812695785433	2_0,2_2,11_0	4_2,2_2,11_0	TPM2

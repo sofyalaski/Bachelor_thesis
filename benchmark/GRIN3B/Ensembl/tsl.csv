@@ -1,0 +1,32 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,AC004528.1-201,ENST00000588380,havana,havana,antisense,5,1
+homo_sapiens,GRIN3B-201,ENST00000234389,ensembl_havana,ensembl_havana_transcript,protein_coding,1,3
+homo_sapiens,GRIN3B-202,ENST00000588335,havana,havana,processed_transcript,3,1
+homo_sapiens,TMEM259-211,ENST00000593068,havana,havana,nonsense_mediated_decay,5 (assigned to previous version 6),7
+homo_sapiens,TMEM259-209,ENST00000592590,havana,havana,protein_coding,5,6
+homo_sapiens,TMEM259-201,ENST00000333175,ensembl_havana,ensembl_havana_transcript,protein_coding,1,9
+homo_sapiens,TMEM259-210,ENST00000592618,havana,havana,retained_intron,5,5
+homo_sapiens,TMEM259-202,ENST00000356663,ensembl_havana,ensembl_havana_transcript,protein_coding,1 (assigned to previous version 7),8
+homo_sapiens,TMEM259-205,ENST00000586704,havana,havana,retained_intron,5,5
+homo_sapiens,TMEM259-208,ENST00000592052,havana,havana,retained_intron,NA,1
+gorilla_gorilla,NA,ENSGGOT00000011252,ensembl,ensembl,protein_coding,NA,3
+macaca_mulatta,GRIN3B-201,ENSMMUT00000061210,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,TMEM259-201,ENSMMUT00000064393,ensembl,ensembl,protein_coding,NA,1
+macaca_mulatta,TMEM259-202,ENSMMUT00000059026,ensembl,ensembl,protein_coding,NA,1
+rattus_norvegicus,Palm-201,ENSRNOT00000013762,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,7
+rattus_norvegicus,Grin3b-202,ENSRNOT00000093751,havana,havana,processed_transcript,NA,1
+rattus_norvegicus,Grin3b-201,ENSRNOT00000017064,ensembl,ensembl,protein_coding,NA,5
+rattus_norvegicus,Tmem259-202,ENSRNOT00000080292,ensembl,ensembl,protein_coding,NA,1
+rattus_norvegicus,Tmem259-201,ENSRNOT00000017245,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,6
+mus_musculus,Grin3b-201,ENSMUST00000045085,ensembl_havana,ensembl_havana_transcript,protein_coding,1,7
+mus_musculus,Grin3b-203,ENSMUST00000149148,havana,havana,protein_coding,1,7
+mus_musculus,Grin3b-202,ENSMUST00000131816,havana,havana,protein_coding,1,2
+mus_musculus,Tmem259-205,ENSMUST00000132080,havana,havana,retained_intron,3,1
+mus_musculus,Tmem259-204,ENSMUST00000126383,havana,havana,retained_intron,5,1
+mus_musculus,Tmem259-201,ENSMUST00000052885,ensembl_havana,ensembl_havana_transcript,protein_coding,1,13
+bos_taurus,GRIN3B-201,ENSBTAT00000036098,ensembl,ensembl,protein_coding,NA,4
+sus_scrofa,GRIN3B-201,ENSSSCT00000026993,ensembl,ensembl,protein_coding,NA,2
+monodelphis_domestica,GRIN3B-201,ENSMODT00000007148,ensembl,ensembl,protein_coding,NA,4
+ornithorhynchus_anatinus,GRIN3B-201,ENSOANT00000012924,ensembl,ensembl,protein_coding,NA,2
+ornithorhynchus_anatinus,GRIN3B-202,ENSOANT00000012923,ensembl,ensembl,protein_coding,NA,3
+xenopus_tropicalis,grin3b-201,ENSXETT00000056951,ensembl,ensembl,protein_coding,NA,2

@@ -1,0 +1,30 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	sus_scrofa	2.0	heart	0.2972972972972973	15_0,4_2	15_0,4_0,4_1,4_2	FMR1
+1	gorilla_gorilla	2.0	adult mammalian kidney	0.2878908894754991	15_0,4_2	15_0,4_0,4_1,4_2	FMR1
+2	gorilla_gorilla	2.0	cerebellum	0.3216553004242293	15_0,4_2	15_0,4_0,4_1,4_2	FMR1
+3	gorilla_gorilla	2.0	frontal cortex	0.2049180327868852	15_0,4_2	15_0,4_0,4_1,4_2	FMR1
+4	gorilla_gorilla	2.0	heart	0.30000000000000004	15_0,4_2	15_0,4_0,4_1,4_2	FMR1
+5	ornithorhynchus_anatinus	3.0	adult mammalian kidney	0.2969826227201815	10_1,22_0	10_1,7_1,14_0	FMR1
+6	ornithorhynchus_anatinus	3.0	brain	0.22994345759979165	10_1,22_0	10_1,14_0	FMR1
+7	ornithorhynchus_anatinus	3.0	female gonad	0.2077276080870824	10_1,22_0	10_1,14_0	FMR1
+8	ornithorhynchus_anatinus	3.0	heart	0.3542350074841665	10_1,22_0	10_1,14_0	FMR1
+9	ornithorhynchus_anatinus	3.0	heart	0.3645434567974279	10_1,22_0	10_1,7_1,14_0	FMR1
+10	ornithorhynchus_anatinus	3.0	testis	0.3868947364984353	10_1,22_0	10_1,14_0	FMR1
+11	ornithorhynchus_anatinus	3.0	testis	0.4077734363740183	10_1,22_0	10_1,7_1,14_0	FMR1
+12	monodelphis_domestica	3.0	adult mammalian kidney	0.22519544958865856	10_1,22_0	10_1,14_0	FMR1
+13	monodelphis_domestica	3.0	brain	0.2461790279182949	10_1,22_0	10_1,7_1,14_0	FMR1
+14	monodelphis_domestica	3.0	cerebellum	0.3667765848859248	10_1,22_0	10_1,14_0	FMR1
+15	monodelphis_domestica	3.0	female gonad	0.2285869490662595	10_1,22_0	10_1,7_1,14_0	FMR1
+16	monodelphis_domestica	3.0	testis	0.3116573417604577	10_1,22_0	10_1,7_1,14_0	FMR1
+17	ornithorhynchus_anatinus	3.0	adult mammalian kidney	0.2969826227201815	10_1,22_0,14_0	10_1,7_1,14_0	FMR1
+18	ornithorhynchus_anatinus	3.0	brain	0.22994345759979165	10_1,22_0,14_0	10_1,14_0	FMR1
+19	ornithorhynchus_anatinus	3.0	female gonad	0.2077276080870824	10_1,22_0,14_0	10_1,14_0	FMR1
+20	ornithorhynchus_anatinus	3.0	heart	0.3542350074841665	10_1,22_0,14_0	10_1,14_0	FMR1
+21	ornithorhynchus_anatinus	3.0	heart	0.3645434567974279	10_1,22_0,14_0	10_1,7_1,14_0	FMR1
+22	ornithorhynchus_anatinus	3.0	testis	0.3868947364984353	10_1,22_0,14_0	10_1,14_0	FMR1
+23	ornithorhynchus_anatinus	3.0	testis	0.4077734363740183	10_1,22_0,14_0	10_1,7_1,14_0	FMR1
+24	monodelphis_domestica	3.0	adult mammalian kidney	0.22519544958865856	10_1,22_0,14_0	10_1,14_0	FMR1
+25	monodelphis_domestica	3.0	brain	0.2461790279182949	10_1,22_0,14_0	10_1,7_1,14_0	FMR1
+26	monodelphis_domestica	3.0	cerebellum	0.3667765848859248	10_1,22_0,14_0	10_1,14_0	FMR1
+27	monodelphis_domestica	3.0	female gonad	0.2285869490662595	10_1,22_0,14_0	10_1,7_1,14_0	FMR1
+28	monodelphis_domestica	3.0	testis	0.3116573417604577	10_1,22_0,14_0	10_1,7_1,14_0	FMR1

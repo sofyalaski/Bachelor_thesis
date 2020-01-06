@@ -1,0 +1,149 @@
+CAMK2G
+CAMK2G 9_2 --> 19_1 new
+GSTESCNTNTEDEDLKA
+GSTESCNTTTEDEDLKV
+GSTESCNTTTEDEDLKA
+CAMK2G 16_0--> 19_1 new(or 24_2)
+GSTESCNTTTEDEDLKV (=CAMK2G 9_2[2]) 34 times in old
+GSTESCNTTTEDEDLKA (=CAMK2G 9_2[3]) 7 times in old
+IAFGCRKAASTVPCTSSTGDTITGV -->16_0  2 times in old
+
+CAMK2G 9_2 == CAMK2G 16_0?? no mutually exclusive exon?
+
+old splice graph: 4_3 --> 9_2 --> 1_8
+                      \        /
+			->16_0
+
+
+new splice graph: 4_3 --> 19_1 -- > 10_1(=1_8); exon 16_0 is far below this exons.
+
+
+
+
+
+KIF1A
+KIF1A 3_0 --> 26_0 in new
+NTVPGGPKY --> 4 times 26_0 in new
+DSGSNK  --> 1 times 11_0 in new
+GFLTQS  --> 1 times 3_0 in new
+NTVPGGPKL--> 6 times 26_0 in new
+
+old splice graph:  12_0 --> 3_0 --> 4_1
+			  /
+			17_1
+
+
+new splice graph: 13_2(=12_0) --> 26_0 -->4_1
+					/
+		    34_0(=17_1)-->3_0 --
+
+3_0 in old turns into two s_exons 3_0 and 26_0? 
+11_0 is far below this exons
+
+
+
+
+MYO1C
+MYO1C 2_4
+ADEISSRVLQALGSEPIQ 3 times in old -->24_2 3 times in new
+LLGVEGSTLREALTHRKIIAKGEE 6 times in old --> 14_0+14_1?
+LLGVEGTTLREALTHRKIIAKGEE 3 times in old -->14_0+14_1?
+
+MYO1C 14_0 -->14_0 new
+LLQ 1 time in old and 1 time in new
+LLS 9 times in old and 9 times in new
+LLG 4 times in old and 13 times in new
+
+MYO1C 14_1
+VDGAMLKEALTHRKIIAKGEE 1 time in new 1 times in new
+VEGPTLREALTHRKIIAKGEE 3 times in new 3 times in new
+VEGSTLREALTHRKIIAKGEE 7 times in new 13 times in new
+VDGTVLKEALTHKKIIAKGEE 4 times in new 4 times in new
+
+old splice graph: 5_0 --> 14_0 -->14_1 -->10_0
+                  \ \ \                  / /
+                   \ \ 5_1--------------/ /
+                    \ ------------2_4----/
+                     -------------------/
+
+new splice graph: 5_0 --> 14_0 -->14_1 -->10_0
+                  \   \                  / /
+                   \   5_1--------------/ /
+                    \                    /
+                     -------------------/
+
+2_4= 14_0+14_1? 24_2 is at the very end of the chain and far from the exons on the splice graph and not connected to the 5_0
+
+
+
+
+
+DNM3 
+DNM3 1_6 
+RPPPAVPGRPS 5 times in old --> RPPPAVPGRPS 8_2 (2 times in new) RRPPPAVPGRPS 26_0 (3 times in new) 
+Is it alternative C-terminus?
+
+SRC 
+3_0 ==17_0 
+RKVDVR / RKVDVR or RKVDVS 
+both turned into 10_0
+
+MAPK9 
+2_3 in old QMQQ 4 times
+in new
+    S_exonID S_exon_Sequence
+      2_3            QMQQ
+     12_1           AQMQQ
+     12_1           AQMQQ
+     12_1           AQMQQ
+
+2_3==12_1 in new splice graph?not an alternative C-terminus?
+
+MAPK10
+5_1
+QVQQ 12 times in old  12 times in new -->8_3
+QVQP 3 times in old  3 times in new -->9_0
+RDASGEH 1 time in old  and 1 time in new --> 2_1
+
+8_3 and 9_0 in new is the same exon?
+
+MAPK10 5_2
+sequence in old = AA ->5_1
+
+
+
+
+SNAP-25
+1_1 sequence in old QLERIEEG
+ in new table maps to both 3_1+3_2
+3_1 = EQLER
+3_2 = IEEGMDQINKDMKEAEKNLTDLG
+
+
+
+
+DNM2 12_1 12_3 
+12_3 is a substring of 12_3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

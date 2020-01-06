@@ -1,0 +1,7 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting ENSSSCT00000040541
+WARNING:root:deleting ENST00000440254
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2B\thoraxe\_intermediate\chimeric_alignment_5.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2B\thoraxe\_intermediate\chimeric_alignment_6.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2B\thoraxe\_intermediate\chimeric_alignment_21.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2B\thoraxe\_intermediate\chimeric_alignment_22.fasta

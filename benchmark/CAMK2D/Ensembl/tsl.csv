@@ -1,0 +1,27 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,CAMK2D-205,ENST00000394524,havana,havana,protein_coding,2,7
+homo_sapiens,CAMK2D-211,ENST00000511664,havana,havana,protein_coding,2 (assigned to previous version 5),6
+homo_sapiens,CAMK2D-201,ENST00000296402,ensembl,ensembl,protein_coding,5,9
+homo_sapiens,CAMK2D-212,ENST00000513132,havana,havana,protein_coding,2,5
+homo_sapiens,CAMK2D-202,ENST00000342666,ensembl_havana,ensembl_havana_transcript,protein_coding,5,9
+homo_sapiens,CAMK2D-214,ENST00000515496,havana,havana,protein_coding,5,5
+homo_sapiens,CAMK2D-213,ENST00000514328,havana,havana,protein_coding,5,5
+homo_sapiens,CAMK2D-204,ENST00000394522,ensembl_havana,ensembl_havana_transcript,protein_coding,1,7
+homo_sapiens,CAMK2D-207,ENST00000505990,havana,havana,protein_coding,5,5
+homo_sapiens,CAMK2D-203,ENST00000379773,havana,havana,protein_coding,1,6
+homo_sapiens,CAMK2D-208,ENST00000508738,ensembl_havana,ensembl_havana_transcript,protein_coding,1,5
+homo_sapiens,CAMK2D-209,ENST00000509594,havana,havana,protein_coding,5,1
+homo_sapiens,CAMK2D-210,ENST00000509907,havana,havana,processed_transcript,2,1
+homo_sapiens,CAMK2D-206,ENST00000505132,havana,havana,retained_intron,2,1
+gorilla_gorilla,CAMK2D-201,ENSGGOT00000052788,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,CAMK2D-202,ENSGGOT00000033104,ensembl,ensembl,protein_coding,NA,2
+gorilla_gorilla,CAMK2D-203,ENSGGOT00000058329,ensembl,ensembl,protein_coding,NA,1
+gorilla_gorilla,CAMK2D-204,ENSGGOT00000026985,ensembl,ensembl,protein_coding,NA,2
+gorilla_gorilla,CAMK2D-205,ENSGGOT00000052903,ensembl,ensembl,protein_coding,NA,1
+danio_rerio,camk2d1-201,ENSDART00000056466,ensembl,ensembl,protein_coding,NA,8
+danio_rerio,camk2d1-204,ENSDART00000142259,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,3
+danio_rerio,camk2d1-207,ENSDART00000166198,ensembl,ensembl,protein_coding,NA,2
+danio_rerio,camk2d1-206,ENSDART00000148369,havana,havana,protein_coding,NA,3
+danio_rerio,camk2d1-202,ENSDART00000136175,havana,havana,protein_coding,NA,3
+danio_rerio,camk2d1-205,ENSDART00000145605,havana,havana,retained_intron,NA,2
+danio_rerio,camk2d1-203,ENSDART00000138757,havana,havana,protein_coding,NA,2

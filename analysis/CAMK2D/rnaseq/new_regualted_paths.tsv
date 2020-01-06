@@ -1,0 +1,39 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	homo_sapiens	2.0	cerebellum	0.2233147223619616	7_1,20_0,19_0	7_1,17_0	CAMK2D
+1	homo_sapiens	2.0	cerebellum	0.21500010596385544	7_1,20_0,19_0	7_1,20_0,17_0	CAMK2D
+2	homo_sapiens	2.0	frontal cortex	0.3099261716920604	7_1,20_0,19_0	7_1,17_0	CAMK2D
+3	homo_sapiens	2.0	frontal cortex	0.3462895033998993	7_1,20_0,19_0	7_1,20_0,17_0	CAMK2D
+4	homo_sapiens	2.0	frontal cortex	0.2750135135134375	7_1,20_0,19_0	7_1,14_0,17_0	CAMK2D
+5	homo_sapiens	2.0	muscle of leg	0.20283567055567986	7_1,20_0,19_0	7_1,17_0	CAMK2D
+6	homo_sapiens	1.0	adrenal tissue	0.2662741255698929	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+7	homo_sapiens	1.0	heart	0.27241410168074376	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+8	homo_sapiens	1.0	intestine	0.2794593727186093	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+9	homo_sapiens	1.0	leukocyte	0.3332205529328779	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+10	homo_sapiens	1.0	liver	0.2992824661334252	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+11	homo_sapiens	1.0	multi-cellular organism	0.3086943860972208	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+12	homo_sapiens	1.0	placenta	0.3257152219477358	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+13	homo_sapiens	1.0	stomach	0.27599942217295503	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+14	homo_sapiens	1.0	testis	0.306201554433486	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+15	gorilla_gorilla	1.0	testis	0.27621971136622725	12_0,10_0,10_1	12_0,10_1,3_0	CAMK2D
+16	homo_sapiens	1.0	adrenal tissue	0.2662741255698929	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+17	homo_sapiens	1.0	heart	0.27241410168074376	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+18	homo_sapiens	1.0	intestine	0.2794593727186093	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+19	homo_sapiens	1.0	leukocyte	0.3332205529328779	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+20	homo_sapiens	1.0	liver	0.2992824661334252	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+21	homo_sapiens	1.0	multi-cellular organism	0.3086943860972208	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+22	homo_sapiens	1.0	placenta	0.3257152219477358	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+23	homo_sapiens	1.0	stomach	0.27599942217295503	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+24	homo_sapiens	1.0	testis	0.306201554433486	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+25	gorilla_gorilla	1.0	testis	0.27621971136622725	10_0,10_1,3_0	12_0,10_1,3_0	CAMK2D
+26	homo_sapiens	2.0	cerebellum	0.2233147223619616	20_0,19_0,17_0	7_1,17_0	CAMK2D
+27	homo_sapiens	2.0	cerebellum	0.21500010596385544	20_0,19_0,17_0	7_1,20_0,17_0	CAMK2D
+28	homo_sapiens	2.0	frontal cortex	0.3099261716920604	20_0,19_0,17_0	7_1,17_0	CAMK2D
+29	homo_sapiens	2.0	frontal cortex	0.3462895033998993	20_0,19_0,17_0	7_1,20_0,17_0	CAMK2D
+30	homo_sapiens	2.0	frontal cortex	0.2750135135134375	20_0,19_0,17_0	7_1,14_0,17_0	CAMK2D
+31	homo_sapiens	2.0	muscle of leg	0.20283567055567986	20_0,19_0,17_0	7_1,17_0	CAMK2D
+32	homo_sapiens	2.0	cerebellum	0.2233147223619616	7_1,20_0,19_0,17_0	7_1,17_0	CAMK2D
+33	homo_sapiens	2.0	cerebellum	0.21500010596385544	7_1,20_0,19_0,17_0	7_1,20_0,17_0	CAMK2D
+34	homo_sapiens	2.0	frontal cortex	0.3099261716920604	7_1,20_0,19_0,17_0	7_1,17_0	CAMK2D
+35	homo_sapiens	2.0	frontal cortex	0.3462895033998993	7_1,20_0,19_0,17_0	7_1,20_0,17_0	CAMK2D
+36	homo_sapiens	2.0	frontal cortex	0.2750135135134375	7_1,20_0,19_0,17_0	7_1,14_0,17_0	CAMK2D
+37	homo_sapiens	2.0	muscle of leg	0.20283567055567986	7_1,20_0,19_0,17_0	7_1,17_0	CAMK2D

@@ -1,0 +1,6 @@
+,path,adult mammalian kidney,heart,kidney,liver,lung,prefrontal cortex,Species,brain,colon,skeletal muscle tissue,spleen,testis,Ammon's horn,cerebellum,embryonic stem cell,female gonad,fibroblast,placenta,thymus,zone of skin
+0,"1_2,10_0",,,,,0.03757165722488377,,mus_musculus,,,,,0.13467850998773512,,,,,,,,
+1,"1_2,8_0,8_1,10_0",1.0,1.0,,1.0,0.9624283427751162,,mus_musculus,1.0,1.0,1.0,1.0,0.8653214900122649,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+2,"1_2,10_0",0.051055523013424406,0.04821294520138357,,0.02302744637045789,0.017519848171728445,,rattus_norvegicus,,,,,,,,,,,,,
+3,"1_2,8_0,8_1,10_0",0.9489444769865757,0.9517870547986164,,0.976972553629542,0.9824801518282715,,rattus_norvegicus,1.0,1.0,1.0,1.0,1.0,,,,,,,,
+4,"1_2,8_0,8_1,10_0",1.0,1.0,1.0,1.0,1.0,1.0,sus_scrofa,,,,,,,,,,,,,

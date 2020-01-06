@@ -1,0 +1,5 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	gorilla_gorilla	1.0	adult mammalian kidney	0.4083392453204579	4_0,17_0	4_0,30_1	PTPRC
+1	homo_sapiens	1.0	adrenal gland	0.2807478982299022	4_0,4_2,4_3,4_4,17_0,30_1	4_0,30_1	PTPRC
+2	homo_sapiens	1.0	adrenal gland	0.29776713059955856	4_0,4_2,4_3,4_4,17_0,30_1	4_0,17_0,30_1	PTPRC
+3	gorilla_gorilla	1.0	adult mammalian kidney	0.4083392453204579	4_0,17_0,30_1	4_0,30_1	PTPRC

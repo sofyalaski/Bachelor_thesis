@@ -1,0 +1,50 @@
+TranscriptIDCluster_5p	ExonIDCluster_5p	S_exonID_5p	TranscriptIDCluster_3p	ExonIDCluster_3p	S_exonID_3p	Species	n_lib	Experiment_ID	Ammon's horn	CD4-positive helper T cell	adipose tissue	adrenal gland	adrenal tissue	adult mammalian kidney	adult organism	blastula	bone marrow	bone marrow macrophage	bone tissue	brain	brown adipose tissue	cerebellum	cerebral cortex	colon	corpus callosum	egg cell	embryo	embryonic stem cell	eye	female gonad	female reproductive system	fibroblast	frontal cortex	gastrula	head	head kidney	heart	heart left ventricle	intestine	kidney	larva	leukocyte	liver	lung	lymph node	male reproductive system	mature ovarian follicle	mesonephros	multi-cellular organism	multi-tissue structure	muscle of leg	muscle tissue	peripheral blood mononuclear cell	pharyngeal gill	pharyngeal muscle cell (C elegans)	placenta	prefrontal cortex	prostate gland	rectum	skeletal muscle tissue	spleen	stomach	tail	temporal lobe	testis	thoracic mammary gland	thymus	thyroid gland	zone of skin
+ENSGGOT00000025486	ENSGGOE00000238041	1_0				gorilla_gorilla	1	GSE43520																																																									0.0				
+ENSGGOT00000053860	ENSGGOE00000312846	1_0				gorilla_gorilla	1	GSE43520																																																									0.0				
+ENSGGOT00000025486	ENSGGOE00000238041	1_0	ENSGGOT00000025486	ENSGGOE00000186377	3_0	gorilla_gorilla	8	GSE30352						0.0								0.0																					0.0														0.0												
+ENSGGOT00000025486	ENSGGOE00000238041	1_0	ENSGGOT00000025486	ENSGGOE00000186377	3_0	gorilla_gorilla	8	GSE43520																									0.0																																0.0				
+ENSGGOT00000053860	ENSGGOE00000312846	1_0	ENSGGOT00000025486	ENSGGOE00000186377	3_0	gorilla_gorilla	8	GSE30352						0.0								0.0																					0.0														0.0												
+ENSGGOT00000053860	ENSGGOE00000312846	1_0	ENSGGOT00000025486	ENSGGOE00000186377	3_0	gorilla_gorilla	8	GSE43520																									0.0																																0.0				
+			ENSGGOT00000025486	ENSGGOE00000186377	3_0	gorilla_gorilla	1	GSE30352																																																									0.0				
+						gorilla_gorilla	1	GSE43520																																																									0.0				
+						gorilla_gorilla	1	GSE30352																																			0.0																										
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	3	GSE43520																																																									0.0				
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	3	GSE30611																																																									0.0				
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	2	GSE43520																						0.0																																							
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	2	GSE30611			0.0																																																										
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	1	GSE43520																																																0.0													
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	2	GSE43520																																																0.0													
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	2	GSE30611																																																										0.0			
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	23	GSE30352						0.0																																											0.0								0.0				
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	23	GSE64283																															0.0	0.0																													
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	23	GSE43520																						0.0																										0.0													
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	23	GSE30611			0.0			0.0																0.0																			0.0																			0.0	
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	10	GSE30352						0.0																																																							
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	10	GSE30611																						0.0																			0.0																				
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	2	GSE30352																									0.0																																				
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	2	GSE64283																																																						0.0							
+ENST00000375855	ENSE00003641651	1_0				homo_sapiens	1	GSE30352																									0.0																																				
+						homo_sapiens	1	GSE30352														0.0																																															
+						homo_sapiens	1	GSE30611																																																		0.0											
+						homo_sapiens	1	GSE30611				1.6674740298006624e-08																																																									
+						homo_sapiens	1	GSE43520																																																									0.0				
+						homo_sapiens	2	GSE64283																																																						0.0							
+						homo_sapiens	2	GSE43520																																																									0.0				
+						homo_sapiens	1	GSE30611																																																										1.4707061296928376e-08			
+						macaca_mulatta	1	GSE43520																																																									0.0				
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE41338																													0.0																																
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE43520												0.0										0.0																										7.409901744999257e-09									0.0				
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	SRP022612																																																													0.0
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE30617	0.0																												0.0						0.0	0.0																	0.0						0.0		
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE30352												0.0		0.0															0.0																												0.0				
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE36026																				0.0																																	0.0								
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE41637						0.0						0.0				0.0																			0.0	0.0																	0.0				0.0				
+ENSMUST00000021828	ENSMUSE00000400684	1_0	ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	48	GSE43721												0.0																							0.0																						0.0				
+			ENSMUST00000021828	ENSMUSE00000117551	3_0	mus_musculus	1	GSE43520																						0.0																																							
+ENSSSCT00000050066	ENSSSCE00000305470	1_0	ENSSSCT00000050066	ENSSSCE00000279932	3_0	sus_scrofa	1	GSE43013																																																	0.0												
+ENSXETT00000023771	ENSXETE00000134006	1_0	ENSXETT00000023771	ENSXETE00000134012	3_0	xenopus_tropicalis	10	GSE43520												0.0																												0.0																	0.0				
+ENSXETT00000023771	ENSXETE00000134006	1_0	ENSXETT00000023771	ENSXETE00000134012	3_0	xenopus_tropicalis	10	GSE37452																			0.0							0.0																																			
+						bos_taurus	1	GSE41637																																			0.0																										
+						bos_taurus	1	GSE41637																																																									0.0				
+ENSRNOT00000019489	ENSRNOE00000139040	1_0				rattus_norvegicus	11	GSE43013						0.0																																																							
+ENSRNOT00000019489	ENSRNOE00000139040	1_0				rattus_norvegicus	11	GSE41637						0.0						0.0				0.0													0.0							0.0																									

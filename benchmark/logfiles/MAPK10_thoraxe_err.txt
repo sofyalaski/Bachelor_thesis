@@ -1,0 +1,38 @@
+
+FATAL: Sequence file contains no data
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_18.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_19.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_20.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_21.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_22.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_23.fasta
+ENST00000641767
+WARNING:root:deleting ENST00000641051
+WARNING:root:deleting ENST00000641462
+WARNING:root:deleting ENST00000642006
+WARNING:root:deleting ENST00000642038
+WARNING:root:deleting ENST00000642009
+WARNING:root:deleting ENST00000395169
+WARNING:root:deleting ENST00000641823
+WARNING:root:deleting ENST00000642103
+WARNING:root:deleting ENST00000641902
+WARNING:root:deleting ENST00000641287
+WARNING:root:deleting ENST00000641952
+WARNING:root:deleting ENST00000641989
+WARNING:root:deleting ENST00000641943
+WARNING:root:deleting ENST00000641120
+WARNING:root:deleting ENST00000641762
+WARNING:root:deleting ENST00000641983
+WARNING:root:deleting ENST00000641297
+WARNING:root:deleting ENST00000641170
+WARNING:root:deleting ENST00000641217
+WARNING:root:deleting ENST00000641555
+WARNING:root:deleting ENST00000641274
+WARNING:root:deleting ENST00000638225
+WARNING:root:deleting ENST00000641157
+WARNING:root:deleting ENST00000641110
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPEFMKKLQPTVRNYVENRPKYAGLTFPKLFPDSLFPADSEHN and CAAYDAVLDRNVAIKKLSRPFQN-QTHAKRAYRELVLMKCVNHKN have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CPEFMKKLQPTVRNYVENRPKYAGLTFPKLFPDSLFPADSEHN and CAGYDAVLDRNVAIKKLSRPFQN-QTHAKRAYRELVLMKCVNHKN have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MAPK10\thoraxe\_intermediate\chimeric_alignment_9.fasta

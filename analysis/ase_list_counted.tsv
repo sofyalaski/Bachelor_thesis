@@ -1,0 +1,84 @@
+gene	s_exonID	type	Species_Ensembl	Species_rnaseq	paths	alt_paths	rna_c	Ens_c	diff
+PAX6	5_1	I	bos_taurus,homo_sapiens,gorilla_gorilla,mus_musculus,sus_scrofa	mus_musculus,rattus_norvegicus,sus_scrofa,bos_taurus,gorilla_gorilla,homo_sapiens,monodelphis_domestica	9_1,5_1,3_0	9_1,3_0	7	5	2
+FMR1	7_1	I	homo_sapiens,gorilla_gorilla,macaca_mulatta	homo_sapiens,monodelphis_domestica,ornithorhynchus_anatinus	10_1,7_1,14_0	10_1,14_0	3	3	0
+FMR1	7_1	I		monodelphis_domestica,ornithorhynchus_anatinus	10_1,7_1,22_0	10_1,22_0	2	0	2
+FMR1	22_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,rattus_norvegicus,sus_scrofa	bos_taurus,gorilla_gorilla,homo_sapiens,monodelphis_domestica,mus_musculus,ornithorhynchus_anatinus,sus_scrofa,rattus_norvegicus	7_1,22_0,14_0	7_1,14_0	8	6	2
+FMR1	22_0	I		monodelphis_domestica,ornithorhynchus_anatinus	10_1,22_0,14_0	10_1,14_0	2	0	2
+FMR1	2_0	I	homo_sapiens,macaca_mulatta,mus_musculus,sus_scrofa		1_2,2_0,2_1,2_2,2_3	1_2,2_3	0	4	-4
+FMR1	2_0	I		homo_sapiens,mus_musculus	14_0,2_0,2_0,2_1,2_2,2_3	14_0,2_3	2	0	2
+FMR1	2_0	I		homo_sapiens,mus_musculus,sus_scrofa	1_2,2_0,2_0,2_1,2_2,2_3	1_2,2_3	3	0	3
+FMR1	4_0	I	homo_sapiens,gorilla_gorilla,sus_scrofa	gorilla_gorilla,homo_sapiens,sus_scrofa	15_0,4_0,4_1	15_0,4_1	3	3	0
+FMR1	4_0	I		gorilla_gorilla,sus_scrofa	15_0,4_0,4_1,4_2	15_0,4_2	2	0	2
+FXR1	7_0	I	gorilla_gorilla,sus_scrofa	gorilla_gorilla,sus_scrofa	2_4,7_0,12_3	2_4,12_3	2	2	0
+FXR1	7_0	I		gorilla_gorilla,sus_scrofa	2_4,7_0,1_2	2_4,1_2	2	0	2
+FXR1	7_0	I		gorilla_gorilla,sus_scrofa	2_4,7_0,5_0	2_4,5_0	2	0	2
+TPM1	2_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,sus_scrofa		6_1,2_0,2_1,2_2	6_1,2_2	0	5	-5
+TPM1	2_0	I		gorilla_gorilla,homo_sapiens	6_1,2_0,2_2	6_1,2_2	2	0	2
+TPM1	11_0	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa,xenopus_tropicalis	gorilla_gorilla,homo_sapiens,xenopus_tropicalis	1_1,11_0,13_0	1_1,9_0,9_1,13_0	3	8	-5
+TPM1	9_0	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa,xenopus_tropicalis	gorilla_gorilla,homo_sapiens,xenopus_tropicalis	1_1,9_0,9_1,13_0	1_1,11_0,13_0	3	8	-5
+TPM1	11_0	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa,xenopus_tropicalis	gorilla_gorilla,homo_sapiens,xenopus_tropicalis	1_1,11_0,13_0	1_1,9_0,9_1,13_0	3	8	-5
+TPM2	2_0	E	bos_taurus,danio_rerio,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa	gorilla_gorilla,bos_taurus,homo_sapiens,mus_musculus,rattus_norvegicus,sus_scrofa	4_2,2_0,11_0	4_2,2_2,11_0	6	8	-2
+TPM2	2_0	E		bos_taurus,homo_sapiens	4_2,2_0,11_0,5_0	4_2,2_2,5_0	2	0	2
+TPM2	2_0	E		bos_taurus,homo_sapiens	4_2,2_0,2_2,5_0	4_2,11_0,5_0	2	0	2
+TPM2	2_2	E	bos_taurus,danio_rerio,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa	gorilla_gorilla,bos_taurus,homo_sapiens,mus_musculus,rattus_norvegicus,sus_scrofa	4_2,2_2,11_0	4_2,2_0,11_0	6	8	-2
+TPM2	2_2	E		bos_taurus,homo_sapiens	2_0,2_2,5_0	2_0,11_0,5_0	2	0	2
+TPM2	2_2	E		bos_taurus,homo_sapiens	4_2,2_2,5_0	4_2,11_0,5_0	2	0	2
+TPM3	6_0	E	bos_taurus,danio_rerio,homo_sapiens,macaca_mulatta,rattus_norvegicus,sus_scrofa	bos_taurus,rattus_norvegicus,sus_scrofa,homo_sapiens	4_2,6_0,10_0	4_2,6_1,10_0	4	6	-2
+TPM3	6_1	E	bos_taurus,danio_rerio,homo_sapiens,macaca_mulatta,rattus_norvegicus,sus_scrofa	bos_taurus,rattus_norvegicus,sus_scrofa,homo_sapiens	4_2,6_1,10_0	4_2,6_0,10_0	4	6	-2
+CAMK2A	24_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,mus_musculus,sus_scrofa	mus_musculus,gorilla_gorilla,homo_sapiens,sus_scrofa,xenopus_tropicalis	7_2,24_0,6_1	7_2,6_1	5	5	0
+CAMK2B	13_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa	bos_taurus,sus_scrofa	18_0,13_0,14_1	18_0,14_1	2	7	-5
+CAMK2G	20_1	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,rattus_norvegicus,sus_scrofa		10_0,20_1,20_2,18_1	10_0,18_1	0	6	-6
+CAMK2G	20_1	I		gorilla_gorilla,rattus_norvegicus	10_0,20_1,18_1	10_0,18_1	2	0	2
+CAMK2G	5_5	I	bos_taurus,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	gorilla_gorilla,rattus_norvegicus	18_2,5_5,21_0	18_2,21_0	2	5	-3
+CAMK2G	5_5	I	bos_taurus,gorilla_gorilla,mus_musculus,sus_scrofa		18_2,5_5,21_0,4_3	18_2,4_3	0	4	-4
+CAMK2G	5_5	I	gorilla_gorilla,sus_scrofa	gorilla_gorilla,rattus_norvegicus	18_2,5_5,4_3	18_2,4_3	2	2	0
+CAMK2G	21_0	I	bos_taurus,gorilla_gorilla,mus_musculus,sus_scrofa	gorilla_gorilla,rattus_norvegicus	18_2,21_0,4_3	18_2,4_3	2	4	-2
+CAMK2G	21_0	I	gorilla_gorilla,macaca_mulatta,rattus_norvegicus,sus_scrofa	gorilla_gorilla,rattus_norvegicus,bos_taurus,homo_sapiens,mus_musculus,sus_scrofa	5_5,21_0,4_3	5_5,4_3	6	4	2
+CAMK2G	21_0	I		gorilla_gorilla,homo_sapiens	5_5,21_0,19_1	5_5,19_1	2	0	2
+CAMK2G	10_1	I	gorilla_gorilla,macaca_mulatta,rattus_norvegicus	gorilla_gorilla,rattus_norvegicus	19_1,10_1,12_0	19_1,12_0	2	3	-1
+CAMK2G	10_1	I	bos_taurus,mus_musculus,sus_scrofa	monodelphis_domestica,mus_musculus,sus_scrofa	19_1,10_1,12_1	19_1,12_1	3	3	0
+KIF1A	26_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,mus_musculus	bos_taurus,monodelphis_domestica,mus_musculus,rattus_norvegicus	13_2,26_0,4_1	13_2,4_1	4	4	0
+KIF1A	26_0	I		gorilla_gorilla,homo_sapiens	13_2,26_0,4_0,4_1	13_2,4_1	2	0	2
+KIF1A	10_1	I	bos_taurus,homo_sapiens,gorilla_gorilla,mus_musculus	bos_taurus,gorilla_gorilla,homo_sapiens,monodelphis_domestica,mus_musculus,rattus_norvegicus	27_1,10_1,25_0	27_1,25_0	6	4	2
+KIF1A	10_1	I		bos_taurus,homo_sapiens,monodelphis_domestica,mus_musculus	27_1,10_1,33_2	27_1,33_2	4	0	4
+KIF1B	37_1	I	homo_sapiens,mus_musculus,rattus_norvegicus,sus_scrofa	homo_sapiens,ornithorhynchus_anatinus,sus_scrofa,monodelphis_domestica,mus_musculus,rattus_norvegicus,xenopus_tropicalis	7_0,37_1,52_0	7_0,52_0	7	4	3
+KIF1B	7_1	I	mus_musculus,rattus_norvegicus	mus_musculus,rattus_norvegicus	22_0,7_1,4_0,4_1	22_0,4_1	2	2	0
+KIF1B	7_1	I	homo_sapiens,gorilla_gorilla,macaca_mulatta	gorilla_gorilla,homo_sapiens,sus_scrofa	22_0,7_1,4_2	22_0,4_2	3	3	0
+KIF1B	7_1	I		gorilla_gorilla,homo_sapiens,ornithorhynchus_anatinus,sus_scrofa,monodelphis_domestica	22_0,7_1,4_0	22_0,4_0	5	0	5
+MYO1B	11_1	I	bos_taurus,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,gorilla_gorilla,homo_sapiens,monodelphis_domestica,rattus_norvegicus,sus_scrofa,mus_musculus	11_0,11_1,11_3	11_0,11_3	7	5	2
+MYO1B	11_1	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,sus_scrofa		11_0,11_1,11_3,15_1	11_0,15_1	0	5	-5
+MYO1B	11_1	I	macaca_mulatta,sus_scrofa	bos_taurus,homo_sapiens,monodelphis_domestica,rattus_norvegicus,sus_scrofa,mus_musculus	11_0,11_1,15_1	11_0,15_1	6	2	4
+MYO1B	11_3	I	bos_taurus,gorilla_gorilla,macaca_mulatta,sus_scrofa	bos_taurus,homo_sapiens,monodelphis_domestica,rattus_norvegicus,sus_scrofa,mus_musculus	11_0,11_3,15_1	11_0,15_1	6	4	2
+MYO1B	11_3	I	macaca_mulatta,sus_scrofa	bos_taurus,homo_sapiens,monodelphis_domestica,sus_scrofa,mus_musculus	11_1,11_3,15_1	11_1,15_1	5	2	3
+MYO1B	11_3	I		sus_scrofa,mus_musculus	5_1,11_3,15_1	5_1,15_1	2	0	2
+DNM1	11_0	E	bos_taurus,homo_sapiens,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,homo_sapiens,sus_scrofa	18_0,11_0,17_0	18_0,11_1,11_2,17_0	3	5	-2
+DNM1	11_1	E	bos_taurus,homo_sapiens,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,homo_sapiens,sus_scrofa	18_0,11_1,11_2,17_0	18_0,11_0,17_0	3	5	-2
+DNM1	7_2	I	bos_taurus,macaca_mulatta,mus_musculus	bos_taurus,homo_sapiens,mus_musculus,rattus_norvegicus	22_0,7_2,14_0	22_0,14_0	4	3	1
+DNM1	15_1	I		bos_taurus,homo_sapiens	13_0,15_1,6_0	13_0,6_0	2	0	2
+DNM2	11_1	E	homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	gorilla_gorilla,homo_sapiens,mus_musculus,sus_scrofa	21_0,11_1,11_2,18_0	21_0,11_3,11_4,18_0	4	5	-1
+DNM2	11_3	E	homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	gorilla_gorilla,homo_sapiens,mus_musculus,sus_scrofa	21_0,11_3,11_4,18_0	21_0,11_1,11_2,18_0	4	5	-1
+DNM2	1_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,homo_sapiens,mus_musculus,rattus_norvegicus,sus_scrofa	22_0,1_0,12_1	22_0,12_1	5	6	-1
+DNM3	20_1	I	bos_taurus,gorilla_gorilla,macaca_mulatta,rattus_norvegicus,sus_scrofa	bos_taurus,gorilla_gorilla,monodelphis_domestica,ornithorhynchus_anatinus,sus_scrofa,rattus_norvegicus	24_0,20_1,14_0	24_0,14_0	6	5	1
+DNM3	8_1	I	homo_sapiens,gorilla_gorilla	gorilla_gorilla,homo_sapiens	9_0,8_1,6_0	9_0,6_0	2	2	0
+FYN	4_2	E	homo_sapiens,gorilla_gorilla,mus_musculus,rattus_norvegicus,sus_scrofa	mus_musculus,rattus_norvegicus	6_0,4_2,3_0	6_0,4_0,4_1,3_0	2	5	-3
+FYN	4_2	E	homo_sapiens,gorilla_gorilla,rattus_norvegicus,sus_scrofa		6_0,4_2,3_0,3_1	6_0,3_0,3_1	0	4	-4
+FYN	4_0	E	homo_sapiens,gorilla_gorilla,mus_musculus,rattus_norvegicus,sus_scrofa	mus_musculus,rattus_norvegicus	6_0,4_0,4_1,3_0	6_0,4_2,3_0	2	5	-3
+SRC	10_0	I	danio_rerio,gorilla_gorilla,mus_musculus,rattus_norvegicus,sus_scrofa	gorilla_gorilla,monodelphis_domestica,mus_musculus,rattus_norvegicus,sus_scrofa	12_0,10_0,13_0	12_0,13_0	5	5	0
+SRC	10_0	I	danio_rerio,gorilla_gorilla,mus_musculus,rattus_norvegicus,sus_scrofa	gorilla_gorilla,monodelphis_domestica,mus_musculus,rattus_norvegicus,sus_scrofa	12_0,10_0,13_0	12_0,13_0	5	5	0
+SNAP-25	3_1	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,gorilla_gorilla,homo_sapiens,mus_musculus,sus_scrofa	6_0,3_1,3_2,3_3,3_5,3_6,2_0	6_0,3_0,2_0	5	6	-1
+SNAP-25	3_1	E		bos_taurus,gorilla_gorilla,homo_sapiens,mus_musculus	3_0,3_1,3_2,3_3,3_5,3_6,1_1	3_0,2_0,1_1	4	0	4
+SNAP-25	3_1	E		gorilla_gorilla,homo_sapiens	6_0,3_1,3_2,3_3,3_5,3_6,1_1	6_0,2_0,1_1	2	0	2
+SNAP-25	3_0	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,gorilla_gorilla,homo_sapiens,mus_musculus,sus_scrofa	6_0,3_0,2_0	6_0,3_1,3_2,3_3,3_5,3_6,2_0	5	6	-1
+SNAP-25	3_0	E		bos_taurus,gorilla_gorilla,homo_sapiens,mus_musculus	6_0,3_0,2_0,1_1	6_0,3_1,3_2,3_3,3_5,3_6,1_1	4	0	4
+SNAP-25	3_0	E		gorilla_gorilla,homo_sapiens	6_0,3_0,3_1,3_2,3_3,3_5,3_6,1_1	6_0,2_0,1_1	2	0	2
+SNAP-25	3_0	E		bos_taurus,homo_sapiens	7_0,3_0,3_1	7_0,6_0,3_1	2	0	2
+NEBL	13_0	I	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,sus_scrofa		3_0,13_0,4_0,11_0	3_0,11_0	0	5	-5
+NEBL	13_0	I		monodelphis_domestica,sus_scrofa,bos_taurus,gorilla_gorilla,homo_sapiens,rattus_norvegicus	3_0,13_0,11_0	3_0,11_0	6	0	6
+NEBL	13_0	I		monodelphis_domestica,sus_scrofa	3_0,13_0,2_0	3_0,2_0	2	0	2
+MAPK8	12_0	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,homo_sapiens,sus_scrofa	4_0,12_0,3_0	4_0,12_1,3_0	3	6	-3
+MAPK8	12_1	E	bos_taurus,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,sus_scrofa	bos_taurus,homo_sapiens,sus_scrofa	4_0,12_1,3_0	4_0,12_0,3_0	3	6	-3
+MAPK9	10_0	E	bos_taurus,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa	bos_taurus,mus_musculus,rattus_norvegicus,sus_scrofa,gorilla_gorilla	3_0,10_0,2_2	3_0,10_1,2_2	5	6	-1
+MAPK9	10_1	E	bos_taurus,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa	bos_taurus,mus_musculus,rattus_norvegicus,sus_scrofa,gorilla_gorilla	3_0,10_1,2_2	3_0,10_0,2_2	5	6	-1
+MAPK10	13_0	E	bos_taurus,homo_sapiens,gorilla_gorilla,mus_musculus,sus_scrofa	sus_scrofa,bos_taurus,gorilla_gorilla,homo_sapiens,mus_musculus	2_0,13_0,3_0	2_0,13_1,3_0	5	5	0
+MAPK10	13_1	E	bos_taurus,homo_sapiens,gorilla_gorilla,mus_musculus,sus_scrofa	sus_scrofa,bos_taurus,gorilla_gorilla,homo_sapiens,mus_musculus	2_0,13_1,3_0	2_0,13_0,3_0	5	5	0
+MAPK10	14_1	I	danio_rerio,homo_sapiens,gorilla_gorilla,macaca_mulatta,mus_musculus,rattus_norvegicus,sus_scrofa,xenopus_tropicalis		start,14_1,4_0,4_1	start,4_1	0	8	-8

@@ -1,0 +1,23 @@
+TranscriptIDCluster_5p	ExonIDCluster_5p	S_exonID_5p	TranscriptIDCluster_3p	ExonIDCluster_3p	S_exonID_3p	Species	n_lib	Experiment_ID	Ammon's horn	CD4-positive helper T cell	adipose tissue	adrenal gland	adrenal tissue	adult mammalian kidney	adult organism	blastula	bone marrow	bone marrow macrophage	bone tissue	brain	brown adipose tissue	cerebellum	cerebral cortex	colon	corpus callosum	egg cell	embryo	embryonic stem cell	eye	female gonad	female reproductive system	fibroblast	frontal cortex	gastrula	head	head kidney	heart	heart left ventricle	intestine	kidney	larva	leukocyte	liver	lung	lymph node	male reproductive system	mature ovarian follicle	mesonephros	multi-cellular organism	multi-tissue structure	muscle of leg	muscle tissue	peripheral blood mononuclear cell	pharyngeal gill	pharyngeal muscle cell (C elegans)	placenta	prefrontal cortex	prostate gland	rectum	skeletal muscle tissue	spleen	stomach	tail	temporal lobe	testis	thoracic mammary gland	thymus	thyroid gland	zone of skin
+ENSBTAT00000022306	ENSBTAE00000182237	2_0	ENSBTAT00000022306	ENSBTAE00000182240	1_0	bos_taurus	2	GSE41637																																				0.0																					0.0				
+ENSXETT00000044438	ENSXETE00000249349	2_0	ENSXETT00000044438	ENSXETE00000249350	1_0	xenopus_tropicalis	9	GSE43520																																																									0.0				
+ENSXETT00000044438	ENSXETE00000249349	2_0	ENSXETT00000044438	ENSXETE00000249350	1_0	xenopus_tropicalis	9	GSE37452																			0.0							0.0																																			
+ENSXETT00000044438	ENSXETE00000249349	2_0				xenopus_tropicalis	1	GSE37452																										0.0																																			
+			ENSXETT00000044438	ENSXETE00000249350	1_0	xenopus_tropicalis	1	GSE37452																										0.0																																			
+			ENSXETT00000044438	ENSXETE00000249350	1_0	xenopus_tropicalis	1	GSE43520																																																									0.0				
+			ENSMODT00000005590	ENSMODE00000047131	2_0	monodelphis_domestica	1	GSE43520																																																									0.0				
+			ENSMODT00000005590	ENSMODE00000047131	2_0	monodelphis_domestica	3	GSE30352																																																									0.0				
+			ENSMODT00000005590	ENSMODE00000047131	2_0	monodelphis_domestica	3	GSE43520																																																									0.0				
+			ENSMODT00000005590	ENSMODE00000047135	1_0	monodelphis_domestica	1	GSE43520																																																									0.0				
+			ENSMODT00000005590	ENSMODE00000047135	1_0	monodelphis_domestica	3	GSE30352																																																									0.0				
+			ENSMODT00000005590	ENSMODE00000047135	1_0	monodelphis_domestica	3	GSE43520																																																									0.0				
+ENSMODT00000005590	ENSMODE00000047135	1_0				monodelphis_domestica	1	GSE30352																																																									0.0				
+						monodelphis_domestica	1	GSE43520																																																									0.0				
+						monodelphis_domestica	1	GSE43520																																																									0.0				
+						mus_musculus	1	GSE41637						0.0																																																							
+			ENSRNOT00000024434	ENSRNOE00000174874	1_0	rattus_norvegicus	1	GSE41637																																																									0.0				
+ENSRNOT00000024434	ENSRNOE00000174832	2_0	ENSRNOT00000024434	ENSRNOE00000174874	1_0	rattus_norvegicus	6	GSE41637						0.0						0.0																																													0.0				
+ENSRNOT00000024434	ENSRNOE00000174832	2_0				rattus_norvegicus	3	GSE41637												0.0																																													0.0				
+ENSRNOT00000024434	ENSRNOE00000174832	2_0				rattus_norvegicus	1	GSE41637																																																									0.0				
+ENSRNOT00000024434	ENSRNOE00000174832	2_0				rattus_norvegicus	2	GSE41637																																																									0.0				
+						rattus_norvegicus	2	GSE41637																																																									0.0				

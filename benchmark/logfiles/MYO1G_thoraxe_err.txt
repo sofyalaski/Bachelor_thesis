@@ -1,0 +1,12 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting T02C12.1.1
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_4.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_5.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_6.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_8.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_13.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_19.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_23.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_28.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_29.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1G\thoraxe\_intermediate\chimeric_alignment_30.fasta

@@ -1,0 +1,8 @@
+,path,adult mammalian kidney,brain,colon,heart,liver,lung,skeletal muscle tissue,spleen,testis,Species,cerebellum,frontal cortex,prefrontal cortex,Ammon's horn,placenta,thymus,zone of skin,bone marrow macrophage,brown adipose tissue,cerebral cortex,embryonic stem cell,female gonad,fibroblast,heart left ventricle,muscle of leg,adipose tissue,adrenal gland,adrenal tissue,intestine,kidney,leukocyte,lymph node,multi-cellular organism,prostate gland,stomach,temporal lobe,thoracic mammary gland,thyroid gland
+0,"19_0,4_0,5_0",1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,bos_taurus,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,
+1,"19_0,4_0,5_0",1.0,,,1.0,1.0,,,,1.0,gorilla_gorilla,1.0,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,
+2,"19_0,5_0",,,,,,,,,,homo_sapiens,,,,,,,,,,,,,,0.00034804213286830925,0.0022677534965069323,,,,,,,,,,,,,
+3,"19_0,4_0,5_0",1.0,1.0,1.0,1.0,1.0,1.0,1.0,,1.0,homo_sapiens,1.0,1.0,1.0,,1.0,,,,,,,1.0,,0.9996519578671317,0.997732246503493,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+4,"19_0,5_0",0.0074431276725093675,0.009933105650061953,,0.0026023185742370656,0.009423295815538373,0.010523406473570677,,0.039729504568742725,,mus_musculus,,,,0.016771321455801767,0.0095840994338642,0.023909915222828957,0.004807321960671818,,,,,,,,,,,,,,,,,,,,,
+5,"19_0,4_0,5_0",0.9925568723274907,0.990066894349938,1.0,0.997397681425763,0.9905767041844616,0.9894765935264294,1.0,0.9602704954312572,1.0,mus_musculus,1.0,,,0.9832286785441982,0.9904159005661358,0.9760900847771711,0.9951926780393282,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,,,,,,,,,
+6,"19_0,4_0,5_0",1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,rattus_norvegicus,,,,,,,,,,,,,,,,,,,,,,,,,,,,

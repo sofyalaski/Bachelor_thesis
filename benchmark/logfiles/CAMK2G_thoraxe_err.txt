@@ -1,0 +1,5 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2G\thoraxe\_intermediate\chimeric_alignment_9.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2G\thoraxe\_intermediate\chimeric_alignment_11.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2G\thoraxe\_intermediate\chimeric_alignment_13.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2G\thoraxe\_intermediate\chimeric_alignment_16.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\CAMK2G\thoraxe\_intermediate\chimeric_alignment_27.fasta

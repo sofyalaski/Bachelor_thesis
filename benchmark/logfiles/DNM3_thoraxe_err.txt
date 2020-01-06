@@ -1,0 +1,5 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\DNM3\thoraxe\_intermediate\chimeric_alignment_4.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\DNM3\thoraxe\_intermediate\chimeric_alignment_13.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\DNM3\thoraxe\_intermediate\chimeric_alignment_16.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\DNM3\thoraxe\_intermediate\chimeric_alignment_23.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\DNM3\thoraxe\_intermediate\chimeric_alignment_25.fasta

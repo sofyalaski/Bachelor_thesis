@@ -1,0 +1,63 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	bos_taurus	2.0	testis	0.9966540144285072	4_0,9_0	4_0,9_0	FXR1
+1	homo_sapiens	2.0	cerebellum	0.6007097898318445	4_0,9_0	4_0,9_0	FXR1
+2	homo_sapiens	2.0	female gonad	0.9856414112457402	4_0,9_0	4_0,9_0	FXR1
+3	homo_sapiens	2.0	intestine	0.9630651027584696	4_0,9_0	4_0,9_0	FXR1
+4	homo_sapiens	2.0	kidney	0.9763198960001448	4_0,9_0	4_0,9_0	FXR1
+5	homo_sapiens	2.0	multi-cellular organism	0.9945762223175318	4_0,9_0	4_0,9_0	FXR1
+6	homo_sapiens	2.0	placenta	0.9866039287953632	4_0,9_0	4_0,9_0	FXR1
+7	homo_sapiens	2.0	stomach	0.9732665179079568	4_0,9_0	4_0,9_0	FXR1
+8	homo_sapiens	2.0	thoracic mammary gland	0.9757444302317386	4_0,9_0	4_0,9_0	FXR1
+9	homo_sapiens	4.0	adipose tissue	0.6682072669433397	2_4,5_0	2_4,12_3,5_0	FXR1
+10	homo_sapiens	4.0	adrenal gland	0.5943619295276935	2_4,5_0	2_4,12_3,5_0	FXR1
+11	homo_sapiens	4.0	adrenal tissue	0.3774648380514417	2_4,5_0	2_4,12_3,5_0	FXR1
+12	homo_sapiens	4.0	adult mammalian kidney	0.5049816335542553	2_4,5_0	2_4,12_3,5_0	FXR1
+13	homo_sapiens	4.0	brain	0.5514476301464822	2_4,5_0	2_4,12_3,5_0	FXR1
+14	homo_sapiens	4.0	cerebellum	0.56006969582264	2_4,5_0	2_4,12_3,5_0	FXR1
+15	homo_sapiens	4.0	female gonad	0.3573588119236252	2_4,5_0	2_4,12_3,5_0	FXR1
+16	homo_sapiens	4.0	leukocyte	0.2948027871422793	2_4,5_0	2_4,12_3,5_0	FXR1
+17	homo_sapiens	4.0	liver	0.5663806424841471	2_4,5_0	2_4,12_3,5_0	FXR1
+18	homo_sapiens	4.0	lung	0.2511418982942462	2_4,5_0	2_4,12_3,5_0	FXR1
+19	homo_sapiens	4.0	lymph node	0.3962238699405624	2_4,5_0	2_4,12_3,5_0	FXR1
+20	homo_sapiens	4.0	placenta	0.4831601997627402	2_4,5_0	2_4,12_3,5_0	FXR1
+21	homo_sapiens	4.0	prefrontal cortex	0.3100408448440887	2_4,5_0	2_4,12_3,5_0	FXR1
+22	homo_sapiens	4.0	thoracic mammary gland	0.3969681870145102	2_4,5_0	2_4,12_3,5_0	FXR1
+23	homo_sapiens	4.0	thyroid gland	0.2792756141358785	2_4,5_0	2_4,12_3,5_0	FXR1
+24	sus_scrofa	4.0	adult mammalian kidney	0.4891663677094422	2_4,5_0	2_4,12_3,5_0	FXR1
+25	sus_scrofa	4.0	kidney	0.5273159144893114	2_4,5_0	2_4,12_3,5_0	FXR1
+26	sus_scrofa	4.0	kidney	0.653206650831354	2_4,5_0	2_4,7_0,12_3,5_0	FXR1
+27	sus_scrofa	4.0	liver	0.242333929222846	2_4,5_0	2_4,12_3,5_0	FXR1
+28	sus_scrofa	4.0	lung	0.3147632311977716	2_4,5_0	2_4,12_3,5_0	FXR1
+29	sus_scrofa	4.0	prefrontal cortex	0.2583517654225199	2_4,5_0	2_4,7_0,12_3,5_0	FXR1
+30	gorilla_gorilla	4.0	adult mammalian kidney	0.6746507505984443	2_4,5_0	2_4,12_3,5_0	FXR1
+31	gorilla_gorilla	4.0	adult mammalian kidney	0.7698116955739402	2_4,5_0	2_4,7_0,12_3,5_0	FXR1
+32	gorilla_gorilla	4.0	liver	0.7142857142857145	2_4,5_0	2_4,12_3,5_0	FXR1
+33	gorilla_gorilla	4.0	prefrontal cortex	0.4373568073486404	2_4,5_0	2_4,12_3,5_0	FXR1
+34	gorilla_gorilla	4.0	prefrontal cortex	0.5834064243454538	2_4,5_0	2_4,7_0,12_3,5_0	FXR1
+35	homo_sapiens	1.0	female gonad	0.28544309831614	1_0,11_0	1_0,12_0	FXR1
+36	homo_sapiens	1.0	heart	0.33832682026617056	1_0,11_0	1_0,12_0	FXR1
+37	homo_sapiens	1.0	heart left ventricle	0.28039662982218944	1_0,11_0	1_0,12_0	FXR1
+38	homo_sapiens	1.0	lung	0.3433572120253325	1_0,11_0	1_0,12_0	FXR1
+39	homo_sapiens	1.0	muscle of leg	0.3243258785675461	1_0,11_0	1_0,12_0	FXR1
+40	homo_sapiens	1.0	testis	0.3770825700943256	1_0,11_0	1_0,12_0	FXR1
+41	xenopus_tropicalis	1.0	embryo	0.94954033404413	1_0,11_0	1_0,12_0	FXR1
+42	homo_sapiens	1.0	female gonad	0.28544309831614	1_0,11_0,12_0	1_0,12_0	FXR1
+43	homo_sapiens	1.0	heart	0.33832682026617056	1_0,11_0,12_0	1_0,12_0	FXR1
+44	homo_sapiens	1.0	heart left ventricle	0.28039662982218944	1_0,11_0,12_0	1_0,12_0	FXR1
+45	homo_sapiens	1.0	lung	0.3433572120253325	1_0,11_0,12_0	1_0,12_0	FXR1
+46	homo_sapiens	1.0	muscle of leg	0.3243258785675461	1_0,11_0,12_0	1_0,12_0	FXR1
+47	homo_sapiens	1.0	testis	0.3770825700943256	1_0,11_0,12_0	1_0,12_0	FXR1
+48	xenopus_tropicalis	1.0	embryo	0.94954033404413	1_0,11_0,12_0	1_0,12_0	FXR1
+49	sus_scrofa	4.0	heart	0.5430879712746859	2_4,7_0,12_3,1_2	2_4,1_2	FXR1
+50	sus_scrofa	4.0	heart	0.21005385996409334	2_4,7_0,12_3,1_2	2_4,12_3,1_2	FXR1
+51	gorilla_gorilla	4.0	heart	0.4533679637730286	2_4,7_0,12_3,1_2	2_4,1_2	FXR1
+52	gorilla_gorilla	4.0	heart	0.2550691062094559	2_4,7_0,12_3,1_2	2_4,12_3,1_2	FXR1
+53	sus_scrofa	4.0	prefrontal cortex	0.24726274790554376	2_4,12_3,1_2	2_4,7_0,12_3,1_2	FXR1
+54	gorilla_gorilla	4.0	testis	0.3619884971892183	2_4,12_3,1_2	2_4,7_0,12_3,1_2	FXR1
+55	homo_sapiens	4.0	heart	0.5905704232571536	2_4,12_3,1_2	2_4,1_2	FXR1
+56	homo_sapiens	4.0	heart left ventricle	0.5442242656679397	2_4,12_3,1_2	2_4,1_2	FXR1
+57	homo_sapiens	4.0	muscle of leg	0.9315407123123912	2_4,12_3,1_2	2_4,1_2	FXR1
+58	homo_sapiens	4.0	skeletal muscle tissue	0.9011608078866556	2_4,12_3,1_2	2_4,1_2	FXR1
+59	homo_sapiens	4.0	testis	0.6936458608727587	2_4,12_3,1_2	2_4,1_2	FXR1
+60	sus_scrofa	4.0	heart	0.3330341113105925	2_4,12_3,1_2	2_4,1_2	FXR1
+61	gorilla_gorilla	4.0	testis	0.4603954674984256	2_4,12_3,1_2	2_4,1_2	FXR1

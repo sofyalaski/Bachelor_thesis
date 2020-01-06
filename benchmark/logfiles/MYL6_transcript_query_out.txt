@@ -1,0 +1,197 @@
+Searching ID for gene with name MYL6 in species homo_sapiens ...
+Found the following list of ids: ["ENSG00000092841"]
+... using gene id ENSG00000092841 from now on.
+Results will be saved in directory MYL6
+Writing the gene tree
+Looking for orthologs
+Found a total of 291 orthologs, of which 4 paralogs
+Orthologous species:
+  phascolarctos_cinereus :    7
+  cercocebus_atys        :    6
+  colobus_angolensis_palliatus:    6
+  cebus_capucinus        :    5
+  papio_anubis           :    4
+  macaca_mulatta         :    4
+  nomascus_leucogenys    :    4
+  gorilla_gorilla        :    4
+  theropithecus_gelada   :    4
+  mandrillus_leucophaeus :    4
+  macaca_nemestrina      :    4
+  rhinopithecus_bieti    :    4
+  homo_sapiens           :    4
+  ciona_savignyi         :    4
+  ciona_intestinalis     :    4
+  cricetulus_griseus_picr:    3
+  pan_paniscus           :    3
+  saimiri_boliviensis_boliviensis:    3
+  jaculus_jaculus        :    3
+  rhinopithecus_roxellana:    3
+  piliocolobus_tephrosceles:    3
+  pan_troglodytes        :    3
+  carlito_syrichta       :    3
+  fukomys_damarensis     :    3
+  poecilia_mexicana      :    3
+  caenorhabditis_elegans :    3
+  otolemur_garnettii     :    2
+  callithrix_jacchus     :    2
+  microtus_ochrogaster   :    2
+  dipodomys_ordii        :    2
+  aotus_nancymaae        :    2
+  canis_lupus_dingo      :    2
+  prolemur_simus         :    2
+  marmota_marmota_marmota:    2
+  mesocricetus_auratus   :    2
+  spermophilus_dauricus  :    2
+  peromyscus_maniculatus_bairdii:    2
+  vulpes_vulpes          :    2
+  gopherus_agassizii     :    2
+  maylandia_zebra        :    2
+  ictalurus_punctatus    :    2
+  takifugu_rubripes      :    2
+  cynoglossus_semilaevis :    2
+  acanthochromis_polyacanthus:    2
+  oryzias_latipes_hni    :    2
+  kryptolebias_marmoratus:    2
+  mola_mola              :    2
+  monopterus_albus       :    2
+  seriola_lalandi_dorsalis:    2
+  mastacembelus_armatus  :    2
+  gasterosteus_aculeatus :    2
+  astatotilapia_calliptera:    2
+  poecilia_reticulata    :    2
+  amphiprion_ocellaris   :    2
+  haplochromis_burtoni   :    2
+  oreochromis_niloticus  :    2
+  astyanax_mexicanus     :    2
+  gadus_morhua           :    2
+  oryzias_latipes        :    2
+  poecilia_formosa       :    2
+  anabas_testudineus     :    2
+  pygocentrus_nattereri  :    2
+  scophthalmus_maximus   :    2
+  amphilophus_citrinellus:    2
+  amphiprion_percula     :    2
+  fundulus_heteroclitus  :    2
+  labrus_bergylta        :    2
+  danio_rerio            :    2
+  neolamprologus_brichardi:    2
+  seriola_dumerili       :    2
+  paramormyrops_kingsleyae:    2
+  pundamilia_nyererei    :    2
+  periophthalmus_magnuspinnatus:    2
+  tetraodon_nigroviridis :    2
+  scleropages_formosus   :    2
+  xiphophorus_maculatus  :    2
+  oryzias_melastigma     :    2
+  esox_lucius            :    2
+  cyprinodon_variegatus  :    2
+  gambusia_affinis       :    2
+  xiphophorus_couchianus :    2
+  stegastes_partitus     :    2
+  oryzias_latipes_hsok   :    2
+  poecilia_latipinna     :    2
+  drosophila_melanogaster:    2
+  cavia_aperea           :    1
+  macaca_fascicularis    :    1
+  bos_taurus             :    1
+  ovis_aries             :    1
+  vicugna_pacos          :    1
+  myotis_lucifugus       :    1
+  ictidomys_tridecemlineatus:    1
+  mus_spicilegus         :    1
+  tursiops_truncatus     :    1
+  oryctolagus_cuniculus  :    1
+  ursus_americanus       :    1
+  sus_scrofa             :    1
+  octodon_degus          :    1
+  chlorocebus_sabaeus    :    1
+  pteropus_vampyrus      :    1
+  cricetulus_griseus_crigri:    1
+  echinops_telfairi      :    1
+  tupaia_belangeri       :    1
+  cricetulus_griseus_chok1gshd:    1
+  procavia_capensis      :    1
+  chinchilla_lanigera    :    1
+  felis_catus            :    1
+  neovison_vison         :    1
+  choloepus_hoffmanni    :    1
+  ochotona_princeps      :    1
+  ailuropoda_melanoleuca :    1
+  panthera_pardus        :    1
+  equus_caballus         :    1
+  urocitellus_parryii    :    1
+  erinaceus_europaeus    :    1
+  capra_hircus           :    1
+  bison_bison_bison      :    1
+  notamacropus_eugenii   :    1
+  heterocephalus_glaber_female:    1
+  rattus_norvegicus      :    1
+  microcebus_murinus     :    1
+  ursus_maritimus        :    1
+  equus_asinus_asinus    :    1
+  panthera_tigris_altaica:    1
+  propithecus_coquereli  :    1
+  heterocephalus_glaber_male:    1
+  meriones_unguiculatus  :    1
+  pongo_abelii           :    1
+  cavia_porcellus        :    1
+  mus_musculus           :    1
+  nannospalax_galili     :    1
+  sarcophilus_harrisii   :    1
+  dasypus_novemcinctus   :    1
+  mus_caroli             :    1
+  mus_pahari             :    1
+  mus_spretus            :    1
+  castor_canadensis      :    1
+  anas_platyrhynchos_platyrhynchos:    1
+  salvator_merianae      :    1
+  lepidothrix_coronata   :    1
+  dromaius_novaehollandiae:    1
+  sphenodon_punctatus    :    1
+  pelodiscus_sinensis    :    1
+  apteryx_owenii         :    1
+  apteryx_rowi           :    1
+  gallus_gallus          :    1
+  lonchura_striata_domestica:    1
+  pogona_vitticeps       :    1
+  chrysemys_picta_bellii :    1
+  notechis_scutatus      :    1
+  chelonoidis_abingdonii :    1
+  anolis_carolinensis    :    1
+  xenopus_tropicalis     :    1
+  hippocampus_comes      :    1
+  lepisosteus_oculatus   :    1
+  petromyzon_marinus     :    1
+  saccharomyces_cerevisiae:    1
+Getting all the transcripts for TSL file
+**** Query species : homo_sapiens
+Got a total of 29 transcripts with biotypes
+  protein_coding         :   17
+  processed_transcript   :    4
+  retained_intron        :    4
+  nonsense_mediated_decay:    2
+  antisense              :    1
+  sense_overlapping      :    1
+**** Orthologues
+bos_taurus            :    3 transcripts 
+sus_scrofa            :    4 transcripts 
+rattus_norvegicus     :    3 transcripts 
+mus_musculus          :   15 transcripts 
+Getting exons sequences
+Getting the sequences files for ENSG00000092841
+Getting exons information for bos_taurus:ENSBTAG00000010799
+  - 12 exons
+  - 12 fasta sequences
+  - 19 lines in the exon table
+Getting exons information for sus_scrofa:ENSSSCG00000039795
+  - 10 exons
+  - 10 fasta sequences
+  - 13 lines in the exon table
+Getting exons information for rattus_norvegicus:ENSRNOG00000054140
+  - 12 exons
+  - 12 fasta sequences
+  - 19 lines in the exon table
+Getting exons information for mus_musculus:ENSMUSG00000090841
+  - 41 exons
+  - 41 fasta sequences
+  - 77 lines in the exon table

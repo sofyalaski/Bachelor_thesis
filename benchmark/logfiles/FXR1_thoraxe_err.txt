@@ -1,0 +1,5 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\FXR1\thoraxe\_intermediate\chimeric_alignment_15.fasta
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CELRARWGGDLGAGQQRSGDCVWRQIRRRRRQAEP and CANENAH--KD---FKKAVGACRIFYHPETTQLMIL have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))
+c:\users\diego\appdata\local\programs\python\python37\lib\site-packages\thoraxe\transcript_info\exon_clustering.py:32: UserWarning: CFPLPFPRLLLAPPP-SSPLVGKFLESLPS and CANENAHKDFKKAVGACRIFYHAETTQLMIL have different lengths
+  warnings.warn('{} and {} have different lengths'.format(query, target))

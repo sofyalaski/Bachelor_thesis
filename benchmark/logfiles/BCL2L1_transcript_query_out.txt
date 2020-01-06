@@ -1,0 +1,228 @@
+Searching ID for gene with name BCL2L1 in species homo_sapiens ...
+Found the following list of ids: ["ENSG00000171552"]
+... using gene id ENSG00000171552 from now on.
+Results will be saved in directory BCL2L1
+Writing the gene tree
+Looking for orthologs
+Found a total of 239 orthologs, of which 7 paralogs
+Orthologous species:
+  homo_sapiens           :    7
+  takifugu_rubripes      :    5
+  capra_hircus           :    4
+  bison_bison_bison      :    3
+  tetraodon_nigroviridis :    3
+  ictidomys_tridecemlineatus:    2
+  rattus_norvegicus      :    2
+  heterocephalus_glaber_male:    2
+  jaculus_jaculus        :    2
+  ovis_aries             :    2
+  bos_taurus             :    2
+  bos_mutus              :    2
+  maylandia_zebra        :    2
+  cyprinodon_variegatus  :    2
+  periophthalmus_magnuspinnatus:    2
+  amphilophus_citrinellus:    2
+  haplochromis_burtoni   :    2
+  mola_mola              :    2
+  scleropages_formosus   :    2
+  mastacembelus_armatus  :    2
+  oryzias_latipes_hni    :    2
+  oryzias_latipes_hsok   :    2
+  scophthalmus_maximus   :    2
+  acanthochromis_polyacanthus:    2
+  amphiprion_ocellaris   :    2
+  poecilia_reticulata    :    2
+  poecilia_latipinna     :    2
+  neolamprologus_brichardi:    2
+  gasterosteus_aculeatus :    2
+  gambusia_affinis       :    2
+  anabas_testudineus     :    2
+  oreochromis_niloticus  :    2
+  xiphophorus_maculatus  :    2
+  poecilia_mexicana      :    2
+  monopterus_albus       :    2
+  gadus_morhua           :    2
+  kryptolebias_marmoratus:    2
+  labrus_bergylta        :    2
+  seriola_lalandi_dorsalis:    2
+  esox_lucius            :    2
+  pundamilia_nyererei    :    2
+  cynoglossus_semilaevis :    2
+  paramormyrops_kingsleyae:    2
+  seriola_dumerili       :    2
+  poecilia_formosa       :    2
+  stegastes_partitus     :    2
+  fundulus_heteroclitus  :    2
+  oryzias_melastigma     :    2
+  amphiprion_percula     :    2
+  oryzias_latipes        :    2
+  gorilla_gorilla        :    1
+  pan_paniscus           :    1
+  pan_troglodytes        :    1
+  mandrillus_leucophaeus :    1
+  rhinopithecus_roxellana:    1
+  macaca_mulatta         :    1
+  piliocolobus_tephrosceles:    1
+  rhinopithecus_bieti    :    1
+  chlorocebus_sabaeus    :    1
+  macaca_fascicularis    :    1
+  colobus_angolensis_palliatus:    1
+  macaca_nemestrina      :    1
+  pongo_abelii           :    1
+  theropithecus_gelada   :    1
+  papio_anubis           :    1
+  nomascus_leucogenys    :    1
+  cercocebus_atys        :    1
+  aotus_nancymaae        :    1
+  cebus_capucinus        :    1
+  callithrix_jacchus     :    1
+  saimiri_boliviensis_boliviensis:    1
+  carlito_syrichta       :    1
+  otolemur_garnettii     :    1
+  propithecus_coquereli  :    1
+  prolemur_simus         :    1
+  tupaia_belangeri       :    1
+  microcebus_murinus     :    1
+  oryctolagus_cuniculus  :    1
+  fukomys_damarensis     :    1
+  cavia_porcellus        :    1
+  microtus_ochrogaster   :    1
+  cricetulus_griseus_crigri:    1
+  ochotona_princeps      :    1
+  cricetulus_griseus_chok1gshd:    1
+  cavia_aperea           :    1
+  peromyscus_maniculatus_bairdii:    1
+  octodon_degus          :    1
+  mus_spicilegus         :    1
+  mus_musculus           :    1
+  cricetulus_griseus_picr:    1
+  meriones_unguiculatus  :    1
+  urocitellus_parryii    :    1
+  dipodomys_ordii        :    1
+  heterocephalus_glaber_female:    1
+  spermophilus_dauricus  :    1
+  chinchilla_lanigera    :    1
+  castor_canadensis      :    1
+  marmota_marmota_marmota:    1
+  mesocricetus_auratus   :    1
+  nannospalax_galili     :    1
+  mus_pahari             :    1
+  mus_spretus            :    1
+  mus_caroli             :    1
+  loxodonta_africana     :    1
+  dasypus_novemcinctus   :    1
+  equus_caballus         :    1
+  pteropus_vampyrus      :    1
+  mustela_putorius_furo  :    1
+  echinops_telfairi      :    1
+  sus_scrofa             :    1
+  ursus_americanus       :    1
+  equus_asinus_asinus    :    1
+  neovison_vison         :    1
+  panthera_tigris_altaica:    1
+  ursus_maritimus        :    1
+  erinaceus_europaeus    :    1
+  myotis_lucifugus       :    1
+  panthera_pardus        :    1
+  procavia_capensis      :    1
+  sorex_araneus          :    1
+  vulpes_vulpes          :    1
+  canis_familiaris       :    1
+  felis_catus            :    1
+  choloepus_hoffmanni    :    1
+  ailuropoda_melanoleuca :    1
+  canis_lupus_dingo      :    1
+  tursiops_truncatus     :    1
+  notamacropus_eugenii   :    1
+  sarcophilus_harrisii   :    1
+  monodelphis_domestica  :    1
+  phascolarctos_cinereus :    1
+  gopherus_agassizii     :    1
+  manacus_vitellinus     :    1
+  sphenodon_punctatus    :    1
+  apteryx_haastii        :    1
+  anas_platyrhynchos_platyrhynchos:    1
+  crocodylus_porosus     :    1
+  chelonoidis_abingdonii :    1
+  chrysemys_picta_bellii :    1
+  calidris_pygmaea       :    1
+  nothoprocta_perdicaria :    1
+  parus_major            :    1
+  salvator_merianae      :    1
+  lepidothrix_coronata   :    1
+  zonotrichia_albicollis :    1
+  lonchura_striata_domestica:    1
+  anolis_carolinensis    :    1
+  ficedula_albicollis    :    1
+  taeniopygia_guttata    :    1
+  apteryx_rowi           :    1
+  gallus_gallus          :    1
+  dromaius_novaehollandiae:    1
+  coturnix_japonica      :    1
+  serinus_canaria        :    1
+  apteryx_owenii         :    1
+  notechis_scutatus      :    1
+  meleagris_gallopavo    :    1
+  pelodiscus_sinensis    :    1
+  calidris_pugnax        :    1
+  anser_brachyrhynchus   :    1
+  pogona_vitticeps       :    1
+  cyanistes_caeruleus    :    1
+  melopsittacus_undulatus:    1
+  junco_hyemalis         :    1
+  numida_meleagris       :    1
+  xenopus_tropicalis     :    1
+  latimeria_chalumnae    :    1
+  xiphophorus_couchianus :    1
+  pygocentrus_nattereri  :    1
+  astyanax_mexicanus     :    1
+  lepisosteus_oculatus   :    1
+  danio_rerio            :    1
+  ictalurus_punctatus    :    1
+  hippocampus_comes      :    1
+  astatotilapia_calliptera:    1
+  eptatretus_burgeri     :    1
+  petromyzon_marinus     :    1
+Getting all the transcripts for TSL file
+**** Query species : homo_sapiens
+Got a total of 11 transcripts with biotypes
+  protein_coding         :    9
+  antisense              :    2
+**** Orthologues
+gorilla_gorilla       :    3 transcripts 
+macaca_mulatta        :    2 transcripts 
+mus_musculus          :    9 transcripts 
+sus_scrofa            :    9 transcripts 
+monodelphis_domestica :    3 transcripts 
+xenopus_tropicalis    :    1 transcripts 
+danio_rerio           :    2 transcripts 
+Getting exons sequences
+Getting the sequences files for ENSG00000171552
+Getting exons information for gorilla_gorilla:ENSGGOG00000026245
+  - 8 exons
+  - 8 fasta sequences
+  - 7 lines in the exon table
+Getting exons information for macaca_mulatta:ENSMMUG00000005985
+  - 6 exons
+  - 6 fasta sequences
+  - 7 lines in the exon table
+Getting exons information for mus_musculus:ENSMUSG00000007659
+  - 18 exons
+  - 18 fasta sequences
+  - 21 lines in the exon table
+Getting exons information for sus_scrofa:ENSSSCG00000035357
+  - 25 exons
+  - 25 fasta sequences
+  - 16 lines in the exon table
+Getting exons information for monodelphis_domestica:ENSMODG00000019490
+  - 5 exons
+  - 5 fasta sequences
+  - 4 lines in the exon table
+Getting exons information for xenopus_tropicalis:ENSXETG00000025175
+  - 2 exons
+  - 2 fasta sequences
+  - 3 lines in the exon table
+Getting exons information for danio_rerio:ENSDARG00000008434
+  - 4 exons
+  - 4 fasta sequences
+  - 7 lines in the exon table

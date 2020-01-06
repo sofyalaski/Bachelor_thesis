@@ -1,0 +1,15 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	homo_sapiens	4.0	heart	0.24596532841788904	13_0,11_0	3_0,11_0	NEBL
+1	bos_taurus	4.0	heart	0.8741966542547839	13_0,11_0	3_0,11_0	NEBL
+2	homo_sapiens	4.0	heart	0.2153833317509476	3_0,4_0	3_0,4_0,11_0	NEBL
+3	homo_sapiens	4.0	heart left ventricle	0.26727011829004577	3_0,4_0	3_0,4_0,11_0	NEBL
+4	sus_scrofa	4.0	heart	0.2504412391211735	3_0,4_0	3_0,11_0,2_0	NEBL
+5	homo_sapiens	4.0	heart	0.4375059614784975	3_0,4_0	3_0,11_0	NEBL
+6	homo_sapiens	4.0	heart	0.2221226297275498	3_0,4_0	3_0,11_0	NEBL
+7	homo_sapiens	4.0	heart left ventricle	0.5482716790901254	3_0,4_0	3_0,11_0	NEBL
+8	homo_sapiens	4.0	heart left ventricle	0.2810015608000796	3_0,4_0	3_0,11_0	NEBL
+9	homo_sapiens	4.0	multi-cellular organism	0.3940182969418468	3_0,4_0	3_0,11_0	NEBL
+10	homo_sapiens	4.0	multi-cellular organism	0.3600326273809625	3_0,4_0	3_0,13_0,11_0	NEBL
+11	monodelphis_domestica	4.0	heart	0.5102320111704758	3_0,4_0	3_0,2_0	NEBL
+12	homo_sapiens	4.0	heart	0.24596532841788904	3_0,13_0,11_0	3_0,11_0	NEBL
+13	bos_taurus	4.0	heart	0.8741966542547839	3_0,13_0,11_0	3_0,11_0	NEBL

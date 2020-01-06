@@ -1,0 +1,16 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,AC010319.2-201,ENST00000594663,havana,havana,protein_coding,3,1
+homo_sapiens,NXNL1-201,ENST00000301944,ensembl_havana,ensembl_havana_transcript,protein_coding,1,2
+gorilla_gorilla,NA,ENSGGOT00000002359,ensembl,ensembl,protein_coding,NA,3
+bos_taurus,NXNL1-201,ENSBTAT00000022306,ensembl,ensembl,protein_coding,NA,4
+sus_scrofa,NXNL1-201,ENSSSCT00000065552,ensembl,ensembl,protein_coding,NA,1
+rattus_norvegicus,Nxnl1-201,ENSRNOT00000024434,ensembl,ensembl,protein_coding,NA,5
+rattus_norvegicus,Nxnl1-202,ENSRNOT00000080706,ensembl,ensembl,protein_coding,NA,1
+mus_musculus,Nxnl1-202,ENSMUST00000163659,ensembl_havana,ensembl_havana_transcript,protein_coding,2,2
+mus_musculus,Nxnl1-201,ENSMUST00000048243,ensembl,ensembl,protein_coding,2,6
+monodelphis_domestica,PBX4-201,ENSMODT00000035074,ensembl,ensembl,protein_coding,NA,2
+monodelphis_domestica,NXNL1-201,ENSMODT00000005590,ensembl,ensembl,protein_coding,NA,3
+monodelphis_domestica,MVB12A-201,ENSMODT00000005603,ensembl,ensembl,protein_coding,NA,2
+xenopus_tropicalis,nxnl1-201,ENSXETT00000044438,ensembl,ensembl,protein_coding,NA,2
+danio_rerio,BX469930.2-201,ENSDART00000152640,havana,havana,antisense,NA,2
+danio_rerio,nxnl1-201,ENSDART00000143829,ensembl_havana,ensembl_havana_transcript,protein_coding,NA,3

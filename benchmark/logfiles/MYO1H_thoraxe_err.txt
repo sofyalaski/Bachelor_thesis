@@ -1,0 +1,1 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1H\thoraxe\_intermediate\chimeric_alignment_28.fasta

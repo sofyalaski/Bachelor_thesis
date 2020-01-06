@@ -1,0 +1,17 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	mus_musculus	3.0	female gonad	0.32220685649277464	6_0,8_0	6_0,20_0,3_0	DNM2
+1	mus_musculus	3.0	placenta	0.2760543272149147	6_0,8_0	6_0,20_0,3_0	DNM2
+2	mus_musculus	3.0	female gonad	0.32220685649277464	6_0,8_0,3_0	6_0,20_0,3_0	DNM2
+3	mus_musculus	3.0	placenta	0.2760543272149147	6_0,8_0,3_0	6_0,20_0,3_0	DNM2
+4	homo_sapiens	5.0	brain	0.22090301397067968	11_2,11_3,11_4,18_0	21_0,11_1,11_2,18_0	DNM2
+5	gorilla_gorilla	5.0	cerebellum	0.27137094407878953	11_2,11_3,11_4,18_0	21_0,11_1,11_2,18_0	DNM2
+6	gorilla_gorilla	5.0	frontal cortex	0.22947368421052636	11_2,11_3,11_4,18_0	21_0,11_1,11_2,18_0	DNM2
+7	gorilla_gorilla	5.0	prefrontal cortex	0.22364928897903294	11_2,11_3,11_4,18_0	21_0,11_1,11_2,18_0	DNM2
+8	gorilla_gorilla	5.0	testis	0.23015366073335736	11_2,11_3,11_4,18_0	21_0,11_1,11_2,18_0	DNM2
+9	mus_musculus	5.0	testis	0.26019715033746404	11_2,11_3,11_4,18_0	21_0,11_1,11_2,18_0	DNM2
+10	homo_sapiens	5.0	brain	0.22090301397067968	21_0,11_1,11_2,11_3	21_0,11_1,11_2,18_0	DNM2
+11	gorilla_gorilla	5.0	cerebellum	0.27137094407878953	21_0,11_1,11_2,11_3	21_0,11_1,11_2,18_0	DNM2
+12	gorilla_gorilla	5.0	frontal cortex	0.22947368421052636	21_0,11_1,11_2,11_3	21_0,11_1,11_2,18_0	DNM2
+13	gorilla_gorilla	5.0	prefrontal cortex	0.22364928897903294	21_0,11_1,11_2,11_3	21_0,11_1,11_2,18_0	DNM2
+14	gorilla_gorilla	5.0	testis	0.23015366073335736	21_0,11_1,11_2,11_3	21_0,11_1,11_2,18_0	DNM2
+15	mus_musculus	5.0	testis	0.26019715033746404	21_0,11_1,11_2,11_3	21_0,11_1,11_2,18_0	DNM2

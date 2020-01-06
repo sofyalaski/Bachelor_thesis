@@ -1,0 +1,4 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	mus_musculus	1.0	brain	0.8808109813195255	2_1,8_0,1_0	2_1,1_0	PAX6
+1	mus_musculus	1.0	cerebellum	0.8650577857506313	2_1,8_0,1_0	2_1,1_0	PAX6
+2	gorilla_gorilla	1.0	cerebellum	0.9326048655540192	2_1,8_0,1_0	2_1,1_0	PAX6

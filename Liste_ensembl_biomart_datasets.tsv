@@ -1,0 +1,70 @@
+dataset	description	version
+choffmanni_gene_ensembl	Sloth genes (choHof1)	choHof1
+xmaculatus_gene_ensembl	Platyfish genes (Xipmac4.4.2)	Xipmac4.4.2
+tnigroviridis_gene_ensembl	Tetraodon genes (TETRAODON 8.0)	TETRAODON 8.0
+pformosa_gene_ensembl	Amazon molly genes (Poecilia_formosa-5.1.2)	Poecilia_formosa-5.1.2
+pcapensis_gene_ensembl	Hyrax genes (proCap1)	proCap1
+hsapiens_gene_ensembl	Human genes (GRCh38.p10)	GRCh38.p10
+mmusculus_gene_ensembl	Mouse genes (GRCm38.p5)	GRCm38.p5
+pabelii_gene_ensembl	Orangutan genes (PPYG2)	PPYG2
+olatipes_gene_ensembl	Medaka genes (HdrR)	HdrR
+pvampyrus_gene_ensembl	Megabat genes (pteVam1)	pteVam1
+gaculeatus_gene_ensembl	Stickleback genes (BROAD S1)	BROAD S1
+amelanoleuca_gene_ensembl	Panda genes (ailMel1)	ailMel1
+ggallus_gene_ensembl	Chicken genes (Gallus_gallus-5.0)	Gallus_gallus-5.0
+aplatyrhynchos_gene_ensembl	Duck genes (BGI_duck_1.0)	BGI_duck_1.0
+ecaballus_gene_ensembl	Horse genes (Equ Cab 2)	Equ Cab 2
+mmulatta_gene_ensembl	Macaque genes (Mmul_8.0.1)	Mmul_8.0.1
+nleucogenys_gene_ensembl	Gibbon genes (Nleu1.0)	Nleu1.0
+meugenii_gene_ensembl	Wallaby genes (Meug_1.0)	Meug_1.0
+vpacos_gene_ensembl	Alpaca genes (vicPac1)	vicPac1
+tguttata_gene_ensembl	Zebra Finch genes (taeGut3.2.4)	taeGut3.2.4
+panubis_gene_ensembl	Olive baboon genes (PapAnu2.0)	PapAnu2.0
+ogarnettii_gene_ensembl	Bushbaby genes (OtoGar3)	OtoGar3
+itridecemlineatus_gene_ensembl	Squirrel genes (spetri2)	spetri2
+ptroglodytes_gene_ensembl	Chimpanzee genes (CHIMP2.1.4)	CHIMP2.1.4
+dnovemcinctus_gene_ensembl	Armadillo genes (Dasnov3.0)	Dasnov3.0
+cjacchus_gene_ensembl	Marmoset genes (C_jacchus3.2.1)	C_jacchus3.2.1
+ggorilla_gene_ensembl	Gorilla genes (gorGor3.1)	gorGor3.1
+cfamiliaris_gene_ensembl	Dog genes (CanFam3.1)	CanFam3.1
+scerevisiae_gene_ensembl	Saccharomyces cerevisiae genes (R64-1-1)	R64-1-1
+sscrofa_gene_ensembl	Pig genes (Sscrofa10.2)	Sscrofa10.2
+rnorvegicus_gene_ensembl	Rat genes (Rnor_6.0)	Rnor_6.0
+oaries_gene_ensembl	Sheep genes (Oar_v3.1)	Oar_v3.1
+sharrisii_gene_ensembl	Tasmanian devil genes (Devil_ref v7.0)	Devil_ref v7.0
+tbelangeri_gene_ensembl	Tree Shrew genes (tupBel1)	tupBel1
+acarolinensis_gene_ensembl	Anole lizard genes (AnoCar2.0)	AnoCar2.0
+ocuniculus_gene_ensembl	Rabbit genes (OryCun2.0)	OryCun2.0
+mmurinus_gene_ensembl	Mouse Lemur genes (Mmur_2.0)	Mmur_2.0
+lafricana_gene_ensembl	Elephant genes (Loxafr3.0)	Loxafr3.0
+cintestinalis_gene_ensembl	C.intestinalis genes (KH)	KH
+ttruncatus_gene_ensembl	Dolphin genes (turTru1)	turTru1
+mfuro_gene_ensembl	Ferret genes (MusPutFur1.0)	MusPutFur1.0
+mlucifugus_gene_ensembl	Microbat genes (Myoluc2.0)	Myoluc2.0
+oniloticus_gene_ensembl	Tilapia genes (Orenil1.0)	Orenil1.0
+mgallopavo_gene_ensembl	Turkey genes (Turkey_2.01)	Turkey_2.01
+celegans_gene_ensembl	Caenorhabditis elegans genes (WBcel235)	WBcel235
+amexicanus_gene_ensembl	Cave fish genes (AstMex102)	AstMex102
+mdomestica_gene_ensembl	Opossum genes (monDom5)	monDom5
+xtropicalis_gene_ensembl	Xenopus genes (JGI 4.2)	JGI 4.2
+trubripes_gene_ensembl	Fugu genes (FUGU 4.0)	FUGU 4.0
+cporcellus_gene_ensembl	Guinea Pig genes (cavPor3)	cavPor3
+csabaeus_gene_ensembl	Vervet-AGM genes (ChlSab1.1)	ChlSab1.1
+oanatinus_gene_ensembl	Platypus genes (OANA5)	OANA5
+eeuropaeus_gene_ensembl	Hedgehog genes (eriEur1)	eriEur1
+oprinceps_gene_ensembl	Pika genes (OchPri2.0-Ens)	OchPri2.0-Ens
+csavignyi_gene_ensembl	C.savignyi genes (CSAV 2.0)	CSAV 2.0
+gmorhua_gene_ensembl	Cod genes (gadMor1)	gadMor1
+drerio_gene_ensembl	Zebrafish genes (GRCz10)	GRCz10
+etelfairi_gene_ensembl	Lesser hedgehog tenrec genes (TENREC)	TENREC
+dmelanogaster_gene_ensembl	Fruitfly genes (BDGP6)	BDGP6
+lchalumnae_gene_ensembl	Coelacanth genes (LatCha1)	LatCha1
+btaurus_gene_ensembl	Cow genes (UMD3.1)	UMD3.1
+dordii_gene_ensembl	Kangaroo rat genes (dipOrd1)	dipOrd1
+tsyrichta_gene_ensembl	Tarsier genes (tarSyr1)	tarSyr1
+saraneus_gene_ensembl	Shrew genes (sorAra1)	sorAra1
+psinensis_gene_ensembl	Chinese softshell turtle genes (PelSin_1.0)	PelSin_1.0
+falbicollis_gene_ensembl	Flycatcher genes (FicAlb_1.4)	FicAlb_1.4
+loculatus_gene_ensembl	Spotted gar genes (LepOcu1)	LepOcu1
+fcatus_gene_ensembl	Cat genes (Felis_catus_6.2)	Felis_catus_6.2
+pmarinus_gene_ensembl	Lamprey genes (Pmarinus_7.0)	Pmarinus_7.0

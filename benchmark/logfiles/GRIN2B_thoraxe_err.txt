@@ -1,0 +1,3 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting ENSSSCT00000000660
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2B\thoraxe\_intermediate\chimeric_alignment_12.fasta

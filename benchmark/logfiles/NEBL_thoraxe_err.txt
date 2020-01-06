@@ -1,0 +1,6 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\NEBL\thoraxe\_intermediate\chimeric_alignment_6.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\NEBL\thoraxe\_intermediate\chimeric_alignment_7.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\NEBL\thoraxe\_intermediate\chimeric_alignment_12.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\NEBL\thoraxe\_intermediate\chimeric_alignment_17.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\NEBL\thoraxe\_intermediate\chimeric_alignment_19.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\NEBL\thoraxe\_intermediate\chimeric_alignment_20.fasta

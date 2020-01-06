@@ -1,0 +1,7 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_6.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_16.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_19.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_24.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_27.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_28.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1E\thoraxe\_intermediate\chimeric_alignment_29.fasta

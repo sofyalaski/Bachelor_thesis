@@ -1,0 +1,69 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	homo_sapiens	1.0	heart left ventricle	0.2574932544544699	9_1,11_0,13_0	1_1,13_0	TPM1
+1	homo_sapiens	1.0	heart left ventricle	0.2540908837265414	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+2	homo_sapiens	1.0	intestine	0.28059475281901275	9_1,11_0,13_0	1_1,13_0	TPM1
+3	homo_sapiens	1.0	lung	0.2519704466530808	9_1,11_0,13_0	1_1,13_0	TPM1
+4	homo_sapiens	1.0	multi-cellular organism	0.3116483206488432	9_1,11_0,13_0	1_1,13_0	TPM1
+5	homo_sapiens	1.0	multi-cellular organism	0.27534013312503997	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+6	homo_sapiens	1.0	muscle of leg	0.2821474534447421	9_1,11_0,13_0	1_1,13_0	TPM1
+7	homo_sapiens	1.0	muscle of leg	0.281089320854538	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+8	homo_sapiens	1.0	stomach	0.2776538080508737	9_1,11_0,13_0	1_1,13_0	TPM1
+9	homo_sapiens	1.0	adrenal gland	0.2218646643111325	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+10	homo_sapiens	1.0	brain	0.223105737142038	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+11	homo_sapiens	1.0	colon	0.2841451847845716	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+12	homo_sapiens	1.0	frontal cortex	0.2553018971858817	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+13	homo_sapiens	1.0	heart	0.2791593199669398	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+14	homo_sapiens	1.0	prostate gland	0.2284454778502445	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+15	xenopus_tropicalis	1.0	embryo	0.2353064744582127	9_1,11_0,13_0	1_1,13_0	TPM1
+16	xenopus_tropicalis	1.0	female gonad	0.2408363330999469	9_1,11_0,13_0	1_1,13_0	TPM1
+17	xenopus_tropicalis	1.0	gastrula	0.2330865963737888	9_1,11_0,13_0	1_1,13_0	TPM1
+18	xenopus_tropicalis	1.0	mesonephros	0.2247685299757504	9_1,11_0,13_0	1_1,13_0	TPM1
+19	xenopus_tropicalis	1.0	testis	0.2672664396497396	9_1,11_0,13_0	1_1,13_0	TPM1
+20	xenopus_tropicalis	1.0	heart	0.21270794522272934	9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+21	xenopus_tropicalis	4.0	embryo	0.5052573651750012	3_0,2_4,10_0	3_0,10_0	TPM1
+22	xenopus_tropicalis	4.0	gastrula	0.6371441385229795	3_0,2_4,10_0	3_0,10_0	TPM1
+23	xenopus_tropicalis	4.0	heart	0.9744253037803232	3_0,2_4,10_0	3_0,10_0	TPM1
+24	xenopus_tropicalis	4.0	skeletal muscle tissue	0.9970911735296792	3_0,2_4,10_0	3_0,10_0	TPM1
+25	homo_sapiens	4.0	heart left ventricle	0.9603884511279364	3_0,2_4,10_0	3_0,10_0	TPM1
+26	homo_sapiens	1.0	heart left ventricle	0.2574932544544699	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+27	homo_sapiens	1.0	heart left ventricle	0.2540908837265414	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+28	homo_sapiens	1.0	intestine	0.28059475281901275	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+29	homo_sapiens	1.0	lung	0.2519704466530808	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+30	homo_sapiens	1.0	multi-cellular organism	0.3116483206488432	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+31	homo_sapiens	1.0	multi-cellular organism	0.27534013312503997	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+32	homo_sapiens	1.0	muscle of leg	0.2821474534447421	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+33	homo_sapiens	1.0	muscle of leg	0.281089320854538	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+34	homo_sapiens	1.0	stomach	0.2776538080508737	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+35	homo_sapiens	1.0	adrenal gland	0.2218646643111325	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+36	homo_sapiens	1.0	brain	0.223105737142038	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+37	homo_sapiens	1.0	colon	0.2841451847845716	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+38	homo_sapiens	1.0	frontal cortex	0.2553018971858817	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+39	homo_sapiens	1.0	heart	0.2791593199669398	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+40	homo_sapiens	1.0	prostate gland	0.2284454778502445	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+41	xenopus_tropicalis	1.0	embryo	0.2353064744582127	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+42	xenopus_tropicalis	1.0	female gonad	0.2408363330999469	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+43	xenopus_tropicalis	1.0	gastrula	0.2330865963737888	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+44	xenopus_tropicalis	1.0	mesonephros	0.2247685299757504	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+45	xenopus_tropicalis	1.0	testis	0.2672664396497396	1_1,9_0,9_1,11_0	1_1,13_0	TPM1
+46	xenopus_tropicalis	1.0	heart	0.21270794522272934	1_1,9_0,9_1,11_0	1_1,9_0,9_1,13_0	TPM1
+47	homo_sapiens	1.0	heart left ventricle	0.2574932544544699	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+48	homo_sapiens	1.0	heart left ventricle	0.2540908837265414	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+49	homo_sapiens	1.0	intestine	0.28059475281901275	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+50	homo_sapiens	1.0	lung	0.2519704466530808	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+51	homo_sapiens	1.0	multi-cellular organism	0.3116483206488432	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+52	homo_sapiens	1.0	multi-cellular organism	0.27534013312503997	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+53	homo_sapiens	1.0	muscle of leg	0.2821474534447421	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+54	homo_sapiens	1.0	muscle of leg	0.281089320854538	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+55	homo_sapiens	1.0	stomach	0.2776538080508737	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+56	homo_sapiens	1.0	adrenal gland	0.2218646643111325	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+57	homo_sapiens	1.0	brain	0.223105737142038	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+58	homo_sapiens	1.0	colon	0.2841451847845716	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+59	homo_sapiens	1.0	frontal cortex	0.2553018971858817	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+60	homo_sapiens	1.0	heart	0.2791593199669398	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+61	homo_sapiens	1.0	prostate gland	0.2284454778502445	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1
+62	xenopus_tropicalis	1.0	embryo	0.2353064744582127	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+63	xenopus_tropicalis	1.0	female gonad	0.2408363330999469	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+64	xenopus_tropicalis	1.0	gastrula	0.2330865963737888	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+65	xenopus_tropicalis	1.0	mesonephros	0.2247685299757504	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+66	xenopus_tropicalis	1.0	testis	0.2672664396497396	1_1,9_0,9_1,11_0,13_0	1_1,13_0	TPM1
+67	xenopus_tropicalis	1.0	heart	0.21270794522272934	1_1,9_0,9_1,11_0,13_0	1_1,9_0,9_1,13_0	TPM1

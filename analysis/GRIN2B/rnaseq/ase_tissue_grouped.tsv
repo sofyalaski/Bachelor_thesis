@@ -1,0 +1,9 @@
+,path,brain,embryo,gastrula,testis,Species,prefrontal cortex,frontal cortex,female gonad,kidney,multi-cellular organism,thoracic mammary gland
+0,"4_0,9_0,7_1",1.0,,,1.0,bos_taurus,1.0,,,,,
+1,"4_0,9_0,7_1",,,,,gorilla_gorilla,1.0,1.0,,,,
+2,"4_0,7_1",,,,0.46097266799749376,homo_sapiens,,,1.0,1.0,0.2565488230918422,
+3,"4_0,9_0,7_1",1.0,,,0.5390273320025061,homo_sapiens,1.0,1.0,,,0.7434511769081578,1.0
+4,"4_0,7_1",0.040245325857755365,,,,rattus_norvegicus,,,,,,
+5,"4_0,9_0,7_1",0.9597546741422447,,,,rattus_norvegicus,,,,,,
+6,"4_0,9_0,7_1",,,,,sus_scrofa,1.0,,,,,
+7,"4_0,9_0,7_1",1.0,1.0,1.0,1.0,xenopus_tropicalis,,,,,,

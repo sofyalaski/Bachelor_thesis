@@ -1,0 +1,9 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_1.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_8.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_10.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_11.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_27.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_33.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_34.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_35.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\PTPRC\thoraxe\_intermediate\chimeric_alignment_36.fasta

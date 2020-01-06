@@ -1,0 +1,16 @@
+
+FATAL: Sequence file contains no data
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_58.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_59.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_62.fasta
+re are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_8.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_13.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_16.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_17.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_24.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_25.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_27.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_30.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_42.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_43.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\KIF1B\thoraxe\_intermediate\chimeric_alignment_45.fasta

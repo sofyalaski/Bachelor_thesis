@@ -1,0 +1,7 @@
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_2.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_5.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_6.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_10.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_15.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_18.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\GRIN2D\thoraxe\_intermediate\chimeric_alignment_19.fasta

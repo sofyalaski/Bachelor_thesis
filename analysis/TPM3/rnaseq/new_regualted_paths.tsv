@@ -1,0 +1,130 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	homo_sapiens	1.0	brain	0.22344864503090947	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+1	homo_sapiens	1.0	colon	0.20175656179782825	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+2	homo_sapiens	1.0	frontal cortex	0.2411790603095865	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+3	homo_sapiens	1.0	heart	0.24651079437926784	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+4	homo_sapiens	1.0	heart left ventricle	0.22570205423747025	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+5	homo_sapiens	1.0	intestine	0.22773875829001325	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+6	homo_sapiens	1.0	intestine	0.21537309219802406	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+7	homo_sapiens	1.0	multi-cellular organism	0.2569928299943167	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+8	homo_sapiens	1.0	muscle of leg	0.2302638621365773	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+9	homo_sapiens	1.0	muscle of leg	0.22861297953260554	4_2,6_0,6_1,10_0	4_2,6_0,10_0	TPM3
+10	homo_sapiens	1.0	placenta	0.24028586914503205	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+11	homo_sapiens	1.0	placenta	0.2353853735807786	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+12	homo_sapiens	1.0	prostate gland	0.2417337671410106	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+13	homo_sapiens	1.0	prostate gland	0.2257011570982829	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+14	homo_sapiens	1.0	testis	0.2282119437033365	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+15	homo_sapiens	1.0	kidney	0.2337537553071011	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+16	bos_taurus	1.0	heart	0.2419194086044133	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+17	bos_taurus	1.0	heart	0.2030909840092012	4_2,6_0,6_1,10_0	4_2,6_0,10_0	TPM3
+18	bos_taurus	1.0	lung	0.2683536303452657	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+19	bos_taurus	1.0	lung	0.20482755534953054	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+20	bos_taurus	1.0	skeletal muscle tissue	0.2394917632678566	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+21	bos_taurus	1.0	skeletal muscle tissue	0.23198839260387755	4_2,6_0,6_1,10_0	4_2,6_0,10_0	TPM3
+22	bos_taurus	1.0	spleen	0.2630758523675929	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+23	bos_taurus	1.0	spleen	0.2395406489734564	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+24	bos_taurus	1.0	testis	0.2923003158382634	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+25	bos_taurus	1.0	testis	0.2769238273569162	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+26	bos_taurus	1.0	adult mammalian kidney	0.25405930856528275	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+27	bos_taurus	1.0	colon	0.2364256290304641	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+28	bos_taurus	1.0	liver	0.2589835208126092	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+29	rattus_norvegicus	1.0	adult mammalian kidney	0.2825441900070334	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+30	rattus_norvegicus	1.0	adult mammalian kidney	0.28337862698844635	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+31	rattus_norvegicus	1.0	brain	0.2090642760794537	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+32	rattus_norvegicus	1.0	colon	0.2817047238913822	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+33	rattus_norvegicus	1.0	colon	0.2751287025337486	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+34	rattus_norvegicus	1.0	liver	0.2703283513724264	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+35	rattus_norvegicus	1.0	liver	0.2766278311892233	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+36	rattus_norvegicus	1.0	lung	0.29193409092656464	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+37	rattus_norvegicus	1.0	lung	0.25375297562546484	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+38	rattus_norvegicus	1.0	spleen	0.27846910858988977	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+39	rattus_norvegicus	1.0	spleen	0.2668403113886509	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+40	rattus_norvegicus	1.0	testis	0.3065787143549739	4_2,6_0,6_1,10_0	4_2,10_0	TPM3
+41	rattus_norvegicus	1.0	testis	0.3024751256238033	4_2,6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+42	homo_sapiens	1.0	brain	0.22344864503090947	4_2,6_0,6_1	4_2,10_0	TPM3
+43	homo_sapiens	1.0	colon	0.20175656179782825	4_2,6_0,6_1	4_2,10_0	TPM3
+44	homo_sapiens	1.0	frontal cortex	0.2411790603095865	4_2,6_0,6_1	4_2,10_0	TPM3
+45	homo_sapiens	1.0	heart	0.24651079437926784	4_2,6_0,6_1	4_2,10_0	TPM3
+46	homo_sapiens	1.0	heart left ventricle	0.22570205423747025	4_2,6_0,6_1	4_2,10_0	TPM3
+47	homo_sapiens	1.0	intestine	0.22773875829001325	4_2,6_0,6_1	4_2,10_0	TPM3
+48	homo_sapiens	1.0	intestine	0.21537309219802406	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+49	homo_sapiens	1.0	multi-cellular organism	0.2569928299943167	4_2,6_0,6_1	4_2,10_0	TPM3
+50	homo_sapiens	1.0	muscle of leg	0.2302638621365773	4_2,6_0,6_1	4_2,10_0	TPM3
+51	homo_sapiens	1.0	muscle of leg	0.22861297953260554	4_2,6_0,6_1	4_2,6_0,10_0	TPM3
+52	homo_sapiens	1.0	placenta	0.24028586914503205	4_2,6_0,6_1	4_2,10_0	TPM3
+53	homo_sapiens	1.0	placenta	0.2353853735807786	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+54	homo_sapiens	1.0	prostate gland	0.2417337671410106	4_2,6_0,6_1	4_2,10_0	TPM3
+55	homo_sapiens	1.0	prostate gland	0.2257011570982829	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+56	homo_sapiens	1.0	testis	0.2282119437033365	4_2,6_0,6_1	4_2,10_0	TPM3
+57	homo_sapiens	1.0	kidney	0.2337537553071011	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+58	bos_taurus	1.0	heart	0.2419194086044133	4_2,6_0,6_1	4_2,10_0	TPM3
+59	bos_taurus	1.0	heart	0.2030909840092012	4_2,6_0,6_1	4_2,6_0,10_0	TPM3
+60	bos_taurus	1.0	lung	0.2683536303452657	4_2,6_0,6_1	4_2,10_0	TPM3
+61	bos_taurus	1.0	lung	0.20482755534953054	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+62	bos_taurus	1.0	skeletal muscle tissue	0.2394917632678566	4_2,6_0,6_1	4_2,10_0	TPM3
+63	bos_taurus	1.0	skeletal muscle tissue	0.23198839260387755	4_2,6_0,6_1	4_2,6_0,10_0	TPM3
+64	bos_taurus	1.0	spleen	0.2630758523675929	4_2,6_0,6_1	4_2,10_0	TPM3
+65	bos_taurus	1.0	spleen	0.2395406489734564	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+66	bos_taurus	1.0	testis	0.2923003158382634	4_2,6_0,6_1	4_2,10_0	TPM3
+67	bos_taurus	1.0	testis	0.2769238273569162	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+68	bos_taurus	1.0	adult mammalian kidney	0.25405930856528275	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+69	bos_taurus	1.0	colon	0.2364256290304641	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+70	bos_taurus	1.0	liver	0.2589835208126092	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+71	rattus_norvegicus	1.0	adult mammalian kidney	0.2825441900070334	4_2,6_0,6_1	4_2,10_0	TPM3
+72	rattus_norvegicus	1.0	adult mammalian kidney	0.28337862698844635	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+73	rattus_norvegicus	1.0	brain	0.2090642760794537	4_2,6_0,6_1	4_2,10_0	TPM3
+74	rattus_norvegicus	1.0	colon	0.2817047238913822	4_2,6_0,6_1	4_2,10_0	TPM3
+75	rattus_norvegicus	1.0	colon	0.2751287025337486	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+76	rattus_norvegicus	1.0	liver	0.2703283513724264	4_2,6_0,6_1	4_2,10_0	TPM3
+77	rattus_norvegicus	1.0	liver	0.2766278311892233	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+78	rattus_norvegicus	1.0	lung	0.29193409092656464	4_2,6_0,6_1	4_2,10_0	TPM3
+79	rattus_norvegicus	1.0	lung	0.25375297562546484	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+80	rattus_norvegicus	1.0	spleen	0.27846910858988977	4_2,6_0,6_1	4_2,10_0	TPM3
+81	rattus_norvegicus	1.0	spleen	0.2668403113886509	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+82	rattus_norvegicus	1.0	testis	0.3065787143549739	4_2,6_0,6_1	4_2,10_0	TPM3
+83	rattus_norvegicus	1.0	testis	0.3024751256238033	4_2,6_0,6_1	4_2,6_1,10_0	TPM3
+84	homo_sapiens	1.0	brain	0.22344864503090947	6_0,6_1,10_0	4_2,10_0	TPM3
+85	homo_sapiens	1.0	colon	0.20175656179782825	6_0,6_1,10_0	4_2,10_0	TPM3
+86	homo_sapiens	1.0	frontal cortex	0.2411790603095865	6_0,6_1,10_0	4_2,10_0	TPM3
+87	homo_sapiens	1.0	heart	0.24651079437926784	6_0,6_1,10_0	4_2,10_0	TPM3
+88	homo_sapiens	1.0	heart left ventricle	0.22570205423747025	6_0,6_1,10_0	4_2,10_0	TPM3
+89	homo_sapiens	1.0	intestine	0.22773875829001325	6_0,6_1,10_0	4_2,10_0	TPM3
+90	homo_sapiens	1.0	intestine	0.21537309219802406	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+91	homo_sapiens	1.0	multi-cellular organism	0.2569928299943167	6_0,6_1,10_0	4_2,10_0	TPM3
+92	homo_sapiens	1.0	muscle of leg	0.2302638621365773	6_0,6_1,10_0	4_2,10_0	TPM3
+93	homo_sapiens	1.0	muscle of leg	0.22861297953260554	6_0,6_1,10_0	4_2,6_0,10_0	TPM3
+94	homo_sapiens	1.0	placenta	0.24028586914503205	6_0,6_1,10_0	4_2,10_0	TPM3
+95	homo_sapiens	1.0	placenta	0.2353853735807786	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+96	homo_sapiens	1.0	prostate gland	0.2417337671410106	6_0,6_1,10_0	4_2,10_0	TPM3
+97	homo_sapiens	1.0	prostate gland	0.2257011570982829	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+98	homo_sapiens	1.0	testis	0.2282119437033365	6_0,6_1,10_0	4_2,10_0	TPM3
+99	homo_sapiens	1.0	kidney	0.2337537553071011	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+100	bos_taurus	1.0	heart	0.2419194086044133	6_0,6_1,10_0	4_2,10_0	TPM3
+101	bos_taurus	1.0	heart	0.2030909840092012	6_0,6_1,10_0	4_2,6_0,10_0	TPM3
+102	bos_taurus	1.0	lung	0.2683536303452657	6_0,6_1,10_0	4_2,10_0	TPM3
+103	bos_taurus	1.0	lung	0.20482755534953054	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+104	bos_taurus	1.0	skeletal muscle tissue	0.2394917632678566	6_0,6_1,10_0	4_2,10_0	TPM3
+105	bos_taurus	1.0	skeletal muscle tissue	0.23198839260387755	6_0,6_1,10_0	4_2,6_0,10_0	TPM3
+106	bos_taurus	1.0	spleen	0.2630758523675929	6_0,6_1,10_0	4_2,10_0	TPM3
+107	bos_taurus	1.0	spleen	0.2395406489734564	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+108	bos_taurus	1.0	testis	0.2923003158382634	6_0,6_1,10_0	4_2,10_0	TPM3
+109	bos_taurus	1.0	testis	0.2769238273569162	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+110	bos_taurus	1.0	adult mammalian kidney	0.25405930856528275	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+111	bos_taurus	1.0	colon	0.2364256290304641	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+112	bos_taurus	1.0	liver	0.2589835208126092	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+113	rattus_norvegicus	1.0	adult mammalian kidney	0.2825441900070334	6_0,6_1,10_0	4_2,10_0	TPM3
+114	rattus_norvegicus	1.0	adult mammalian kidney	0.28337862698844635	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+115	rattus_norvegicus	1.0	brain	0.2090642760794537	6_0,6_1,10_0	4_2,10_0	TPM3
+116	rattus_norvegicus	1.0	colon	0.2817047238913822	6_0,6_1,10_0	4_2,10_0	TPM3
+117	rattus_norvegicus	1.0	colon	0.2751287025337486	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+118	rattus_norvegicus	1.0	liver	0.2703283513724264	6_0,6_1,10_0	4_2,10_0	TPM3
+119	rattus_norvegicus	1.0	liver	0.2766278311892233	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+120	rattus_norvegicus	1.0	lung	0.29193409092656464	6_0,6_1,10_0	4_2,10_0	TPM3
+121	rattus_norvegicus	1.0	lung	0.25375297562546484	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+122	rattus_norvegicus	1.0	spleen	0.27846910858988977	6_0,6_1,10_0	4_2,10_0	TPM3
+123	rattus_norvegicus	1.0	spleen	0.2668403113886509	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+124	rattus_norvegicus	1.0	testis	0.3065787143549739	6_0,6_1,10_0	4_2,10_0	TPM3
+125	rattus_norvegicus	1.0	testis	0.3024751256238033	6_0,6_1,10_0	4_2,6_1,10_0	TPM3
+126	bos_taurus	2.0	heart	0.7666853763453854	9_0,7_0,5_0	9_0,5_0	TPM3
+127	bos_taurus	2.0	skeletal muscle tissue	0.9704837850404424	9_0,7_0,5_0	9_0,5_0	TPM3
+128	rattus_norvegicus	2.0	skeletal muscle tissue	0.6290598372221945	9_0,7_0,5_0	9_0,5_0	TPM3

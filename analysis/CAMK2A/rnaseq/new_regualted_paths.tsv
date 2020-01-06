@@ -1,0 +1,6 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	gorilla_gorilla	2.0	frontal cortex	0.27810174944701394	4_2,1_1	6_1,1_1	CAMK2A
+1	gorilla_gorilla	2.0	prefrontal cortex	0.3031094000359403	4_2,1_1	6_1,1_1	CAMK2A
+2	ornithorhynchus_anatinus	2.0	cerebellum	0.3020548172666572	4_2,1_1	6_1,1_1	CAMK2A
+3	gorilla_gorilla	2.0	frontal cortex	0.27810174944701394	6_1,4_2,1_1	6_1,1_1	CAMK2A
+4	gorilla_gorilla	2.0	prefrontal cortex	0.3031094000359403	6_1,4_2,1_1	6_1,1_1	CAMK2A

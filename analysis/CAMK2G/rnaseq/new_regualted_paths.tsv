@@ -1,0 +1,44 @@
+	Specie	group	tissue	delta_psi	new_path	alt_path	gene
+0	homo_sapiens	4.0	adult mammalian kidney	0.3619116693800304	24_1,22_0	24_1,17_0	CAMK2G
+1	homo_sapiens	4.0	brain	0.3676647196807197	24_1,22_0	24_1,17_0	CAMK2G
+2	homo_sapiens	4.0	cerebellum	0.2668601345892553	24_1,22_0	24_1,17_0	CAMK2G
+3	homo_sapiens	4.0	female gonad	0.2943987476528945	24_1,22_0	24_1,17_0	CAMK2G
+4	homo_sapiens	4.0	frontal cortex	0.29566356311179603	24_1,22_0	24_1,17_0	CAMK2G
+5	homo_sapiens	4.0	heart left ventricle	0.3818771173800102	24_1,22_0	24_1,17_0	CAMK2G
+6	homo_sapiens	4.0	intestine	0.2654340323996813	24_1,22_0	24_1,17_0	CAMK2G
+7	homo_sapiens	4.0	kidney	0.3385641376363704	24_1,22_0	24_1,17_0	CAMK2G
+8	homo_sapiens	4.0	lung	0.21953545939071267	24_1,22_0	24_1,17_0	CAMK2G
+9	homo_sapiens	4.0	multi-cellular organism	0.21322425287986416	24_1,22_0	24_1,17_0	CAMK2G
+10	homo_sapiens	4.0	muscle of leg	0.2264745871278213	24_1,22_0	24_1,17_0	CAMK2G
+11	homo_sapiens	4.0	prefrontal cortex	0.3151986884685691	24_1,22_0	24_1,17_0	CAMK2G
+12	homo_sapiens	4.0	prostate gland	0.36243015479206736	24_1,22_0	24_1,17_0	CAMK2G
+13	homo_sapiens	4.0	stomach	0.27107673982586883	24_1,22_0	24_1,17_0	CAMK2G
+14	homo_sapiens	4.0	thyroid gland	0.2123997216410674	24_1,22_0	24_1,17_0	CAMK2G
+15	gorilla_gorilla	4.0	cerebellum	0.3488144853532247	24_1,22_0	24_1,17_0	CAMK2G
+16	gorilla_gorilla	4.0	frontal cortex	0.3676333021515435	24_1,22_0	24_1,17_0	CAMK2G
+17	gorilla_gorilla	4.0	prefrontal cortex	0.3818273392130184	24_1,22_0	24_1,17_0	CAMK2G
+18	gorilla_gorilla	4.0	testis	0.4248172972360581	24_1,22_0	24_1,17_0	CAMK2G
+19	homo_sapiens	4.0	cerebellum	0.20001344502597007	25_0,17_0	24_1,17_0	CAMK2G
+20	homo_sapiens	4.0	lung	0.2100138691955039	25_0,17_0	24_1,17_0	CAMK2G
+21	homo_sapiens	4.0	muscle of leg	0.25124804479808466	25_0,17_0	24_1,17_0	CAMK2G
+22	homo_sapiens	4.0	placenta	0.2923503309397347	25_0,17_0	24_1,17_0	CAMK2G
+23	homo_sapiens	4.0	thyroid gland	0.3214331184802233	25_0,17_0	24_1,17_0	CAMK2G
+24	homo_sapiens	4.0	adult mammalian kidney	0.3619116693800304	24_1,22_0,17_0	24_1,17_0	CAMK2G
+25	homo_sapiens	4.0	brain	0.3676647196807197	24_1,22_0,17_0	24_1,17_0	CAMK2G
+26	homo_sapiens	4.0	cerebellum	0.2668601345892553	24_1,22_0,17_0	24_1,17_0	CAMK2G
+27	homo_sapiens	4.0	female gonad	0.2943987476528945	24_1,22_0,17_0	24_1,17_0	CAMK2G
+28	homo_sapiens	4.0	frontal cortex	0.29566356311179603	24_1,22_0,17_0	24_1,17_0	CAMK2G
+29	homo_sapiens	4.0	heart left ventricle	0.3818771173800102	24_1,22_0,17_0	24_1,17_0	CAMK2G
+30	homo_sapiens	4.0	intestine	0.2654340323996813	24_1,22_0,17_0	24_1,17_0	CAMK2G
+31	homo_sapiens	4.0	kidney	0.3385641376363704	24_1,22_0,17_0	24_1,17_0	CAMK2G
+32	homo_sapiens	4.0	lung	0.21953545939071267	24_1,22_0,17_0	24_1,17_0	CAMK2G
+33	homo_sapiens	4.0	multi-cellular organism	0.21322425287986416	24_1,22_0,17_0	24_1,17_0	CAMK2G
+34	homo_sapiens	4.0	muscle of leg	0.2264745871278213	24_1,22_0,17_0	24_1,17_0	CAMK2G
+35	homo_sapiens	4.0	prefrontal cortex	0.3151986884685691	24_1,22_0,17_0	24_1,17_0	CAMK2G
+36	homo_sapiens	4.0	prostate gland	0.36243015479206736	24_1,22_0,17_0	24_1,17_0	CAMK2G
+37	homo_sapiens	4.0	stomach	0.27107673982586883	24_1,22_0,17_0	24_1,17_0	CAMK2G
+38	homo_sapiens	4.0	thyroid gland	0.2123997216410674	24_1,22_0,17_0	24_1,17_0	CAMK2G
+39	gorilla_gorilla	4.0	cerebellum	0.3488144853532247	24_1,22_0,17_0	24_1,17_0	CAMK2G
+40	gorilla_gorilla	4.0	frontal cortex	0.3676333021515435	24_1,22_0,17_0	24_1,17_0	CAMK2G
+41	gorilla_gorilla	4.0	prefrontal cortex	0.3818273392130184	24_1,22_0,17_0	24_1,17_0	CAMK2G
+42	gorilla_gorilla	4.0	testis	0.4248172972360581	24_1,22_0,17_0	24_1,17_0	CAMK2G

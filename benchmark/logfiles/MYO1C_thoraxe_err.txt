@@ -1,0 +1,7 @@
+WARNING:root:Identical isoform sequences were found, keeping only one transcript:
+WARNING:root:deleting ENST00000359786
+WARNING:root:deleting ENSMUST00000069057
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1C\thoraxe\_intermediate\chimeric_alignment_9.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1C\thoraxe\_intermediate\chimeric_alignment_20.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1C\thoraxe\_intermediate\chimeric_alignment_23.fasta
+WARNING:root:There are few (1) sequences in C:\Users\Diego\MASSIV\TranscriptAnnotation\benchmark\MYO1C\thoraxe\_intermediate\chimeric_alignment_31.fasta

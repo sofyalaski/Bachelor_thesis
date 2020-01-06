@@ -1,0 +1,11 @@
+,path,brain,embryo,female gonad,gastrula,heart,liver,mesonephros,testis,Species,adult mammalian kidney,colon,lung,skeletal muscle tissue,spleen,cerebellum,placenta,kidney,prefrontal cortex,frontal cortex,Ammon's horn,bone marrow macrophage,thymus,zone of skin,leukocyte,lymph node,multi-cellular organism,adipose tissue,adrenal gland,adrenal tissue,heart left ventricle,intestine,muscle of leg,prostate gland,stomach,thoracic mammary gland,thyroid gland
+0,"24_0,23_0,6_0",1.0,,,,1.0,1.0,,1.0,bos_taurus,1.0,1.0,1.0,1.0,1.0,,,,1.0,,,,,,,,,,,,,,,,,,
+1,"24_0,23_0,6_0",,,,,,1.0,,1.0,gorilla_gorilla,1.0,,,,,1.0,,,1.0,1.0,,,,,,,,,,,,,,,,,
+2,"24_0,6_0",,,,,,0.08764725738859959,,,homo_sapiens,,,0.1898678197642136,,,,0.05505027813626037,,,0.18932115543702216,,,,,0.014234571304139996,0.1266102790855629,0.06678276382604346,,,,,,,,,,
+3,"24_0,23_0,6_0",1.0,,1.0,,1.0,0.9123527426114004,,1.0,homo_sapiens,1.0,,0.8101321802357864,,,1.0,0.9449497218637397,1.0,1.0,0.8106788445629778,,,,,0.98576542869586,0.873389720914437,0.9332172361739566,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+4,"24_0,23_0,6_0",1.0,,1.0,,1.0,1.0,,1.0,monodelphis_domestica,,,,,,1.0,1.0,,,,,,,,,,,,,,,,,,,,
+5,"24_0,23_0,6_0",1.0,,1.0,,1.0,1.0,,1.0,mus_musculus,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,1.0,1.0,1.0,1.0,,,,,,,,,,,,,
+6,"24_0,23_0,6_0",1.0,,,,1.0,1.0,,1.0,rattus_norvegicus,1.0,1.0,1.0,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,
+7,"24_0,6_0",,,,,,,,,sus_scrofa,,,0.04123711340206186,,,,,,,,,,,,,,,,,,,,,,,,
+8,"24_0,23_0,6_0",,,,,1.0,1.0,,,sus_scrofa,,,0.9587628865979382,,,,,1.0,1.0,,,,,,,,,,,,,,,,,,
+9,"24_0,23_0,6_0",1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,xenopus_tropicalis,,,,,,,,,,,,,,,,,,,,,,,,,,,

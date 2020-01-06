@@ -1,0 +1,16 @@
+Species,Name,TranscriptID,Source,ExperimentSource,Biotype,Flags,Version
+homo_sapiens,GRIN2C-201,ENST00000293190,ensembl_havana,ensembl_havana_transcript,protein_coding,1 (assigned to previous version 9),10
+homo_sapiens,GRIN2C-204,ENST00000584176,havana,havana,retained_intron,2,1
+homo_sapiens,GRIN2C-202,ENST00000347612,ensembl_havana,ensembl_havana_transcript,protein_coding,1,4
+homo_sapiens,GRIN2C-203,ENST00000578159,havana,havana,processed_transcript,3,1
+homo_sapiens,GRIN2C-205,ENST00000584496,havana,havana,retained_intron,1,1
+gorilla_gorilla,GRIN2C-201,ENSGGOT00000022186,ensembl,ensembl,protein_coding,NA,2
+macaca_mulatta,GRIN2C-201,ENSMMUT00000008067,ensembl,ensembl,protein_coding,NA,3
+rattus_norvegicus,Grin2c-201,ENSRNOT00000004477,ensembl,ensembl,protein_coding,NA,5
+mus_musculus,Grin2c-201,ENSMUST00000003351,havana,havana,protein_coding,5,12
+mus_musculus,Grin2c-202,ENSMUST00000106554,ensembl,ensembl,protein_coding,5,1
+mus_musculus,Gm25837-201,ENSMUST00000158919,ensembl,ncrna,miRNA,NA,1
+bos_taurus,GRIN2C-201,ENSBTAT00000015137,ensembl,ensembl,protein_coding,NA,6
+sus_scrofa,GRIN2C-201,ENSSSCT00000026855,ensembl,ensembl,protein_coding,NA,2
+monodelphis_domestica,GRIN2C-201,ENSMODT00000008742,ensembl,ensembl,protein_coding,NA,3
+xenopus_tropicalis,grin2c-201,ENSXETT00000014979,ensembl,ensembl,protein_coding,NA,1
