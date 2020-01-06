@@ -1,105 +1,96 @@
-	id	idE	type	n	structure	hmmer	documented	function	idE_s_exon
-0	1	PAX6_5_1	I	14	c	0	y	binding specificity (DNA)	5_1
-1	2	PTPRC_17_0	C	164	c	NA	y	immunological recognition	17_0
-2	2	PTPRC_2_7	C	18	NA	NA	n		30_2
-3	3	FMR1_7_0	I	45	c	0	y	binding affinity (RNA)	7_1
-4	4	FMR1_22_0	I	21	c	0	y	binding affinity (RNA)	22_0
-5	5	FMR1_1_5	I	12	c	0	y	binding affinity (RNA)	2_0
-6	6	FMR1_1_6	I	13	c	0	y	binding affinity (RNA)	2_2
-7	7	FMR1_4_0	I	17	b	0	y	binding affinity (RNA)	4_0
-8	8	FXR1_2_7	I	29	NA	0	n		3_2
-9	9	FXR1_7_0	I	27	NA	0	n		7_0
-10	10	FXR1_2_1	C	6	c	0	n		16_1
-11	10	FXR1_2_16	C	86	c	0	n		12_3
-12	11	TPM1_6_1	N	38	h	1	y	partner dissociation	6_1
-13	11	TPM1_1_0	N	43	h	1	y	partner dissociation	1_0
-14	12	TPM1_2_0	I	42	h	1	y	partner dissociation	2_0
-15	13	TPM1_12_0	E	25	h	1	y	partner dissociation	11_0
-16	13	TPM1_9_0	E	25	h	1	y	partner dissociation	9_0
-18	14	TPM1_10_0	C	26	h	1	y	partner dissociation	10_0
-19	14	TPM1_11_0	C	26	h	1	y	partner dissociation	2_4
-20	14	TPM1_11_1	C	23	h	1	y	partner dissociation	2_6
-21	15	TPM2_3_0	E	25	h	1	y	partner dissociation	2_0
-22	15	TPM2_3_2	E	25	h	1	y	partner dissociation	2_2
-23	16	TPM2_9_0	C	27	h	1	y	partner dissociation	9_0
-24	16	TPM2_10_0	C	26	h	1	y	partner dissociation	10_0
-25	17	TPM3_2_1	N	80	h	1	y	partner dissociation	4_1
-26	17	TPM3_2_2	N	44	h	1	y	partner dissociation	2_0
-27	18	TPM3_7_0	E	25	h	1	y	partner dissociation	6_0
-28	18	TPM3_7_1	E	25	h	1	y	partner dissociation	6_1
-29	19	TPM3_6_0	C	26	h	1	y	partner dissociation	7_0
-30	19	TPM3_5_0	C	26	h	1	y	partner dissociation	5_0
-31	20	TPM4_6_0	N	80	h	1	y	partner dissociation	6_0
-32	20	TPM4_2_0	N	44	h	1	y	partner dissociation	2_0
-33	21	TPM4_8_0	C	26	NA	1	n		7_0
-34	21	TPM4_5_3	C	26	h	1	y	partner dissociation	7_1
-35	22	CAMK2A_24_0	I	11	c	0	y	cellular localization	24_0
-36	23	CAMK2B_2_4	I	25	c	0	y		3_3
-37	24	CAMK2B_10_1	I	15	c	0	y		13_0
-38	25	CAMK2B_1_0	I	129	c	0	y	partner acquisiton (pred)	1_0
-39	26	CAMK2G_1_3	I	21	c	0	y		20_1
-40	27	CAMK2G_5_4	I	11	c	0	y	cellular localization	5_5
-41	28	CAMK2G_21_0	I	23	c	0	n		21_0
-42	29	CAMK2G_9_2*	E	17	NA	NA	n		19_1
-43	29	CAMK2G_16_0*	E	25	b	NA	n		16_0
-44	30	CAMK2G_1_8	I	39	NA	NA	n		10_1
-45	31	KIF1A_3_0	I	9	c	0	n		26_0,3_0
-46	32	KIF1A_1_2	I	103	c	0	n		1_3
-47	33	KIF1A_10_1	I	9	c	0	n		10_1
-48	34	KIF1B_41_0	C	1143	NA	NA	y	partner specificty	41_0
-49	34	KIF1B_1_0	C	494	NA	NA	y	partner specificty	1_0
-50	35	KIF1B_7_1	I	6	c	0	y	binding affinity (prot)	37_1
-51	36	KIF1B_29_1	I	14	NA	0	n		7_1
-52	37	KIF1B_3_0	I	8	c	0	n		4_0
-53	38	MYO1B_11_1	I	29	h	2	y	binding affinity (prot) -- partner acquisition (pred)	11_1
-54	39	MYO1B_11_3	I	29	h	2	y	binding affinity (prot) -- partner acquisition (pred)	11_3
-55	40	MYO1C_3_0	N	6	b	0	n		4_0
-56	40	MYO1C_22_0	N	31	c	0	n		22_0
-57	41	MYO1C_2_4*	E	24	NA	NA	n		24_2
-58	41	MYO1C_14_0*	E	24	h	0	n		14_0
-59	42	GRIN2A_15_0	C	23	c	0	y	regulation	15_0
-60	42	GRIN2A_1_1	C	206	c	0	y	regulation	1_1
-61	42	GRIN2A_1_4	C	206	c	0	y	regulation	1_2
-62	43	DNM1_11_0	E	46	h	0	y	partner specificity	11_0
-63	43	DNM1_11_1	E	46	h	0	y	partner specificity	11_1
-64	44	DNM1_7_2	I	4	h	0	y	partner specificity	7_2
-65	45	DNM1_15_1	I	4	h	0	n		15_1
-66	46	DNM1_5_1	C	19	c	0	n		4_0
-67	46	DNM1_2_4	C	6	c	0	n		16_1
-68	47	DNM2_12_1	E	46	h	0	y	partner specificity	11_1
-69	47	DNM2_12_3	E	46	h	0	y	partner specificity	11_3
-70	48	DNM2_1_0	I	4	h	0	y	partner specificity	1_0
-71	49	DNM2_13_1	C	22	c	0	n		13_2
-72	49	DNM2_1_11	C	38	NA	NA	n		13_2
-73	50	DNM3_20_1	I	10	NAx	NA	n		20_1
-74	51	DNM3_7_1	I	4	h	0	y	partner specificity	8_1
-75	52	DNM3_1_2	C	11	NA	NA	n		1_3
-76	53	DNM3_1_4	C	22	c	0	n		1_4
-77	53	DNM3_1_6	C	11	c	0	n		26_0,8_2
-78	54	FYN_4_2	E	52	b	1	y	domain organization and substrate binding (pred)	4_2
-79	54	FYN_4_0	E	55	b	1	y	domain organization and substrate binding (pred)	4_0
-80	55	SRC_3_0	I	89	NA	NA	n		10_0
-81	56	SRC_17_0	I	17	NA	NA	n		10_0
-82	57	SNAP-25_1_1	E	45	h	1	y	partner specificity (?)	3_1
-83	57	SNAP-25_1_0	E	40	h	1	y	partner specificity (?)	3_0
-84	58	SNAP23_1_0	C	107	h	0	y		1_0
-85	58	SNAP23_3_0	C	126	h	0	y		3_0
-86	59	NEBL_15_0	N	2510	c	0	y		15_0
-87	59	NEBL_18_0	N	110	m	2	y		18_0
-88	60	NEBL_13_0	I	83	c	0	n		13_0
-89	61	MAPK8_12_0	E	24	h	0	y	partner specificity	12_0
-90	61	MAPK8_12_1	E	24	h	0	y	partner specificity	12_1
-91	62	MAPK8_19_0	C	4	c	0	y		15_0
-92	62	MAPK8_5_1	C	47	c	0	y		5_0
-93	63	MAPK9_10_0	E	24	h	0	y	partner specificity	10_0
-94	63	MAPK9_10_1	E	24	h	0	y	partner specificity	10_1
-95	64	MAPK9_2_3	C	4	c	0	y		2_3,12_1
-96	64	MAPK9_4_1	C	48	c	0	y		4_1
-97	65	MAPK10_13_0	E	24	h	0	y	partner specificity	13_0
-98	65	MAPK10_13_1	E	24	h	0	y	partner specificity	13_1
-99	66	MAPK10_5_1	C	7	c	0	y		9_0,8_3
-100	66	MAPK10_5_2	C	46	c	0	y		5_1
-101	67	MAPK10_14_1	I	38	c	0	y		14_1
-102	68	BCL2L1_1_0	I	57	NA	0	n		1_0
-103	69	BCL2L1_3_0	N	29	NA	0	n		3_0
-104	69	BCL2L1_1_1	N	120	h	0	n		1_1
+id	identifier	type	n	structure	hmmer	documented	function
+1	PAX6_5_1	I	14	c	0.0	y	binding specificity (DNA)
+2	PTPRC_17_0	C	164	c		y	immunological recognition
+2	PTPRC_30_2	C	18			n	
+3	FMR1_7_1	I	45	c	0.0	y	binding affinity (RNA)
+4	FMR1_22_0	I	21	c	0.0	y	binding affinity (RNA)
+5	FMR1_2_0	I	12	c	0.0	y	binding affinity (RNA)
+6	FMR1_4_0	I	17	b	0.0	y	binding affinity (RNA)
+7	FXR1_7_0	I	27		0.0	n	
+8	FXR1_16_1	C	6	c	0.0	n	
+8	FXR1_12_3	C	86	c	0.0	n	
+9	TPM1_6_1	N	38	h	1.0	y	partner dissociation
+9	TPM1_1_0	N	43	h	1.0	y	partner dissociation
+10	TPM1_2_0	I	42	h	1.0	y	partner dissociation
+11	TPM1_11_0	E	25	h	1.0	y	partner dissociation
+11	TPM1_9_0	E	25	h	1.0	y	partner dissociation
+12	TPM1_10_0	C	26	h	1.0	y	partner dissociation
+12	TPM1_2_4	C	26	h	1.0	y	partner dissociation
+12	TPM1_2_6	C	23	h	1.0	y	partner dissociation
+13	TPM2_2_0	E	25	h	1.0	y	partner dissociation
+13	TPM2_2_2	E	25	h	1.0	y	partner dissociation
+14	TPM2_9_0	C	27	h	1.0	y	partner dissociation
+14	TPM2_10_0	C	26	h	1.0	y	partner dissociation
+15	TPM3_4_1	N	80	h	1.0	y	partner dissociation
+15	TPM3_2_0	N	44	h	1.0	y	partner dissociation
+16	TPM3_6_0	E	25	h	1.0	y	partner dissociation
+16	TPM3_6_1	E	25	h	1.0	y	partner dissociation
+17	TPM3_7_0	C	26	h	1.0	y	partner dissociation
+17	TPM3_5_0	C	26	h	1.0	y	partner dissociation
+18	TPM4_6_0	N	80	h	1.0	y	partner dissociation
+18	TPM4_2_0	N	44	h	1.0	y	partner dissociation
+19	TPM4_7_0	C	26		1.0	n	
+19	TPM4_7_1	C	26	h	1.0	y	partner dissociation
+20	CAMK2A_24_0	I	11	c	0.0	y	cellular localization
+21	CAMK2B_13_0	I	15	c	0.0	y	
+22	CAMK2B_1_0	I	129	c	0.0	y	partner acquisiton (pred)
+23	CAMK2G_20_1	I	21	c	0.0	y	
+24	CAMK2G_5_5	I	11	c	0.0	y	cellular localization
+25	CAMK2G_21_0	I	23	c	0.0	n	
+26	CAMK2G_10_1	I	39			n	
+27	KIF1A_26_0_3_0	I	9	c	0.0	n	
+28	KIF1A_1_3	I	103	c	0.0	n	
+29	KIF1A_10_1	I	9	c	0.0	n	
+30	KIF1B_41_0	C	1143			y	partner specificty
+30	KIF1B_1_0	C	494			y	partner specificty
+31	KIF1B_37_1	I	6	c	0.0	y	binding affinity (prot)
+32	KIF1B_7_1	I	14		0.0	n	
+33	MYO1B_11_1	I	29	h	2.0	y	binding affinity (prot) -- partner acquisition (pred)
+34	MYO1B_11_3	I	29	h	2.0	y	binding affinity (prot) -- partner acquisition (pred)
+35	MYO1C_4_0	N	6	b	0.0	n	
+35	MYO1C_22_0	N	31	c	0.0	n	
+36	GRIN2A_15_0	C	23	c	0.0	y	regulation
+36	GRIN2A_1_1	C	206	c	0.0	y	regulation
+36	GRIN2A_1_2	C	206	c	0.0	y	regulation
+37	DNM1_11_0	E	46	h	0.0	y	partner specificity
+37	DNM1_11_1	E	46	h	0.0	y	partner specificity
+38	DNM1_7_2	I	4	h	0.0	y	partner specificity
+39	DNM1_15_1	I	4	h	0.0	n	
+40	DNM1_4_0	C	19	c	0.0	n	
+40	DNM1_16_1	C	6	c	0.0	n	
+41	DNM2_11_1	E	46	h	0.0	y	partner specificity
+41	DNM2_11_3	E	46	h	0.0	y	partner specificity
+42	DNM2_1_0	I	4	h	0.0	y	partner specificity
+43	DNM2_13_2	C	22	c	0.0	n	
+43	DNM2_13_2	C	38			n	
+44	DNM3_20_1	I	10	NAx		n	
+45	DNM3_8_1	I	4	h	0.0	y	partner specificity
+46	DNM3_1_3	C	11			n	
+46	DNM3_1_4	C	22	c	0.0	n	
+46	DNM3_26_0_8_2	C	11	c	0.0	n	
+47	FYN_4_2	E	52	b	1.0	y	domain organization and substrate binding (pred)
+47	FYN_4_0	E	55	b	1.0	y	domain organization and substrate binding (pred)
+48	SRC_10_0	I	89			n	
+49	SRC_10_0	I	17			n	
+50	SNAP-25_3_1	E	45	h	1.0	y	partner specificity (?)
+50	SNAP-25_3_0	E	40	h	1.0	y	partner specificity (?)
+51	SNAP23_1_0	C	107	h	0.0	y	
+51	SNAP23_3_0	C	126	h	0.0	y	
+52	NEBL_15_0	N	2510	c	0.0	y	
+52	NEBL_18_0	N	110	m	2.0	y	
+53	NEBL_13_0	I	83	c	0.0	n	
+54	MAPK8_12_0	E	24	h	0.0	y	partner specificity
+54	MAPK8_12_1	E	24	h	0.0	y	partner specificity
+55	MAPK8_15_0	C	4	c	0.0	y	
+55	MAPK8_5_0	C	47	c	0.0	y	
+56	MAPK9_10_0	E	24	h	0.0	y	partner specificity
+56	MAPK9_10_1	E	24	h	0.0	y	partner specificity
+57	MAPK9_2_3_12_1	C	4	c	0.0	y	
+57	MAPK9_4_1	C	48	c	0.0	y	
+58	MAPK10_13_0	E	24	h	0.0	y	partner specificity
+58	MAPK10_13_1	E	24	h	0.0	y	partner specificity
+59	MAPK10_9_0_8_3	C	7	c	0.0	y	
+59	MAPK10_5_1	C	46	c	0.0	y	
+60	MAPK10_14_1	I	38	c	0.0	y	
+61	BCL2L1_3_0	N	29		0.0	n	
+61	BCL2L1_1_1	N	120	h	0.0	n	
